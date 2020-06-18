@@ -75,13 +75,21 @@ public class BuyJourney {
         homepage.addedToCart();
     }
 
+    /**
+     * From the homepage click on - Contact Us
+     * (On the top left of the page)
+     * Enter email address
+     * Enter a message
+     * Click on - Send
+     * Verify message has been sent
+     **/
     @Test
     public void proceedToContactUsPage() {
         contactPage.goToContactUsPage();
         contactPage.enterEmailAddress();
         contactPage.enterMessage();
         contactPage.clickSend();
-       // contactPage.verifyErrorMessage();
+        // contactPage.verifyErrorMessage();
         contactPage.verifySentMessage();
     }
 
