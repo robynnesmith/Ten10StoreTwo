@@ -20,6 +20,9 @@ public class BuyJourney {
     private ShoppingCartPage basketpage = new ShoppingCartPage(driver);
     private SignInPage signInPage = new SignInPage(driver);
     private ProductPage productPage = new ProductPage(driver);
+    private Orders orders = new Orders(driver);
+
+
 
     @Before
     public void individualSetUp() {
@@ -94,5 +97,26 @@ public class BuyJourney {
         productPage.filterYellow();
         productPage.filterPrice();
         productPage.correctItemDisplayed();
+    }
+
+    /**
+     * must be signed in with previous orders placed
+     * * Navigate to Sign In Page
+     * * Click Orders (bottom of page)
+     * * Click Details
+     * * Choose Product
+     * *Add Comment
+     * *Verify that message was successfuly sent
+     */
+    @Test
+    public void addMessage(){
+        homepage.navigateToSignInPage();
+        signInPage.login();
+        homepage.clickOrder();
+        orders.clickDetails();
+        orders.chooseProductDropDown();
+        orders.enterMessage("hi");
+        orders.sendMessage();
+        orders.successfullySendMessage();
     }
 }
