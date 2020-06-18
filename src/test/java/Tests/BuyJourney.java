@@ -18,8 +18,7 @@ public class BuyJourney {
     private SignInPage signInPage = new SignInPage(driver);
     private ProductPage productPage = new ProductPage(driver);
     private Orders orders = new Orders(driver);
-
-
+    private ContactUsPage contactPage = new ContactUsPage(driver);
 
     @Before
     public void individualSetUp() {
@@ -78,6 +77,25 @@ public class BuyJourney {
     }
 
     /**
+     * Navigate to 'Women' page
+     * Select dresses
+     * Select size
+     * Select colour
+     * Select price range
+     * Verify that correct product is displayed
+     */
+
+    @Test
+    public void searchUsingFilters(){
+        homepage.clickWomen();
+        productPage.filterDresses();
+        productPage.filterMedium();
+        productPage.filterYellow();
+        productPage.filterPrice();
+        productPage.correctItemDisplayed();
+    }
+
+    /**
      * must be signed in with previous orders placed
      * * Navigate to Sign In Page
      * * Click Orders (bottom of page)
@@ -97,4 +115,16 @@ public class BuyJourney {
         orders.sendMessage();
         orders.successfullySendMessage();
     }
+
+    @Test
+    public void proceedToContactUsPage() {
+        contactPage.goToContactUsPage();
+        contactPage.enterEmailAddress();
+        contactPage.enterMessage();
+        contactPage.clickSend();
+       // contactPage.verifyErrorMessage();
+        contactPage.verifySentMessage();
+    }
+
+
 }
