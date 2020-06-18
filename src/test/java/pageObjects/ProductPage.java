@@ -23,6 +23,8 @@ public class ProductPage extends BasePage {
     private static final By MEDIUM_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M']");
     private static final By YELLOW_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow']");
     private static final By PRICE_RANGE = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow/Price-%24-16-17']");
+    private static final By CLEAR_FILTERS = By.cssSelector(".btn.btn-tertiary.js-search-filters-clear-all:last-of-type");
+//    private static final By SEVEN_PRODUCTS = By.xpath("//*[text()='Showing 1-7 of 7 item(s)']");
 
     public void productPageDisplayed() {
         WebElement productPage = driver.findElement(ADD_TO_CART_BUTTON);
@@ -67,5 +69,34 @@ public class ProductPage extends BasePage {
         WebElement printedChiffonDress = driver.findElement(By.xpath("//*[text()='Printed Chiffon Dress']"));
         Assert.assertTrue(elementIsVisible(printedChiffonDress));
     }
+
+    public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
+
+    public void sevenProducts(String input){
+        driver.getPageSource().contains(input);
+    }
+
+
+    public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
+
+//    public void sevenProducts() {
+//        WebElement sevenProducts = driver.findElement(By.xpath("//*[text()='There are 7 products.']"));
+//        Assert.assertTrue(elementIsVisible(sevenProducts));
+//    }
+    public void sevenProducts(String input){
+        driver.getPageSource().contains(input);
+    }
+
+
+    public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
+
+//    public void sevenProducts() {
+//        WebElement sevenProducts = driver.findElement(By.xpath("//*[text()='There are 7 products.']"));
+//        Assert.assertTrue(elementIsVisible(sevenProducts));
+//    }
+    public void sevenProducts(String input){
+        driver.getPageSource().contains(input);
+    }
+
 
 }
