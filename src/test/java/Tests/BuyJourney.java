@@ -126,5 +126,4 @@ public class BuyJourney {
         contactPage.verifySentMessage();
     }
 
-
 }
