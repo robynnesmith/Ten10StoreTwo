@@ -126,4 +126,19 @@ public class BuyJourney {
         contactPage.verifySentMessage();
     }
 
+    /**
+     * Navigate to news subscription at the bottom
+       of the homepage
+     * Enter a valid email address
+     * Click subscribe
+     * Verify that success message is displayed
+     */
+    @Test
+    public void subscribeToNews(){
+        homepage.enterEmail("randomemail1@gmail.com");
+        homepage.clickSubscribe();
+        homepage.checkSuccessfullySubscribed();
+
+    }
+
 }
