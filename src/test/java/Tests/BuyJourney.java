@@ -89,7 +89,6 @@ public class BuyJourney {
         contactPage.enterEmailAddress();
         contactPage.enterMessage();
         contactPage.clickSend();
-        // contactPage.verifyErrorMessage();
         contactPage.verifySentMessage();
     }
 
