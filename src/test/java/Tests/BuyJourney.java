@@ -3,10 +3,7 @@ package Tests;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import pageObjects.HomePage;
-import pageObjects.ProductPage;
-import pageObjects.ShoppingCartPage;
-import pageObjects.SignInPage;
+import pageObjects.*;
 
 import static Tests.TestSuite.driverFactory;
 
@@ -20,6 +17,7 @@ public class BuyJourney {
     private ShoppingCartPage basketpage = new ShoppingCartPage(driver);
     private SignInPage signInPage = new SignInPage(driver);
     private ProductPage productPage = new ProductPage(driver);
+    private ContactUsPage contactPage = new ContactUsPage(driver);
 
     @Before
     public void individualSetUp() {
@@ -76,4 +74,16 @@ public class BuyJourney {
         basketpage.addToCart();
         homepage.addedToCart();
     }
+
+    @Test
+    public void proceedToContactUsPage() {
+        contactPage.goToContactUsPage();
+        contactPage.enterEmailAddress();
+        contactPage.enterMessage();
+        contactPage.clickSend();
+       // contactPage.verifyErrorMessage();
+        contactPage.verifySentMessage();
+    }
+
+
 }
