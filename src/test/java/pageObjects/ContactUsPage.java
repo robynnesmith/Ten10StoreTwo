@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
-
 public class ContactUsPage extends BasePage {
 
     public ContactUsPage(WebDriver driver) {
