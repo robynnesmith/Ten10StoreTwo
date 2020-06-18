@@ -72,6 +72,24 @@ public class ProductPage extends BasePage {
 
     public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
 
+    public void sevenProducts(String input){
+        driver.getPageSource().contains(input);
+    }
+
+
+    public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
+
+//    public void sevenProducts() {
+//        WebElement sevenProducts = driver.findElement(By.xpath("//*[text()='There are 7 products.']"));
+//        Assert.assertTrue(elementIsVisible(sevenProducts));
+//    }
+    public void sevenProducts(String input){
+        driver.getPageSource().contains(input);
+    }
+
+
+    public void clearFilter(){ waitAndClick(CLEAR_FILTERS); }
+
 //    public void sevenProducts() {
 //        WebElement sevenProducts = driver.findElement(By.xpath("//*[text()='There are 7 products.']"));
 //        Assert.assertTrue(elementIsVisible(sevenProducts));
