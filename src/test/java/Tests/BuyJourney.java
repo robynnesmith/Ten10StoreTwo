@@ -75,6 +75,5 @@ public class BuyJourney {
         productPage.selectColour();
         basketpage.addToCart();
         homepage.addedToCart();
-
     }
 }
