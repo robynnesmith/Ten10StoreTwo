@@ -86,7 +86,7 @@ public class BuyJourney {
      */
 
     @Test
-    public void searchUsingFilters(){
+    public void searchUsingFilters() {
         homepage.clickWomen();
         productPage.filterDresses();
         productPage.filterMedium();
@@ -105,7 +105,7 @@ public class BuyJourney {
      * *Verify that message was successfuly sent
      */
     @Test
-    public void addMessage(){
+    public void addMessage() {
         homepage.navigateToSignInPage();
         signInPage.login();
         homepage.clickOrder();
@@ -132,6 +132,7 @@ public class BuyJourney {
         contactPage.clickSend();
         contactPage.verifySentMessage();
     }
+
     /**
      * *click on Women
      * *select fiters for category, size, colour
@@ -147,28 +148,16 @@ public class BuyJourney {
         productPage.clearFilter();
         productPage.sevenProducts("There are 7 products.");
     }
-    /**
-     * *click on Women
-     * *select fiters for category, size, colour
-     * *then select "clear all" filter
-     * *verify that all 7 items available again
-     */
-    @Test
-    public void clearFilter(){
-        homepage.clickWomen();
-        productPage.filterDresses();
-        productPage.filterMedium();
-        productPage.filterYellow();
-        productPage.clearFilter();
-        productPage.sevenProducts("There are 7 products.");
 
     /**
      * Navigate to news subscription at the bottom
-       of the homepage
+     of the homepage
      * Enter a valid email address
      * Click subscribe
      * Verify that success message is displayed
      */
+
+
     @Test
     public void subscribeToNews(){
         homepage.enterEmail("randomemail1@gmail.com");
@@ -176,7 +165,7 @@ public class BuyJourney {
         homepage.checkSuccessfullySubscribed();
     }
 
-    }
-    }
-
 }
+
+
+
