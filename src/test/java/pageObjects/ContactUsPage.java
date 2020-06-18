@@ -39,12 +39,6 @@ public class ContactUsPage extends BasePage {
         send.click();
     }
 
-    public void verifyErrorMessage() {
-        WebElement errorMessage = driver.findElement(By.cssSelector("div[class='col-xs-12 alert alert-danger']"));
-        wait.until(ExpectedConditions.visibilityOf(errorMessage));
-        System.out.println(errorMessage.getText());
-        Assert.assertTrue(errorMessage.isDisplayed());
-    }
 
     public void verifySentMessage() {
         WebElement sentMessage = driver.findElement(By.cssSelector("div[class='col-xs-12 alert alert-success']"));
