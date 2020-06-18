@@ -76,4 +76,23 @@ public class BuyJourney {
         basketpage.addToCart();
         homepage.addedToCart();
     }
+
+    /**
+     * Navigate to 'Women' page
+     * Select dresses
+     * Select size
+     * Select colour
+     * Select price range
+     * Verify that correct product is displayed
+     */
+
+    @Test
+    public void searchUsingFilters(){
+        homepage.clickWomen();
+        productPage.filterDresses();
+        productPage.filterMedium();
+        productPage.filterYellow();
+        productPage.filterPrice();
+        productPage.correctItemDisplayed();
+    }
 }

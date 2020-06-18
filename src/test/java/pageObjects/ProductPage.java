@@ -19,6 +19,10 @@ public class ProductPage extends BasePage {
     private static final By QUANTITY_UP_BUTTON = By.cssSelector(".material-icons.touchspin-up");
     private static final By SIZE_DROPDWON = By.cssSelector("#group_1");
     private static final By WHITE_COLOUR_OPTION = By.cssSelector("input[value = '8']");
+    private static final By DRESSES_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses']");
+    private static final By MEDIUM_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M']");
+    private static final By YELLOW_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow']");
+    private static final By PRICE_RANGE = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow/Price-%24-16-17']");
 
     public void productPageDisplayed() {
         WebElement productPage = driver.findElement(ADD_TO_CART_BUTTON);
@@ -41,6 +45,27 @@ public class ProductPage extends BasePage {
     public void selectColour() {
         WebElement chooseColour = driver.findElement(WHITE_COLOUR_OPTION);
         chooseColour.click();
+    }
+
+    public void filterDresses(){
+        waitAndClick(DRESSES_CHECKBOX);
+    }
+
+    public void filterMedium(){
+        waitAndClick(MEDIUM_CHECKBOX);
+    }
+
+    public void filterYellow(){
+        waitAndClick(YELLOW_CHECKBOX);
+    }
+
+    public void filterPrice(){
+        waitAndClick(PRICE_RANGE);
+    }
+
+    public void correctItemDisplayed(){
+        WebElement printedChiffonDress = driver.findElement(By.xpath("//*[text()='Printed Chiffon Dress']"));
+        Assert.assertTrue(elementIsVisible(printedChiffonDress));
     }
 
 }
