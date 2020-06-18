@@ -26,6 +26,9 @@ public class HomePage extends BasePage {
     private static final By SECOND_PRODUCT_QUICKVIEW = By.cssSelector("div.products > article:nth-child(2) .quick-view");
     private static final By ADD_TO_CART_BUTTON = By.cssSelector(".btn.btn-primary.add-to-cart");
     private static final By MODAL_WINDOW = By.cssSelector("#myModalLabel");
+    private static final By CLICK_ORDERS = By.cssSelector("a[title='Orders']");
+
+
 
     public void goTo() {
         driver.get(URL);
@@ -73,5 +76,9 @@ public class HomePage extends BasePage {
         maximiseBrowserWindow();
         addItemToCart();
         addedToCart();
+    }
+
+    public void clickOrder() {
+        waitAndClick(CLICK_ORDERS);
     }
 }
