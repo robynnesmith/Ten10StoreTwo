@@ -139,6 +139,21 @@ public class BuyJourney {
      * *verify that all 7 items available again
      */
     @Test
+    public void clearFilter() {
+        homepage.clickWomen();
+        productPage.filterDresses();
+        productPage.filterMedium();
+        productPage.filterYellow();
+        productPage.clearFilter();
+        productPage.sevenProducts("There are 7 products.");
+    }
+    /**
+     * *click on Women
+     * *select fiters for category, size, colour
+     * *then select "clear all" filter
+     * *verify that all 7 items available again
+     */
+    @Test
     public void clearFilter(){
         homepage.clickWomen();
         productPage.filterDresses();
@@ -159,6 +174,7 @@ public class BuyJourney {
         homepage.enterEmail("randomemail1@gmail.com");
         homepage.clickSubscribe();
         homepage.checkSuccessfullySubscribed();
+    }
 
     }
     }
