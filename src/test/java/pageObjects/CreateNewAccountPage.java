@@ -20,6 +20,7 @@ public class CreateNewAccountPage extends BasePage {
     private static final By EMAIL_INPUT = By.name("email");
     private static final By PASSWORD_INPUT = By.name("password");
     private static final By SAVE_BUTTON = By.cssSelector(".form-control-submit");
+    private static final By DATE_OF_BIRTH = By.name("birthday");
 
 
     public void enterPersonalDetails() {
@@ -34,7 +35,7 @@ public class CreateNewAccountPage extends BasePage {
         waitAndClick(SAVE_BUTTON);
     }
 
-    public void personalDetailsNumericFirstName(String firstName, String lastName, String email, String password){
+    public void personalDetails(String firstName, String lastName, String email, String password){
         findAndType(FIRST_NAME_INPUT,firstName);
         findAndType(LAST_NAME_INPUT, lastName);
         findAndType(EMAIL_INPUT, email);
@@ -44,6 +45,15 @@ public class CreateNewAccountPage extends BasePage {
     public void invalidNameAlertPresent(){
         WebElement invalidName = driver.findElement(By.xpath("//*[text()='Invalid name']"));
         Assert.assertTrue(elementIsVisible(invalidName));
+    }
+
+    public void enterBirthday(String birthday){
+        findAndType(DATE_OF_BIRTH, birthday);
+    }
+
+    public void invalidFormat(){
+        WebElement birthdayAlert = driver.findElement(By.xpath("//*[text()='Format should be 05/31/1970.']"));
+        Assert.assertTrue(elementIsVisible(birthdayAlert));
     }
 
 

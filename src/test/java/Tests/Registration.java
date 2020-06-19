@@ -80,11 +80,28 @@ public class Registration {
     public void numericValuesInNameField(){
         homepage.navigateToSignInPage();
         signInPage.clickCreateAnAccount();
-        createNewAccountPage.personalDetailsNumericFirstName("123", "Wren", "randomemail@gmail.com", "password");
+        createNewAccountPage.personalDetails("123", "Wren", "randomemail@gmail.com", "password");
         createNewAccountPage.clickSave();
         createNewAccountPage.invalidNameAlertPresent();
     }
 
+    /**
+     * Go to sign in page
+     * Navigate to registration page
+     * Fill out details on registration form
+     * Insert invalid date for birthday field
+     * Click Save
+     * Verify Error message
+     */
+    @Test
+    public void enterInvalidBirthday(){
+        homepage.navigateToSignInPage();
+        signInPage.clickCreateAnAccount();
+        createNewAccountPage.personalDetails("Adam", "Wren", "randomemail@gmail.com", "password");
+        createNewAccountPage.enterBirthday("Thursday");
+        createNewAccountPage.clickSave();
+        createNewAccountPage.invalidFormat();
+    }
 
     @After
     public void individualTearDown() {

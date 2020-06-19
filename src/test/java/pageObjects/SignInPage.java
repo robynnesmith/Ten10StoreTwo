@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -35,6 +37,7 @@ public class SignInPage extends BasePage {
     private static final By ADDRESSES = By.cssSelector("#addresses-link");
     private static final By ADD_NEW_ADDRESS = By.cssSelector("[data-link-action='add-address']");
     private static final By CLICK_SIGN_IN = By.cssSelector("span[class='hidden-sm-down']");
+    private static final By SUCCESS_ALERT = By.cssSelector(".ps-alert-success");
 
     public void enterCreateNewAccountEmailAddress(String emailAddress) {
         findAndType(EMAIL_ADDRESS_INPUT_BOX, emailAddress);
@@ -148,6 +151,11 @@ public class SignInPage extends BasePage {
     }
     public void clickSignIn() {
         waitAndClick(CLICK_SIGN_IN);
+    }
+
+    public void successAlert(){
+        WebElement successAlert = driver.findElement(SUCCESS_ALERT);
+        Assert.assertTrue(elementIsVisible(successAlert));
     }
 
 

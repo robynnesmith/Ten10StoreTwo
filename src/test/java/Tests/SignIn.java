@@ -26,7 +26,6 @@ public class SignIn {
         homepage.goTo();
     }
 
-
     /**
      * Sign in as Registered User
      * Pre-Conditions - Must have signIn information for a registered user
@@ -70,7 +69,6 @@ public class SignIn {
      */
     @Test
     public void forgottenPassword() {
-
         homepage.navigateToSignInPage();
         signInPage.forgottenPasswordCheck();
     }
@@ -84,7 +82,6 @@ public class SignIn {
      */
     @Test
     public void signOut() {
-
         homepage.navigateToSignInPage();
         signInPage.login();
         signInPage.clickSignOut();
@@ -123,8 +120,22 @@ public class SignIn {
         signInPage.clickAddNewAddress();
         checkoutPage.enterNewAddressDetails("Mr Wren", "Ten10", "123 Street", "Derby", "12345");
         signInPage.addressSuccessfullyAdded();
+    }
 
-
+    /**
+     * *Go to sign in page
+     * *Click forgot password
+     * *Enter unregistered email
+     * *Verify error message is displayed
+     */
+    @Test
+    public void unregisteredEmailToRecoverPassword(){
+        homepage.navigateToSignInPage();
+        signInPage.forgottenPassword();
+        signInPage.enterForgottenPasswordEmailAddress("123abc@abc123.com");
+        signInPage.clickRetrievePassword();
+        signInPage.successAlert();
 
     }
+
 }
