@@ -231,6 +231,11 @@ public class BuyJourney {
      */
     @Test @Ignore
     public void notEnoughStock (){
+        productPage.navigatetoProductPage();
+        productPage.selectColour();
+        productPage.emptyQuantity();
+        productPage.enterQuantity("500");
+        productPage.noStockMessage();
 
     }
 
