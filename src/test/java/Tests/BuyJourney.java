@@ -1,6 +1,7 @@
 package Tests;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
@@ -110,10 +111,11 @@ public class BuyJourney {
         signInPage.login();
         homepage.clickOrder();
         orders.clickDetails();
-        orders.chooseProductDropDown();
+//        orders.chooseProductDropDown();
         orders.enterMessage("hi");
         orders.sendMessage();
         orders.successfullySendMessage();
+        signInPage.clickSignOut();
     }
 
     /**
@@ -158,10 +160,114 @@ public class BuyJourney {
      */
     @Test
     public void subscribeToNews(){
-        homepage.enterEmail("randomemail1@gmail.com");
+        homepage.enterEmail(homepage.randomEmail() + "@abc.com");
         homepage.clickSubscribe();
         homepage.checkSuccessfullySubscribed();
     }
 
+    /**
+     * 1. Navigate to homepage.
+     * 2. Select summer dresses from Menu.
+     * 3. Choose third item.
+     * 4. Select size and quantity from quick view.
+     * 5. Click 'Add to cart'.
+     * Verify product added to cart.
+     */
+
+    @Test
+    public void addItemViaSummerDressesInMenu(){
+        homepage.hoverOverWomen();
+        homepage.selectSummerDress();
+        productPage.selectThirdSummerDress();
+        productPage.selectQuantity();
+        productPage.selectSize();
+        basketpage.addToCart();
+        homepage.addedToCart();
     }
+
+    /**
+    *1. Navigate to homepage
+     * 2. Type product name into 'search our catalogue' bar
+     * 3. Click item
+     * 4. Select size and quantity
+     * 5. Click 'Add to cart'
+     * 6. Check product added to cart
+    */
+
+    @Test
+    public void addItemViaCatalogueSearch(){
+        homepage.searchBarOnHomePage("dress");
+        homepage.clickSearch();
+        homepage.hoverOverDress();
+        homepage.addItemToCart();
+        homepage.addedToCart();
+
+    }
+    /**
+     * 1. After added item to basket in quick view, continue shopping
+     * 2. Add a different item to basket in quick view
+     * 3. Head to Check out
+     * 4. Verify Second Item is added
+     */
+
+    @Test
+    public void continueShoppingAndAddSecondItemToBasket(){
+        homepage.hoverOverItem();
+        homepage.addItemToCart();
+        homepage.continueShopping();
+        homepage.hoverOverThirdItem();
+        homepage.clickThirdItemQuickView();
+        homepage.addSingleItemToCart();
+        homepage.addedToCart();
+    }
+
+    /**
+     *1. Navigate to Home page.
+     * 2. Select any product on the home page
+     * 3. Enter a high number in the quantity (Example 500)
+     * Verify that the message "There are not enough products in Stock displayed"
+     */
+    @Test @Ignore
+    public void notEnoughStock (){
+
+    }
+
+    /**
+     *1. Navigate to Home page.
+     * 2. Select any product on the home page
+     * 3. Enter a high number in the quantity (Example 500)
+     * Verify that "Add to Cart" button is disabled.
+     */
+    @Test @Ignore
+    public void noAddToCartButtonForOutOfStock (){
+
+    }
+
+    /**
+     *1. Navigate to home page
+     * 2. Select a product that is available with different option (FADED SHORT SLEEVES T-SHIRT)
+     * Verify that the message "Product available with different options" is displayed.
+     */
+    @Test @Ignore
+    public void productAvailableWithDifferentOption (){
+
+    }
+
+    /**
+     * Precodition:
+     * One or more orders are already made with the account in use.
+     * 1. Navigate to Home page
+     * 2. Click on <Account name>
+     * 3. Click on "Order History And Details"
+     * 4. Click on "Reorder"
+     * 5. Complete the purchase.
+     * Verify that the order made in Step 5 is succesful.
+     * Verify that the order is displayed as a seperate order in "Order History and Details".
+     */
+    @Test @Ignore
+    public void reorderPreviousPurchase (){
+
+    }
+
+}
 

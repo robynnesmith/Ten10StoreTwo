@@ -24,7 +24,8 @@ public class ProductPage extends BasePage {
     private static final By YELLOW_CHECKBOX = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow']");
     private static final By PRICE_RANGE = By.cssSelector("[href='http://3.11.70.191/index.php?controller=category&id_category=3&q=Categories-Dresses/Size-M/Color-Yellow/Price-%24-16-17']");
     private static final By CLEAR_FILTERS = By.cssSelector(".btn.btn-tertiary.js-search-filters-clear-all:last-of-type");
-//    private static final By SEVEN_PRODUCTS = By.xpath("//*[text()='Showing 1-7 of 7 item(s)']");
+    private static final By SELECT_THIRD_SUMMER_DRESS = By.cssSelector("[href='http://3.11.70.191/index.php?id_product=7&id_product_attribute=34&rewrite=printed-chiffon-dress&controller=product#/1-size-s/16-color-yellow']");
+
 
     public void productPageDisplayed() {
         WebElement productPage = driver.findElement(ADD_TO_CART_BUTTON);
@@ -75,5 +76,9 @@ public class ProductPage extends BasePage {
     public void sevenProducts(String input){
         driver.getPageSource().contains(input);
     }
+
+    public void selectThirdSummerDress(){waitAndClick(SELECT_THIRD_SUMMER_DRESS);}
+
+
 
 }
