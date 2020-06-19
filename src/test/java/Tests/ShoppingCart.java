@@ -196,8 +196,6 @@ public class ShoppingCart {
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
-    }
-
         checkoutPage.setAddNewAddress();
     }
 
