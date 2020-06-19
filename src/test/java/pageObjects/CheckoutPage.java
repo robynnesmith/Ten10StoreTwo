@@ -29,6 +29,10 @@ public class CheckoutPage extends BasePage {
     private static final By ORDER_CONFIRMATION_MESSAGE = By.cssSelector("#content-hook_order_confirmation");
     private static final By CONTINUE_BUTTON = By.cssSelector(".continue.btn.btn-primary.float-xs-right");
     private static final By SHIPPING_COMMENT_INPUT = By.id("delivery_message");
+    private static final By ALIAS = By.name("alias");
+    private static final By COMPANY = By.name("company");
+    private static final By SELECT_STATE = By.cssSelector(".form-control.form-control-select :nth-child(5)");
+    private static final By SAVE_BUTTON = By.cssSelector(".btn.btn-primary.float-xs-right");
 
     public void deliveryAddressEnterDisplayed() {
 
@@ -91,5 +95,16 @@ public class CheckoutPage extends BasePage {
 
     public void enterShippingComment() {
         findAndType(SHIPPING_COMMENT_INPUT, "Nothing to add");
+    }
+
+    public void enterNewAddressDetails(String alias, String company, String address, String city, String postcode){
+        findAndType(ALIAS, alias);
+        findAndType(COMPANY, company);
+        findAndType(ADDRESS_INPUT, address);
+        findAndType(CITY_INPUT, city);
+        waitAndClick(STATE_DROPDOWN);
+        waitAndClick(SELECT_STATE);
+        findAndType(POSTCODE_INPUT, postcode);
+        waitAndClick(SAVE_BUTTON);
     }
 }
