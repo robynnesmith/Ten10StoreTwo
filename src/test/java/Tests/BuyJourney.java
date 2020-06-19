@@ -87,7 +87,7 @@ public class BuyJourney {
      */
 
     @Test
-    public void searchUsingFilters(){
+    public void searchUsingFilters() {
         homepage.clickWomen();
         productPage.filterDresses();
         productPage.filterMedium();
@@ -106,7 +106,7 @@ public class BuyJourney {
      * *Verify that message was successfuly sent
      */
     @Test
-    public void addMessage(){
+    public void addMessage() {
         homepage.navigateToSignInPage();
         signInPage.login();
         homepage.clickOrder();
@@ -153,11 +153,13 @@ public class BuyJourney {
 
     /**
      * Navigate to news subscription at the bottom
-       of the homepage
+     of the homepage
      * Enter a valid email address
      * Click subscribe
      * Verify that success message is displayed
      */
+
+
     @Test
     public void subscribeToNews(){
         homepage.enterEmail(homepage.randomEmail() + "@abc.com");
@@ -270,4 +272,7 @@ public class BuyJourney {
     }
 
 }
+}
+
+
 
