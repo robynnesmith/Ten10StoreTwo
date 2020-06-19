@@ -1,7 +1,10 @@
 package pageObjects;
 
+import net.bytebuddy.implementation.bytecode.assign.TypeCasting;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by jack.forman on 23/10/2016.
@@ -29,6 +32,18 @@ public class CreateNewAccountPage extends BasePage {
 
     public void clickSave() {
         waitAndClick(SAVE_BUTTON);
+    }
+
+    public void personalDetailsNumericFirstName(String firstName, String lastName, String email, String password){
+        findAndType(FIRST_NAME_INPUT,firstName);
+        findAndType(LAST_NAME_INPUT, lastName);
+        findAndType(EMAIL_INPUT, email);
+        findAndType(PASSWORD_INPUT, password);
+    }
+
+    public void invalidNameAlertPresent(){
+        WebElement invalidName = driver.findElement(By.xpath("//*[text()='Invalid name']"));
+        Assert.assertTrue(elementIsVisible(invalidName));
     }
 
 

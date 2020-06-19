@@ -71,6 +71,20 @@ public class Registration {
         createNewAccountPage.clickSave();
     }
 
+    /**
+     * enter numeric values into name field
+     * valid details in other fields
+     * verify error message is displayed
+     */
+    @Test
+    public void numericValuesInNameField(){
+        homepage.navigateToSignInPage();
+        signInPage.clickCreateAnAccount();
+        createNewAccountPage.personalDetailsNumericFirstName("123", "Wren", "randomemail@gmail.com", "password");
+        createNewAccountPage.clickSave();
+        createNewAccountPage.invalidNameAlertPresent();
+    }
+
 
     @After
     public void individualTearDown() {

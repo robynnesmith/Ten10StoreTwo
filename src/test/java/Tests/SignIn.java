@@ -3,6 +3,7 @@ package Tests;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import pageObjects.CheckoutPage;
 import pageObjects.HomePage;
 import pageObjects.SignInPage;
 
@@ -16,6 +17,7 @@ public class SignIn {
     public static WebDriver driver = driverFactory.getDriver();
     private HomePage homepage = new HomePage(driver);
     private SignInPage signInPage = new SignInPage(driver);
+    private CheckoutPage checkoutPage = new CheckoutPage(driver);
 
 
     @Before
@@ -87,6 +89,42 @@ public class SignIn {
         signInPage.login();
         signInPage.clickSignOut();
         signInPage.userSignedOut();
+
+    }
+
+    /**
+     * *Navigate to sign in page
+     * *Enter registered email address
+     * *Enter invalid password
+     * *Click sign in
+     * *Verify error message is shown
+     */
+    @Test
+    public void invalidPassword(){
+        homepage.navigateToSignInPage();
+        signInPage.enterSignInEmailAddress("random@gmail.com");
+        signInPage.enterInvalidPassword("password123");
+        signInPage.clickLogIn();
+        signInPage.authenticationFailed();
+    }
+
+    /**
+     * *navigate to account page and to addresses section
+     * *add a new address and enter details into 'alias' and 'company' fields
+     * *verify new address has been added
+     */
+    @Test
+    public void addNewAddress(){
+        homepage.navigateToSignInPage();
+        signInPage.enterSignInEmailAddress("random@gmail.com");
+        signInPage.enterPassword2("password");
+        signInPage.clickLogIn();
+        signInPage.clickAddressesLink();
+        signInPage.clickAddNewAddress();
+        checkoutPage.enterNewAddressDetails("Mr Wren", "Ten10", "123 Street", "Derby", "12345");
+        signInPage.addressSuccessfullyAdded();
+
+
 
     }
 }
