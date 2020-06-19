@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class CheckoutPage extends BasePage {
 
@@ -29,6 +30,8 @@ public class CheckoutPage extends BasePage {
     private static final By ORDER_CONFIRMATION_MESSAGE = By.cssSelector("#content-hook_order_confirmation");
     private static final By CONTINUE_BUTTON = By.cssSelector(".continue.btn.btn-primary.float-xs-right");
     private static final By SHIPPING_COMMENT_INPUT = By.id("delivery_message");
+    private static final By INVOICE_ADDRESS = By.cssSelector("a[data-link-action='different-invoice-address']");
+    //private static final By
 
     public void deliveryAddressEnterDisplayed() {
 
@@ -89,7 +92,15 @@ public class CheckoutPage extends BasePage {
         waitUntilVisible(ADDRESS_SECTION);
     }
 
+    public void differentInvoiceAddress() {
+        driver.findElement(INVOICE_ADDRESS).click();
+    }
+
     public void enterShippingComment() {
         findAndType(SHIPPING_COMMENT_INPUT, "Nothing to add");
+        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+        driver.findElement(SHIPPING_COMMENT_INPUT).getText();
+
+
     }
 }
