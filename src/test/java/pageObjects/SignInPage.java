@@ -32,6 +32,8 @@ public class SignInPage extends BasePage {
     private static final By FORGOTTEN_PASSWORD_LINK = By.cssSelector(".forgot-password");
     private static final By SEND_RESET_LINK_BUTTON = By.cssSelector(".forgotten-password button:first-of-type");
     private static final By NOTIFICATION_MESSAGE = By.cssSelector(".ps-alert-error");
+    private static final By ADDRESSES = By.cssSelector("#addresses-link");
+    private static final By ADD_NEW_ADDRESS = By.cssSelector("[data-link-action='add-address']");
     private static final By CLICK_SIGN_IN = By.cssSelector("span[class='hidden-sm-down']");
 
     public void enterCreateNewAccountEmailAddress(String emailAddress) {
@@ -49,6 +51,15 @@ public class SignInPage extends BasePage {
 
     public void enterPassword() {
         findAndType(PASSWORD_INPUT, pd.getPassword());
+    }
+
+    public void enterPassword2(String password){
+        findAndType(PASSWORD_INPUT, password);
+
+    }
+
+    public void enterInvalidPassword(String invalidPassword){
+        findAndType(PASSWORD_INPUT, invalidPassword);
     }
 
     public void successfulSignIn() {
@@ -118,7 +129,26 @@ public class SignInPage extends BasePage {
         confirmationMessage();
     }
 
+    public void authenticationFailed(){
+        WebElement autheticationAlert = driver.findElement(By.xpath("//*[text()='Authentication failed.']"));
+        Assert.assertTrue(elementIsVisible(autheticationAlert));
+    }
+
+    public void clickAddressesLink(){
+        waitAndClick(ADDRESSES);
+    }
+
+    public void clickAddNewAddress(){
+        waitAndClick(ADD_NEW_ADDRESS);
+    }
+
+    public void addressSuccessfullyAdded(){
+        WebElement successMessage = driver.findElement(By.xpath("//*[text()='Address successfully added!']"));
+        Assert.assertTrue(elementIsVisible(successMessage));
+    }
     public void clickSignIn() {
         waitAndClick(CLICK_SIGN_IN);
     }
+
+
 }
