@@ -99,5 +99,11 @@ public class ShoppingCartPage extends BasePage {
     public void clickModalProceedToCheckout() {
         waitAndClick(MODAL_PROCEED_TO_CHECKOUT_BUTTON);
     }
+
+    public void cartButton() {
+        WebElement cartButtonQuantity = driver.findElement(CART_BUTTON);
+        System.out.println(cartButtonQuantity.getText());
+        Assert.assertTrue(elementIsVisible(cartButtonQuantity));
+    }
 }
 

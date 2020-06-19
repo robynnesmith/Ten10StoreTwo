@@ -1,6 +1,7 @@
 package Tests;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
@@ -111,6 +112,125 @@ public class ShoppingCart {
         checkoutPage.agreeToTerms();
         checkoutPage.confirmOrder();
         checkoutPage.orderConfirmationDisplayed();
+    }
+
+    /**
+     * Navigate to basket
+     * Click proceed to checkout
+     * Delivery Address Page is shown
+     * Make invoice address different
+     * Click continue button
+     * Verify shipping method displayed
+     */
+    @Test
+    public void makeInvoiceAddressDifferentToDeliveryAddress() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        basketpage.clickProceedToCheckout();
+        checkoutPage.deliveryAddressSectionDisplayed();
+        checkoutPage.differentInvoiceAddress();
+        checkoutPage.clickProceedToNextSection();
+        checkoutPage.paymentPageDisplayed();
+
+    }
+    /**
+     * *Navigate to basket
+     * *Verify that all items are displayed
+     * *Verify that product counter and prices are correct
+     */
+//    @Test
+//    public void multipleItemsInShoppingCartDisplayed () {
+//        homePage.navigateToSignInPage();
+//        signInPage.login();
+//        homePage.goTo();
+//        homePage.addItemToCart();
+//        //basketpage.clickModalProceedToCheckout();
+//        homePage.continueShopping();
+//
+//
+//    }
+
+    /**
+     * * Navigate to basket
+     * * Proceed to checkout
+     * * Select Address
+     * * Write a comment in 'Shipping Method' section
+     * * Verify comment has been added
+     */
+    @Test
+    @Ignore
+    public void addCommentToOrder() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        basketpage.clickProceedToCheckout();
+        checkoutPage.deliveryAddressSectionDisplayed();
+        checkoutPage.clickProceedToNextSection();
+        checkoutPage.shippingPageDisplayed();
+        checkoutPage.enterShippingComment();
+    }
+
+    /**
+     * *Navigate to basket
+     * *Click proceed to checkout
+     * *Logout
+     * *Verify cart emptied when sign back in.
+     */
+    @Test
+    public void proceedToCheckoutAndLogout() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        signInPage.clickSignOut();
+        signInPage.clickSignIn();
+        signInPage.login();
+        basketpage.cartButton();
+    }
+
+    /**
+     * *Navigate to basket
+     * *Proceed to checkout
+     * *Click "+ new address"
+     * *Fill out address form
+     * *Verify new address is created
+     */
+    @Test
+    @Ignore
+    public void addNewAddress() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        basketpage.clickProceedToCheckout();
+        checkoutPage.deliveryAddressSectionDisplayed();
+    }
+
+
+    /**
+     * *Navigate to basket
+     * *Click proceed to checkout
+     * *Logout
+     * *Verify cart emptied when sign back in.
+     */
+    @Test
+    public void proceedToChechkoutAndLogout() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        signInPage.clickSignOut();
+        signInPage.clickSignIn();
+        signInPage.login();
+        basketpage.cartButton();
     }
 
 
