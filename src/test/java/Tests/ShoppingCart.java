@@ -56,7 +56,7 @@ public class ShoppingCart {
      */
     @Test
     public void increaseQuantityOfProductInBasket() {
-        homePage.itemAddedToCart();
+        homePage.addItemToCart();
         basketpage.navigateToBasket();
         basketpage.increaseQuantity();
         basketpage.verifyQuantityUpdated();
@@ -136,22 +136,7 @@ public class ShoppingCart {
         checkoutPage.paymentPageDisplayed();
 
     }
-    /**
-     * *Navigate to basket
-     * *Verify that all items are displayed
-     * *Verify that product counter and prices are correct
-     */
-//    @Test
-//    public void multipleItemsInShoppingCartDisplayed () {
-//        homePage.navigateToSignInPage();
-//        signInPage.login();
-//        homePage.goTo();
-//        homePage.addItemToCart();
-//        //basketpage.clickModalProceedToCheckout();
-//        homePage.continueShopping();
-//
-//
-//    }
+
 
     /**
      * * Navigate to basket
@@ -212,5 +197,9 @@ public class ShoppingCart {
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
     }
+
+        checkoutPage.setAddNewAddress();
+    }
+
 
 }
