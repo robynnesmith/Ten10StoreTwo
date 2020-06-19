@@ -32,6 +32,7 @@ public class ShoppingCartPage extends BasePage {
     private static final By PROCEED_TO_CHECKOUT_BUTTON = By.cssSelector(".checkout a");
     private static final By PERSONAL_INFORMATION_PAGE = By.id("checkout-personal-information-step");
     private static final By MODAL_PROCEED_TO_CHECKOUT_BUTTON = By.cssSelector(".cart-content-btn>a");
+    private static final By CONTINUE_SHOPPING = By.cssSelector("div[class='cart-grid-body col-xs-12 col-lg-8'] >a");
 
 
     public void addToCart() {
@@ -104,6 +105,10 @@ public class ShoppingCartPage extends BasePage {
         WebElement cartButtonQuantity = driver.findElement(CART_BUTTON);
         System.out.println(cartButtonQuantity.getText());
         Assert.assertTrue(elementIsVisible(cartButtonQuantity));
+    }
+    public void continueShopping() {
+        WebElement continueShopping = driver.findElement(CONTINUE_SHOPPING);
+        continueShopping.click();
     }
 }
 

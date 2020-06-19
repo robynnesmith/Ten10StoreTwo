@@ -56,7 +56,7 @@ public class ShoppingCart {
      */
     @Test
     public void increaseQuantityOfProductInBasket() {
-        homePage.itemAddedToCart();
+        homePage.addItemToCart();
         basketpage.navigateToBasket();
         basketpage.increaseQuantity();
         basketpage.verifyQuantityUpdated();
@@ -136,22 +136,7 @@ public class ShoppingCart {
         checkoutPage.paymentPageDisplayed();
 
     }
-    /**
-     * *Navigate to basket
-     * *Verify that all items are displayed
-     * *Verify that product counter and prices are correct
-     */
-//    @Test
-//    public void multipleItemsInShoppingCartDisplayed () {
-//        homePage.navigateToSignInPage();
-//        signInPage.login();
-//        homePage.goTo();
-//        homePage.addItemToCart();
-//        //basketpage.clickModalProceedToCheckout();
-//        homePage.continueShopping();
-//
-//
-//    }
+
 
     /**
      * * Navigate to basket
@@ -211,26 +196,7 @@ public class ShoppingCart {
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
-    }
-
-
-    /**
-     * *Navigate to basket
-     * *Click proceed to checkout
-     * *Logout
-     * *Verify cart emptied when sign back in.
-     */
-    @Test
-    public void proceedToChechkoutAndLogout() {
-        homePage.navigateToSignInPage();
-        signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
-        basketpage.clickModalProceedToCheckout();
-        signInPage.clickSignOut();
-        signInPage.clickSignIn();
-        signInPage.login();
-        basketpage.cartButton();
+        checkoutPage.setAddNewAddress();
     }
 
 

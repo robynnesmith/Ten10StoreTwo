@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class CheckoutPage extends BasePage {
@@ -31,7 +32,7 @@ public class CheckoutPage extends BasePage {
     private static final By CONTINUE_BUTTON = By.cssSelector(".continue.btn.btn-primary.float-xs-right");
     private static final By SHIPPING_COMMENT_INPUT = By.id("delivery_message");
     private static final By INVOICE_ADDRESS = By.cssSelector("a[data-link-action='different-invoice-address']");
-    //private static final By
+    private static final By ADD_NEW_ADDRESS = By.cssSelector("p[class='add-address'] >a");
 
     public void deliveryAddressEnterDisplayed() {
 
@@ -101,6 +102,13 @@ public class CheckoutPage extends BasePage {
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         driver.findElement(SHIPPING_COMMENT_INPUT).getText();
 
+
+    }
+    public void setAddNewAddress() {
+        WebElement addNewAddress = driver.findElement(ADD_NEW_ADDRESS);
+        addNewAddress.click();
+
+        Random random = new Random();
 
     }
 }
