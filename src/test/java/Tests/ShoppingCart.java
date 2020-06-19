@@ -1,6 +1,7 @@
 package Tests;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
@@ -160,6 +161,7 @@ public class ShoppingCart {
      * * Verify comment has been added
      */
     @Test
+    @Ignore
     public void addCommentToOrder() {
         homePage.navigateToSignInPage();
         signInPage.login();
@@ -180,7 +182,7 @@ public class ShoppingCart {
      * *Verify cart emptied when sign back in.
      */
     @Test
-    public void proceedToChechkoutAndLogout() {
+    public void proceedToCheckoutAndLogout() {
         homePage.navigateToSignInPage();
         signInPage.login();
         homePage.goTo();
@@ -200,7 +202,8 @@ public class ShoppingCart {
      * *Verify new address is created
      */
     @Test
-    public void addNewAddress () {
+    @Ignore
+    public void addNewAddress() {
         homePage.navigateToSignInPage();
         signInPage.login();
         homePage.goTo();
@@ -209,4 +212,26 @@ public class ShoppingCart {
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
     }
+
+
+    /**
+     * *Navigate to basket
+     * *Click proceed to checkout
+     * *Logout
+     * *Verify cart emptied when sign back in.
+     */
+    @Test
+    public void proceedToChechkoutAndLogout() {
+        homePage.navigateToSignInPage();
+        signInPage.login();
+        homePage.goTo();
+        homePage.addItemToCart();
+        basketpage.clickModalProceedToCheckout();
+        signInPage.clickSignOut();
+        signInPage.clickSignIn();
+        signInPage.login();
+        basketpage.cartButton();
+    }
+
+
 }
