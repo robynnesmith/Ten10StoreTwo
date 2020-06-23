@@ -1,5 +1,6 @@
 package stepdefs;
 
+import config.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,27 +8,26 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
 
-import static Tests.TestSuite.driverFactory;
-
 public class BuyJourneyStepDef {
-    private static DriverFactory driverFactory;
-    public static WebDriver driver = driverFactory.getDriver();
-    private HomePage homepage = new HomePage(driver);
-    private ShoppingCartPage basketpage = new ShoppingCartPage(driver);
-    private SignInPage signInPage = new SignInPage(driver);
-    private ProductPage productPage = new ProductPage(driver);
-    private Orders orders = new Orders(driver);
-    private ContactUsPage contactPage = new ContactUsPage(driver);
 
-    @Given("^user is on the \"([^\"])\" page$")
+    private HomePage homepage = new HomePage();
+    private ShoppingCartPage basketpage = new ShoppingCartPage();
+    private SignInPage signInPage = new SignInPage();
+    private ProductPage productPage = new ProductPage();
+    private Orders orders = new Orders();
+    private ContactUsPage contactPage = new ContactUsPage();
+
+    @Given("^the user is on the \"([^\"]*)\" page$")
     public void theUserIsOnThePage(String page) {
         switch(page){
-            case "homepage":
+            case "home":
                 homepage.goTo();
                 break;
-            case "product page":
+            case "product":
                 productPage.navigatetoProductPage();
                 break;
+            case "signed in":
+                signInPage.successfulSignIn();
             default:
                 System.out.println("Unexpected page type");
         }
@@ -61,9 +61,13 @@ public class BuyJourneyStepDef {
         productPage.selectSize();
         productPage.selectColour();
     }
-    @And("add item to card")
-    public void addItemToCart(){
+    @And("^the user adds item to cart$")
+    public void theUserAddsItemToCart() {
         basketpage.addToCart();
+    }
+    @Then("^verify the product has been added to the cart$")
+    public void verifyTheProductHasBeenAddedToTheCart() {
+        homepage.addedToCart();
     }
 
 //

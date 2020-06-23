@@ -12,10 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class ContactUsPage extends BasePage {
 
-    public ContactUsPage(WebDriver driver) {
-        super(driver);
-    }
-
     WebDriverWait wait = new WebDriverWait(driver, 5);
     private static final By CONTACT_US_PAGE = By.cssSelector("a[href='http://3.11.70.191/index.php?controller=contact']");
     private static final By EMAIL = By.cssSelector("div[class='col-md-6'] >input.form-control");
