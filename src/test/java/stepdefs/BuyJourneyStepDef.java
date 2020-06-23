@@ -17,15 +17,17 @@ public class BuyJourneyStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
 
-    @Given("^user is on the \"([^\"])\" page$")
+    @Given("^the user is on the \"([^\"]*)\" page$")
     public void theUserIsOnThePage(String page) {
         switch(page){
-            case "homepage":
+            case "home":
                 homepage.goTo();
                 break;
-            case "product page":
+            case "product":
                 productPage.navigatetoProductPage();
                 break;
+            case "signed in":
+                signInPage.successfulSignIn();
             default:
                 System.out.println("Unexpected page type");
         }
@@ -59,9 +61,13 @@ public class BuyJourneyStepDef {
         productPage.selectSize();
         productPage.selectColour();
     }
-    @And("add item to card")
-    public void addItemToCart(){
+    @And("^the user adds item to cart$")
+    public void theUserAddsItemToCart() {
         basketpage.addToCart();
+    }
+    @Then("^verify the product has been added to the cart$")
+    public void verifyTheProductHasBeenAddedToTheCart() {
+        homepage.addedToCart();
     }
 
 //
