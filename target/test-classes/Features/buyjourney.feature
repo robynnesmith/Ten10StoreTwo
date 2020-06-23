@@ -1,6 +1,9 @@
 Feature: Buy Journey
   Scenario: Select item from homepage
     Given  the user is on the "homepage"
+
+  Scenario: Select item from homepage
+    Given  the user is on the "home" page
     When  the user selects item through hovering over it
     Then  the Product Page is displayed
 

@@ -17,13 +17,13 @@ public class BuyJourneyStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
 
-    @Given("^user is on the \"([^\"])\" page$")
+    @Given("^the user is on the \"([^\"]*)\" page$")
     public void theUserIsOnThePage(String page) {
         switch(page){
-            case "homepage":
+            case "home":
                 homepage.goTo();
                 break;
-            case "product page":
+            case "product":
                 productPage.navigatetoProductPage();
                 break;
             default:
@@ -59,10 +59,34 @@ public class BuyJourneyStepDef {
         productPage.selectSize();
         productPage.selectColour();
     }
-    @And("add item to card")
-    public void addItemToCart(){
+    @And("^the user adds item to cart$")
+    public void theUserAddsItemToCart() {
         basketpage.addToCart();
     }
+    @Then("^verify the product has been added to the cart$")
+    public void verifyTheProductHasBeenAddedToTheCart() {
+        homepage.addedToCart();
+    }
+//add message
+    @Given("^the user has \"([^\"]*)\"$")
+    public void theUserHas(String arg0) {
+        switch(arg0) {
+            case "successfully signed in":
+                //some code
+                break;
+        }
+    }
+    @And("^the user navigates to {string} page$")
+    public void theUserNavigatesToPage(String arg0) {
+
+    }
+
+    @When("^the user fills out message form$")
+    public void theUserFillsOutMessageForm() {
+    }
+
+
+
 
 //
 }

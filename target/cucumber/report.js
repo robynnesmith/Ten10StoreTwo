@@ -10,12 +10,14 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"homepage\"",
+  "name": "the user is on the \"home\" page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user selects item through hovering over it",
@@ -25,7 +27,7 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theUserSelectsItemThroughHoveringOverIt()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the Product Page is displayed",
@@ -35,7 +37,7 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theProductPageIsDisplayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add product to cart from homepage",
@@ -43,12 +45,14 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"homepage\"",
+  "name": "the user is on the \"home\" page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user adds item to cart by hovering over it",
@@ -58,7 +62,7 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCartByHoveringOverIt()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify product has been added to cart",
@@ -68,7 +72,7 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.verifyProductHasBeenAddedToCart()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add product to cart from product page",
@@ -80,10 +84,11 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cimg src\u003d\"http://3.11.70.191/img/p/7/7-home_default.jpg\" alt\u003d\"Blouse\" data-full-size-image-url\u003d\"http://3.11.70.191/img/p/7/7-large_default.jpg\"\u003e is not clickable at point (492, 440). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir10132_1053201245}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57992}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: f2dd9b742be79d11f213fc163b4454eb\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.ProductPage.navigatetoProductPage(ProductPage.java:33)\r\n\tat stepdefs.BuyJourneyStepDef.theUserIsOnThePage(BuyJourneyStepDef.java:27)\r\n\tat ✽.the user is on the \"product\" page(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:15)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "the user selects details of item",
@@ -93,24 +98,27 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .material-icons.touchspin-up (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.ProductPage.selectQuantity(ProductPage.java:37)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem(BuyJourneyStepDef.java:58)\r\n\tat ✽.the user selects details of item(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/buyjourney.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .material-icons.touchspin-up\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.ProductPage.selectQuantity(ProductPage.java:37)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem(BuyJourneyStepDef.java:58)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the user adds item to cart",
   "keyword": "And "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCart()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "verify the product has been added to the cart",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.verifyTheProductHasBeenAddedToTheCart()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Add a message",
@@ -208,70 +216,38 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.background({
-  "name": "Clear cookies",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "clear cookies",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.clearCookies()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.scenario({
   "name": "Register user with already Registered Email Address.",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"create a new account\" page",
+  "name": "the user is on the \"create an account\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user completes the form with a \"registered\" email address",
+  "name": "the user completes the form with an already \"registered\" email address",
   "keyword": "When "
 });
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "\"user already registered\" alert is displayed",
+  "name": "an error message is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.errorMessageDisplayed()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "Clear cookies",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "clear cookies",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.clearCookies()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "New user is able to register.",
@@ -279,24 +255,25 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"create a new account\" page",
+  "name": "the user is on the \"create an account\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user completes the form with a \"unregistered\" email address",
+  "name": "the user completes the form with an \"unregistered\" email address",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.unregisteredEmailAddress()"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: firstname (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.findAndType(BasePage.java:41)\r\n\tat pageObjects.CreateNewAccountPage.enterPersonalDetails(CreateNewAccountPage.java:24)\r\n\tat stepdefs.RegistrationStepDef.unregisteredEmailAddress(RegistrationStepDef.java:41)\r\n\tat ✽.the user completes the form with an \"unregistered\" email address(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/registration.feature:10)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.name: firstname\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.findAndType(BasePage.java:41)\r\n\tat pageObjects.CreateNewAccountPage.enterPersonalDetails(CreateNewAccountPage.java:24)\r\n\tat stepdefs.RegistrationStepDef.unregisteredEmailAddress(RegistrationStepDef.java:41)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "the \"my account\" page is displayed",
@@ -306,22 +283,7 @@ formatter.match({
   "location": "stepdefs.RegistrationStepDef.myAccountPageDisplayed()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "Clear cookies",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "clear cookies",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.clearCookies()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "Numeric values are entered into the name field.",
@@ -329,59 +291,42 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"create a new account\" page",
+  "name": "the user is on the \"create an account\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters a \"unregistered\" email address",
+  "name": "the user enters an \"unregistered\" email address",
   "keyword": "When "
 });
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user enters an invalid \"name\"",
+  "name": "the user enters numeric values into the name field",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.numericValuesEnteredIntoNameField()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "\"invalid name\" alert is displayed",
+  "name": "an invalid name error is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.invalidNameAlert()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.background({
-  "name": "Clear cookies",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "clear cookies",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.clearCookies()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "An invalid Date of Birth is entered.",
@@ -389,44 +334,42 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is on the \"create a new account\" page",
+  "name": "the user is on the \"create new account\" page",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user enters a \"unregistered\" email address",
+  "name": "the user enters an \"unregistered\" email address",
   "keyword": "When "
 });
-formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "the user enters an invalid \"date of birth\"",
+  "name": "the user enters an invalid date of birth",
   "keyword": "And "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.invalidDateOfBirth()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "\"invalid date of birth\" alert is displayed",
+  "name": "an invalid date of birth error is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+  "location": "stepdefs.RegistrationStepDef.invalidDateOfBirthAlert()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.uri("file:src/test/resources/features/shoppingcart.feature");
 formatter.feature({
@@ -445,7 +388,7 @@ formatter.step({
 });
 formatter.match({});
 formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
   "status": "ambiguous"
 });
 formatter.step({
@@ -499,7 +442,7 @@ formatter.step({
 });
 formatter.match({});
 formatter.result({
-  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+  "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
   "status": "ambiguous"
 });
 formatter.step({
