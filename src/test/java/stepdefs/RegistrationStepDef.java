@@ -22,6 +22,7 @@ public class RegistrationStepDef {
 
     @Given("^the user is on the \"([^\"])\" page$")
     public void theUserIsOnThePage(){
+        homepage.goTo();
         homepage.navigateToSignInPage();
         signInPage.clickCreateAnAccount();
     }
