@@ -1,0 +1,1207 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-23T13:02:19.434Z",
+        "line": 2,
+        "name": "Select item from homepage",
+        "description": "",
+        "id": "buy-journey;select-item-from-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "the user is on the \"homepage\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 993900,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user selects item through hovering over it",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelectsItemThroughHoveringOverIt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the Product Page is displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theProductPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:19.518Z",
+        "line": 8,
+        "name": "Add product to cart from homepage",
+        "description": "",
+        "id": "buy-journey;add-product-to-cart-from-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user is on the \"homepage\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the user adds item to cart by hovering over it",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCartByHoveringOverIt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify product has been added to cart",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.verifyProductHasBeenAddedToCart()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:19.533Z",
+        "line": 13,
+        "name": "Add product to cart from product page",
+        "description": "",
+        "id": "buy-journey;add-product-to-cart-from-product-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6164283400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user is on the \"product\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .material-icons.touchspin-up (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.ProductPage.selectQuantity(ProductPage.java:37)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem(BuyJourneyStepDef.java:58)\r\n\tat ✽.the user selects details of item(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/buyjourney.feature:15)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .material-icons.touchspin-up\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.ProductPage.selectQuantity(ProductPage.java:37)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem(BuyJourneyStepDef.java:58)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20521505800,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "the user selects details of item",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the user adds item to cart",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "verify the product has been added to the cart",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:46.234Z",
+        "line": 19,
+        "name": "Add a message",
+        "description": "",
+        "id": "buy-journey;add-a-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "the user is already \"signed in\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "the user navigates to \"details\" page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "the user fills out message form",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "then the message has been sent off",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 24,
+            "name": "verify message  is displayed",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:46.243Z",
+        "line": 26,
+        "name": "Test product filters on dresses page.",
+        "description": "",
+        "id": "buy-journey;test-product-filters-on-dresses-page.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "The user is on the \"women\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "The \"Size\" selector",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "\"colour\" selector",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "\"price\" selector are checked",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "The correct product is displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Buy Journey",
+    "description": "",
+    "id": "buy-journey",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/buyjourney.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12339100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.RegistrationStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:46.248Z",
+        "line": 6,
+        "name": "Register user with already Registered Email Address.",
+        "description": "",
+        "id": "registration;register-user-with-already-registered-email-address.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1323147900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 749068300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user completes the form with a \"registered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "registered",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57732900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"user already registered\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user already registered",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22316300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.RegistrationStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:48.396Z",
+        "line": 11,
+        "name": "New user is able to register.",
+        "description": "",
+        "id": "registration;new-user-is-able-to-register.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 635630200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1087264900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user completes the form with a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84522200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the \"my account\" page is displayed",
+            "match": {
+              "location": "stepdefs.RegistrationStepDef.myAccountPageDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12963100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.RegistrationStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:50.229Z",
+        "line": 16,
+        "name": "Numeric values are entered into the name field.",
+        "description": "",
+        "id": "registration;numeric-values-are-entered-into-the-name-field.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 670945300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 136768100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user enters a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 562862500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user enters an invalid \"name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34534400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"invalid name\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid name",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11949700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.RegistrationStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:51.650Z",
+        "line": 22,
+        "name": "An invalid Date of Birth is entered.",
+        "description": "",
+        "id": "registration;an-invalid-date-of-birth-is-entered.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 661517300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 128952200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user enters a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 704180600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user enters an invalid \"date of birth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "date of birth",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57988700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"invalid date of birth\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid date of birth",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/registration.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-23T13:02:53.223Z",
+        "line": 3,
+        "name": "Remove item from shopping basket",
+        "description": "",
+        "id": "shopping-cart;remove-item-from-shopping-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "status": "ambiguous"
+            },
+            "line": 4,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1004500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the item is deleted",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.itemDeletedFromBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the item should be removed",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.itemShouldBeRemoved()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "pricing \u0026 totals should be updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.236Z",
+        "line": 10,
+        "name": "Increase quantity of product in basket",
+        "description": "",
+        "id": "shopping-cart;increase-quantity-of-product-in-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.RegistrationStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "status": "ambiguous"
+            },
+            "line": 11,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 989600,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "user increases quantity of item",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "basket is updated",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "product counter is updated",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "pricing \u0026 totals should be updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.248Z",
+        "line": 18,
+        "name": "Proceed to checkout not logged in",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-not-logged-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "user is on the \"\"shopping cart\"\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "user is not logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "user has \"\"1 item\"\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "user proceeds to checkout",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "sign-in displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.258Z",
+        "line": 25,
+        "name": "Proceed to checkout and buy the item while logged in",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-and-buy-the-item-while-logged-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 26,
+            "name": "user is on the \"\"shopping cart\"\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "user is logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 28,
+            "name": "user has \"\"1 item\"\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 29,
+            "name": "user proceeds to checkout",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "fills in form",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "order confirmation displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.265Z",
+        "line": 39,
+        "name": "Make invoice address different to delivery address",
+        "description": "",
+        "id": "shopping-cart;make-invoice-address-different-to-delivery-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 40,
+            "name": "user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 41,
+            "name": "user is logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 42,
+            "name": "user has \"1 item\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 43,
+            "name": "user changes invoice address on checkout",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "shipping method should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.274Z",
+        "line": 46,
+        "name": "Multiple items in shopping cart displayed correctly",
+        "description": "",
+        "id": "shopping-cart;multiple-items-in-shopping-cart-displayed-correctly",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 47,
+            "name": "user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 48,
+            "name": "user has \"2 items\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 49,
+            "name": "all items are displayed",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 50,
+            "name": "product counter \u0026 prices are correct",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.282Z",
+        "line": 52,
+        "name": "Add a comment to your order",
+        "description": "",
+        "id": "shopping-cart;add-a-comment-to-your-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 53,
+            "name": "user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 54,
+            "name": "user is logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 55,
+            "name": "user has \"1 item\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 56,
+            "name": "user writes in shipping method in checkout form",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 57,
+            "name": "comment is added",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.291Z",
+        "line": 59,
+        "name": "Proceed to checkout and logout",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-and-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 60,
+            "name": "user is on the \"shopping cart\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 61,
+            "name": "user is logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 62,
+            "name": "user has \"1 item\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 63,
+            "name": "user signs out from checkout page",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 64,
+            "name": "cart is empty if user logs back on",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T13:02:53.298Z",
+        "line": 66,
+        "name": "Add new address",
+        "description": "",
+        "id": "shopping-cart;add-new-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 67,
+            "name": "user is on the \"\"shopping cart\"\" page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 68,
+            "name": "user is logged in",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 69,
+            "name": "user has \"\"1 item\"\" in basket",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 70,
+            "name": "user has at least 1 saved address",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 71,
+            "name": "user adds new address to checkout form",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 72,
+            "name": "new address is saved",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Shopping Cart",
+    "description": "",
+    "id": "shopping-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/shoppingcart.feature",
+    "tags": []
+  }
+]
