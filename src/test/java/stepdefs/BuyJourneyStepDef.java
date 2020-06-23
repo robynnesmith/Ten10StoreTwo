@@ -26,8 +26,6 @@ public class BuyJourneyStepDef {
             case "product":
                 productPage.navigatetoProductPage();
                 break;
-            case "signed in":
-                signInPage.successfulSignIn();
             default:
                 System.out.println("Unexpected page type");
         }
@@ -69,6 +67,26 @@ public class BuyJourneyStepDef {
     public void verifyTheProductHasBeenAddedToTheCart() {
         homepage.addedToCart();
     }
+//add message
+    @Given("^the user has \"([^\"]*)\"$")
+    public void theUserHas(String arg0) {
+        switch(arg0) {
+            case "successfully signed in":
+                //some code
+                break;
+        }
+    }
+    @And("^the user navigates to {string} page$")
+    public void theUserNavigatesToPage(String arg0) {
+
+    }
+
+    @When("^the user fills out message form$")
+    public void theUserFillsOutMessageForm() {
+    }
+
+
+
 
 //
 }
