@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-23T09:18:03.897Z",
+        "start_timestamp": "2020-06-23T14:44:52.224Z",
         "line": 3,
         "name": "Select item from homepage",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6782090100,
+              "duration": 6328165000,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 607407300,
+              "duration": 695151800,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 51987600,
+              "duration": 45993100,
               "status": "passed"
             },
             "line": 6,
@@ -56,8 +56,8 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:11.428Z",
-        "line": 9,
+        "start_timestamp": "2020-06-23T14:44:59.360Z",
+        "line": 8,
         "name": "Add product to cart from homepage",
         "description": "",
         "id": "buy-journey;add-product-to-cart-from-homepage",
@@ -66,10 +66,10 @@
         "steps": [
           {
             "result": {
-              "duration": 167000100,
+              "duration": 160457800,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "the user is on the \"home\" page",
             "match": {
               "arguments": [
@@ -84,10 +84,10 @@
           },
           {
             "result": {
-              "duration": 1134832200,
+              "duration": 1134662000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "the user adds item to cart by hovering over it",
             "match": {
               "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCartByHoveringOverIt()"
@@ -96,21 +96,27 @@
           },
           {
             "result": {
-              "duration": 613099200,
+              "duration": 620126000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "verify product has been added to cart",
+            "line": 11,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
             "match": {
-              "location": "stepdefs.BuyJourneyStepDef.verifyProductHasBeenAddedToCart()"
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:13.346Z",
-        "line": 14,
+        "start_timestamp": "2020-06-23T14:45:01.278Z",
+        "line": 13,
         "name": "Add product to cart from product page",
         "description": "",
         "id": "buy-journey;add-product-to-cart-from-product-page",
@@ -119,11 +125,10 @@
         "steps": [
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cimg src\u003d\"http://3.11.70.191/img/p/7/7-home_default.jpg\" alt\u003d\"Blouse\" data-full-size-image-url\u003d\"http://3.11.70.191/img/p/7/7-large_default.jpg\"\u003e is not clickable at point (492, 440). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir10132_1053201245}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57992}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: f2dd9b742be79d11f213fc163b4454eb\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.ProductPage.navigatetoProductPage(ProductPage.java:33)\r\n\tat stepdefs.BuyJourneyStepDef.theUserIsOnThePage(BuyJourneyStepDef.java:27)\r\n\tat ✽.the user is on the \"product\" page(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:15)\r\n",
-              "duration": 1094735700,
-              "status": "failed"
+              "duration": 429473500,
+              "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "the user is on the \"product\" page",
             "match": {
               "arguments": [
@@ -138,20 +143,28 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 345677000,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "the user selects details of item",
+            "line": 15,
+            "name": "the user selects \"details of item\"",
             "match": {
-              "location": "stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem()"
+              "arguments": [
+                {
+                  "val": "details of item",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 653933400,
+              "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "the user adds item to cart",
             "match": {
               "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCart()"
@@ -160,21 +173,27 @@
           },
           {
             "result": {
-              "duration": 1000800,
-              "status": "skipped"
+              "duration": 590255500,
+              "status": "passed"
             },
-            "line": 18,
-            "name": "verify the product has been added to the cart",
+            "line": 17,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
             "match": {
-              "location": "stepdefs.BuyJourneyStepDef.verifyTheProductHasBeenAddedToTheCart()"
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:14.479Z",
-        "line": 20,
+        "start_timestamp": "2020-06-23T14:45:03.304Z",
+        "line": 19,
         "name": "Add a message",
         "description": "",
         "id": "buy-journey;add-a-message",
@@ -183,54 +202,63 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 4152781600,
+              "status": "passed"
             },
-            "line": 21,
-            "name": "the user is already \"signed in\"",
-            "match": {},
+            "line": 20,
+            "name": "the user is on the \"account details\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "account details",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 466906700,
+              "status": "passed"
             },
-            "line": 22,
-            "name": "the user navigates to \"details\" page",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 21,
+            "name": "the user selects \"submits message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "submits message",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
             },
-            "line": 23,
-            "name": "the user fills out message form",
-            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 299527900,
+              "status": "passed"
             },
-            "line": 24,
-            "name": "then the message has been sent off",
-            "match": {},
+            "line": 22,
+            "name": "the successfully submitted message for \"add message\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "add message",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
             "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 25,
-            "name": "verify message  is displayed",
-            "match": {},
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:14.494Z",
-        "line": 27,
+        "start_timestamp": "2020-06-23T14:45:08.227Z",
+        "line": 24,
         "name": "Test product filters on dresses page.",
         "description": "",
         "id": "buy-journey;test-product-filters-on-dresses-page.",
@@ -239,47 +267,251 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 444006900,
+              "status": "passed"
             },
-            "line": 28,
-            "name": "The user is on the \"women\" page",
-            "match": {},
+            "line": 25,
+            "name": "the user is on the \"women\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "women",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2035764200,
+              "status": "passed"
             },
-            "line": 29,
-            "name": "The \"Size\" selector",
-            "match": {},
+            "line": 26,
+            "name": "the user selects \"different filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "different filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 45572600,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "The correct product is displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theCorrectProductIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T14:45:10.754Z",
+        "line": 29,
+        "name": "Clear filters",
+        "description": "",
+        "id": "buy-journey;clear-filters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 524136800,
+              "status": "passed"
             },
             "line": 30,
-            "name": "\"colour\" selector",
-            "match": {},
-            "keyword": "And "
+            "name": "the user is on the \"women\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "women",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2030070100,
+              "status": "passed"
             },
             "line": 31,
-            "name": "\"price\" selector are checked",
-            "match": {},
+            "name": "the user selects \"different filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "different filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97830100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the user selects \"clears filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "clears filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 36609300,
+              "status": "passed"
             },
-            "line": 32,
-            "name": "The correct product is displayed",
-            "match": {},
+            "line": 33,
+            "name": "all 7 products are displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.all7ProductsAreDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T14:45:13.448Z",
+        "line": 35,
+        "name": "Subscribe to news and special sales",
+        "description": "",
+        "id": "buy-journey;subscribe-to-news-and-special-sales",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 174447900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 450911200,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the user completes the newsletter form with a \"valid\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheNewsletterFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56561500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the successfully submitted message for \"subscription\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "subscription",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-23T14:45:14.136Z",
+        "line": 40,
+        "name": "Proceed to Contact Us page and send a message",
+        "description": "",
+        "id": "buy-journey;proceed-to-contact-us-page-and-send-a-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 363771300,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "the user is on the \"contact us\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact us",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 479398800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the user completes the contact us form",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheContactUsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75965600,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the successfully submitted message for \"contact us\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact us",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ]
@@ -296,7 +528,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-23T09:18:14.502Z",
+        "start_timestamp": "2020-06-23T14:45:15.080Z",
         "line": 3,
         "name": "Register user with already Registered Email Address.",
         "description": "",
@@ -306,7 +538,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1005300,
+              "duration": 455135500,
               "status": "passed"
             },
             "line": 4,
@@ -345,7 +577,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:14.509Z",
+        "start_timestamp": "2020-06-23T14:45:15.554Z",
         "line": 8,
         "name": "New user is able to register.",
         "description": "",
@@ -355,6 +587,7 @@
         "steps": [
           {
             "result": {
+              "duration": 704517800,
               "status": "passed"
             },
             "line": 9,
@@ -373,7 +606,7 @@
           {
             "result": {
               "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: firstname (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.findAndType(BasePage.java:41)\r\n\tat pageObjects.CreateNewAccountPage.enterPersonalDetails(CreateNewAccountPage.java:24)\r\n\tat stepdefs.RegistrationStepDef.unregisteredEmailAddress(RegistrationStepDef.java:41)\r\n\tat ✽.the user completes the form with an \"unregistered\" email address(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/registration.feature:10)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.name: firstname\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.findAndType(BasePage.java:41)\r\n\tat pageObjects.CreateNewAccountPage.enterPersonalDetails(CreateNewAccountPage.java:24)\r\n\tat stepdefs.RegistrationStepDef.unregisteredEmailAddress(RegistrationStepDef.java:41)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 20199341300,
+              "duration": 20206339900,
               "status": "failed"
             },
             "line": 10,
@@ -397,7 +630,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.724Z",
+        "start_timestamp": "2020-06-23T14:45:36.479Z",
         "line": 13,
         "name": "Numeric values are entered into the name field.",
         "description": "",
@@ -407,6 +640,7 @@
         "steps": [
           {
             "result": {
+              "duration": 441767100,
               "status": "passed"
             },
             "line": 14,
@@ -433,7 +667,6 @@
           },
           {
             "result": {
-              "duration": 1000900,
               "status": "skipped"
             },
             "line": 16,
@@ -457,7 +690,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.731Z",
+        "start_timestamp": "2020-06-23T14:45:36.928Z",
         "line": 19,
         "name": "An invalid Date of Birth is entered.",
         "description": "",
@@ -467,7 +700,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1005000,
+              "duration": 330699300,
               "status": "passed"
             },
             "line": 20,
@@ -528,7 +761,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-06-23T09:18:34.738Z",
+        "start_timestamp": "2020-06-23T14:45:37.265Z",
         "line": 3,
         "name": "Remove item from shopping basket",
         "description": "",
@@ -539,7 +772,6 @@
           {
             "result": {
               "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 994900,
               "status": "ambiguous"
             },
             "line": 4,
@@ -571,7 +803,6 @@
           },
           {
             "result": {
-              "duration": 999000,
               "status": "skipped"
             },
             "line": 7,
@@ -595,7 +826,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.750Z",
+        "start_timestamp": "2020-06-23T14:45:37.278Z",
         "line": 10,
         "name": "Increase quantity of product in basket",
         "description": "",
@@ -606,7 +837,6 @@
           {
             "result": {
               "error_message": "io.cucumber.core.runner.AmbiguousStepDefinitionsException: \"the user is on the \"shopping cart\" page\" matches more than one step definition:\n  \"^the user is on the \"([^\"]*)\" page$\" in stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)\n  \"^the user is on the \"shopping cart\" page$\" in stepdefs.ShoppingCartStepDef.userOnShoppingCartPage()\r\n\tat io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:267)\r\n\tat io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:238)\r\n\tat io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:118)\r\n\tat io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:107)\r\n\tat io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:97)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 1033900,
               "status": "ambiguous"
             },
             "line": 11,
@@ -654,7 +884,6 @@
           },
           {
             "result": {
-              "duration": 1000100,
               "status": "skipped"
             },
             "line": 16,
@@ -667,7 +896,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.761Z",
+        "start_timestamp": "2020-06-23T14:45:37.294Z",
         "line": 18,
         "name": "Proceed to checkout not logged in",
         "description": "",
@@ -723,7 +952,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.768Z",
+        "start_timestamp": "2020-06-23T14:45:37.307Z",
         "line": 25,
         "name": "Proceed to checkout and buy the item while logged in",
         "description": "",
@@ -788,7 +1017,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.775Z",
+        "start_timestamp": "2020-06-23T14:45:37.318Z",
         "line": 39,
         "name": "Make invoice address different to delivery address",
         "description": "",
@@ -844,7 +1073,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.785Z",
+        "start_timestamp": "2020-06-23T14:45:37.331Z",
         "line": 46,
         "name": "Multiple items in shopping cart displayed correctly",
         "description": "",
@@ -891,7 +1120,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.793Z",
+        "start_timestamp": "2020-06-23T14:45:37.349Z",
         "line": 52,
         "name": "Add a comment to your order",
         "description": "",
@@ -947,7 +1176,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.801Z",
+        "start_timestamp": "2020-06-23T14:45:37.356Z",
         "line": 59,
         "name": "Proceed to checkout and logout",
         "description": "",
@@ -1003,7 +1232,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-23T09:18:34.809Z",
+        "start_timestamp": "2020-06-23T14:45:37.371Z",
         "line": 66,
         "name": "Add new address",
         "description": "",

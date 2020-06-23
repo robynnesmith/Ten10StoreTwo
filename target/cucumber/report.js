@@ -65,11 +65,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify product has been added to cart",
+  "name": "the successfully submitted message for \"added to cart\" is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.BuyJourneyStepDef.verifyProductHasBeenAddedToCart()"
+  "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -87,18 +87,17 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cimg src\u003d\"http://3.11.70.191/img/p/7/7-home_default.jpg\" alt\u003d\"Blouse\" data-full-size-image-url\u003d\"http://3.11.70.191/img/p/7/7-large_default.jpg\"\u003e is not clickable at point (492, 440). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir10132_1053201245}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57992}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: f2dd9b742be79d11f213fc163b4454eb\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.ProductPage.navigatetoProductPage(ProductPage.java:33)\r\n\tat stepdefs.BuyJourneyStepDef.theUserIsOnThePage(BuyJourneyStepDef.java:27)\r\n\tat ✽.the user is on the \"product\" page(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:15)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user selects details of item",
+  "name": "the user selects \"details of item\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "stepdefs.BuyJourneyStepDef.theUserSelectsDetailsOfItem()"
+  "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user adds item to cart",
@@ -108,17 +107,17 @@ formatter.match({
   "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCart()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "verify the product has been added to the cart",
+  "name": "the successfully submitted message for \"added to cart\" is displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "stepdefs.BuyJourneyStepDef.verifyTheProductHasBeenAddedToTheCart()"
+  "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Add a message",
@@ -126,44 +125,34 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the user is already \"signed in\"",
+  "name": "the user is on the \"account details\" page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"details\" page",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "the user fills out message form",
+  "name": "the user selects \"submits message\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "then the message has been sent off",
+  "name": "the successfully submitted message for \"add message\" is displayed",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
 });
-formatter.step({
-  "name": "verify message  is displayed",
-  "keyword": "And "
-});
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Test product filters on dresses page.",
@@ -171,44 +160,149 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "The user is on the \"women\" page",
+  "name": "the user is on the \"women\" page",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
-  "name": "The \"Size\" selector",
+  "name": "the user selects \"different filters\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "\"colour\" selector",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "\"price\" selector are checked",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "The correct product is displayed",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theCorrectProductIsDisplayed()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Clear filters",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the user is on the \"women\" page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user selects \"different filters\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user selects \"clears filters\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "all 7 products are displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.all7ProductsAreDisplayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Subscribe to news and special sales",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the user is on the \"home\" page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user completes the newsletter form with a \"valid\" email address",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheNewsletterFormWithAEmailAddress(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the successfully submitted message for \"subscription\" is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Proceed to Contact Us page and send a message",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the user is on the \"contact us\" page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserIsOnThePage(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user completes the contact us form",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheContactUsForm()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the successfully submitted message for \"contact us\" is displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepdefs.BuyJourneyStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.uri("file:src/test/resources/features/registration.feature");
 formatter.feature({

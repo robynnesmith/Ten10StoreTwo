@@ -19,74 +19,142 @@ public class BuyJourneyStepDef {
 
     @Given("^the user is on the \"([^\"]*)\" page$")
     public void theUserIsOnThePage(String page) {
-        switch(page){
+        homepage.goTo();
+        switch (page) {
+            //Select item from homepage
+            //Add product to cart from homepage
             case "home":
-                homepage.goTo();
                 break;
+            //Add product to cart from product page
             case "product":
                 productPage.navigatetoProductPage();
                 break;
+            //add message
+            case "account details":
+                homepage.navigateToSignInPage();
+                signInPage.login();
+                homepage.clickOrder();
+                orders.clickDetails();
+                break;
+            //Test product filters on dresses page
+            //clear filters
+            case "women":
+                homepage.clickWomen();
+                break;
             default:
                 System.out.println("Unexpected page type");
+            //Proceed to Contact Us page and send a message
+            case "contact us":
+                contactPage.goToContactUsPage();
+                break;
         }
     }
-//Select item from homepage
+
+    //Select item from homepage
     @When("^the user selects item through hovering over it$")
-    public void theUserSelectsItemThroughHoveringOverIt(){
+    public void theUserSelectsItemThroughHoveringOverIt() {
         homepage.hoverOverItem();
         homepage.clickMoreButton();
     }
+
     @Then("^the Product Page is displayed$")
-    public void theProductPageIsDisplayed (){
+    public void theProductPageIsDisplayed() {
         productPage.productPageDisplayed();
     }
 
-//Add product to cart from homepage
+    //Add product to cart from homepage
     @When("^the user adds item to cart by hovering over it$")
     public void theUserAddsItemToCartByHoveringOverIt() {
         homepage.hoverOverItem();
         homepage.addItemToCart();
     }
-    @Then("^verify product has been added to cart$")
-    public void verifyProductHasBeenAddedToCart(){
-        homepage.addedToCart();
-    }
 
-//Add product to cart from product page
-    @When("^the user selects details of item$")
-    public void theUserSelectsDetailsOfItem(){
-        productPage.selectQuantity();
-        productPage.selectSize();
-        productPage.selectColour();
+    @When("^the user selects \"([^\"]*)\"$")
+    public void theUserSelects(String selects) {
+        switch(selects) {
+            //Add product to cart from product page
+            case "details of item":
+                productPage.selectQuantity();
+                productPage.selectSize();
+                productPage.selectColour();
+                break;
+            //add message
+            case "submits message":
+                orders.enterMessage("hi");
+                orders.sendMessage();
+                break;
+            //Test product filters on dresses page
+            //clear filters
+            case "different filters":
+                productPage.filterDresses();
+                productPage.filterMedium();
+                productPage.filterYellow();
+                productPage.filterPrice();
+                break;
+            case "clears filters":
+                productPage.clearFilter();
+            default:
+                System.out.println("not able to select");
+        }
     }
+//Add product to cart from product page
     @And("^the user adds item to cart$")
     public void theUserAddsItemToCart() {
         basketpage.addToCart();
     }
-    @Then("^verify the product has been added to the cart$")
-    public void verifyTheProductHasBeenAddedToTheCart() {
-        homepage.addedToCart();
+
+
+    @Then("^the successfully submitted message for \"([^\"]*)\" is displayed$")
+    public void theSuccessfullySubmittedMessageIsDisplayed(String successful) {
+        switch(successful){
+            case "added to cart":
+                homepage.addedToCart();
+                break;
+            //add message
+            case "add message":
+                orders.successfullySendMessage();
+                signInPage.clickSignOut();
+                break;
+            //Subscribe to news and special sales
+            case "subscription":
+                homepage.checkSuccessfullySubscribed();
+                break;
+            //Proceed to Contact Us page and send a message
+            case "contact us":
+                contactPage.verifySentMessage();
+                break;
+        }
+
     }
-//add message
-    @Given("^the user has \"([^\"]*)\"$")
-    public void theUserHas(String arg0) {
-        switch(arg0) {
-            case "successfully signed in":
-                //some code
+
+//Test product filters on dresses page
+    @Then("^The correct product is displayed$")
+    public void theCorrectProductIsDisplayed() {
+        productPage.correctItemDisplayed();
+    }
+
+//clear filters
+    @Then("^all 7 products are displayed$")
+    public void all7ProductsAreDisplayed() {
+        productPage.sevenProducts("There are 7 products.");
+    }
+
+//Subscribe to news and special sales
+    @When("^the user completes the newsletter form with a \"([^\"]*)\" email address$")
+    public void theUserCompletesTheNewsletterFormWithAEmailAddress(String validEmail) {
+        switch(validEmail){
+            case "valid":
+                homepage.enterEmail(homepage.randomEmail() + "@hello.com");
+                homepage.clickSubscribe();
                 break;
         }
     }
-    @And("^the user navigates to {string} page$")
-    public void theUserNavigatesToPage(String arg0) {
 
+//Proceed to Contact Us page and send a message
+    @When("the user completes the contact us form")
+    public void theUserCompletesTheContactUsForm() {
+        contactPage.enterEmailAddress();
+        contactPage.enterMessage();
+        contactPage.clickSend();
     }
-
-    @When("^the user fills out message form$")
-    public void theUserFillsOutMessageForm() {
-    }
-
-
-
-
-//
 }
