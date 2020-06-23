@@ -1,5 +1,6 @@
 package stepdefs;
 
+import config.DriverFactory;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,17 +8,13 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import pageObjects.*;
 
-import static Tests.TestSuite.driverFactory;
-
 public class BuyJourneyStepDef {
-    private static DriverFactory driverFactory;
-    public static WebDriver driver = driverFactory.getDriver();
-    private HomePage homepage = new HomePage(driver);
-    private ShoppingCartPage basketpage = new ShoppingCartPage(driver);
-    private SignInPage signInPage = new SignInPage(driver);
-    private ProductPage productPage = new ProductPage(driver);
-    private Orders orders = new Orders(driver);
-    private ContactUsPage contactPage = new ContactUsPage(driver);
+   private HomePage homepage = new HomePage();
+    private ShoppingCartPage basketpage = new ShoppingCartPage();
+    private SignInPage signInPage = new SignInPage();
+    private ProductPage productPage = new ProductPage();
+    private Orders orders = new Orders();
+    private ContactUsPage contactPage = new ContactUsPage();
 
     @Given("^user is on the \"([^\"])\" page$")
     public void theUserIsOnThePage(String page) {
