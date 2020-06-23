@@ -18,7 +18,7 @@ Feature: Buy Journey
     Then verify the product has been added to the cart
 
   Scenario: Add a message
-    Given the user is already "signed in"
+    Given the user has "successfully signed in"
     And the user navigates to "details" page
     When the user fills out message form
     Then then the message has been sent off
