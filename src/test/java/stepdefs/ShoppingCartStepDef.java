@@ -20,17 +20,17 @@ public class ShoppingCartStepDef {
 
     @Given("^the user is on the \"shopping cart\" page$")
     public void userOnShoppingCartPage() {
-
+        homePage.itemAddedToCart();
     }
 
     @And("^the user has \"1 item\" in their basket$")
     public void userHasItemInBasket() {
-
+        basketpage.navigateToBasket();
     }
 
     @When("^the item is deleted$")
     public void itemDeletedFromBasket() {
-
+        basketpage.deleteItemFromBasket();
     }
 
     @Then("^the item should be removed$")
@@ -40,8 +40,11 @@ public class ShoppingCartStepDef {
 
     @And("^pricing & totals should be updated$")
     public void pricingAndTotalsUpdated() {
+        basketpage.checkItemRemovedFromBasket();
 
     }
+
+
 
 
 }
