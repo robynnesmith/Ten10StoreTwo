@@ -8,9 +8,6 @@ import static org.junit.Assert.assertTrue;
 
 public class Orders extends BasePage{
 
-    public Orders(WebDriver driver) { super(driver); }
-
-
     private static final By CLICK_DETAILS = By.linkText("Details");
     private static final By CHOOSE_PRODUCT_DROP_DOWN = By.cssSelector("option[value='7']");
     private static final By ENTER_MESSAGE = By.cssSelector("textarea[rows='3']");

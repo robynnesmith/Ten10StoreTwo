@@ -1,9 +1,9 @@
 package stepdefs;
 
+import config.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import jdk.jfr.MemoryAddress;
 import org.openqa.selenium.WebDriver;
 import pageObjects.CreateNewAccountPage;
 import pageObjects.HomePage;
@@ -13,12 +13,10 @@ import pageObjects.SignInPage;
 
 
 public class RegistrationStepDef {
-    private static DriverFactory driverFactory;
-    public static WebDriver driver = driverFactory.getDriver();
-    private HomePage homepage = new HomePage(driver);
-    private ShoppingCartPage basketpage = new ShoppingCartPage(driver);
-    private SignInPage signInPage = new SignInPage(driver);
-    private CreateNewAccountPage createNewAccountPage = new CreateNewAccountPage(driver);
+    private HomePage homepage = new HomePage();
+    private ShoppingCartPage basketpage = new ShoppingCartPage();
+    private SignInPage signInPage = new SignInPage();
+    private CreateNewAccountPage createNewAccountPage = new CreateNewAccountPage();
 
     @Given("^the user is on the \"([^\"])\" page$")
     public void theUserIsOnThePage(){

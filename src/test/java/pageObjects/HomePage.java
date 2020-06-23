@@ -15,10 +15,6 @@ import java.util.Random;
 public class HomePage extends BasePage {
     Random random = new Random();
 
-    public HomePage(WebDriver driver) {
-        super(driver);
-    }
-
     private static String URL = "http://3.11.70.191/index.php";
     private Actions actions = new Actions(driver);
 
