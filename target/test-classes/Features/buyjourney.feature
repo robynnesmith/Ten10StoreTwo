@@ -1,4 +1,6 @@
 Feature: Buy Journey
+  Scenario: Select item from homepage
+    Given  the user is on the "homepage"
 
   Scenario: Select item from homepage
     Given  the user is on the "home" page
@@ -6,7 +8,7 @@ Feature: Buy Journey
     Then  the Product Page is displayed
 
   Scenario:Add product to cart from homepage
-    Given the user is on the "home" page
+    Given the user is on the "homepage"
     When the user adds item to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
 

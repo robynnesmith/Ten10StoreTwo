@@ -145,7 +145,6 @@ public class ShoppingCart {
      * * Verify comment has been added
      */
     @Test
-    @Ignore
     public void addCommentToOrder() {
         homePage.navigateToSignInPage();
         signInPage.login();

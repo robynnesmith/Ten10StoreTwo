@@ -4,31 +4,31 @@ Feature:Shopping Cart
     Given the user is on the "shopping cart" page
     And the user has "1 item" in their basket
     When the item is deleted
-    Then the item should be removed
-    And pricing & totals should be updated
+    And the item should be removed
+    Then pricing & totals should be updated
 
   Scenario:Increase quantity of product in basket
     Given the user is on the "shopping cart" page
     And the user has "1 item" in their basket
-    When user increases quantity of item
-    Then basket is updated
+    When the user increases quantity of item
+    Then their basket is updated
     And product counter is updated
     And pricing & totals should be updated
 
   Scenario:Proceed to checkout not logged in
-    Given user is on the ""shopping cart"" page
-    And user is not logged in
-    And user has ""1 item"" in basket
-    When user proceeds to checkout
-    Then sign-in displayed
+    Given the user is on the "shopping cart" page
+    And the user is "not logged in"
+    And the user has "1 item" in their basket
+    When the user proceeds to checkout
+    Then the sign-in displayed
 
-  Scenario:Proceed to checkout and buy the item while logged in
-    Given user is on the ""shopping cart"" page
-    And user is logged in
-    And user has ""1 item"" in basket
-    When user proceeds to checkout
+  Scenario:Proceed to checkout and buy item while logged in
+    Given the user is on the "shopping cart" page
+    And the user is "logged in"
+    And the user has "1 item" in their basket
+    When the user proceeds to checkout
     And fills in form
-    Then order confirmation displayed
+    Then the order confirmation displayed
 
 
 
