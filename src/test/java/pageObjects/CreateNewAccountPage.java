@@ -1,10 +1,13 @@
 package pageObjects;
 
+import io.cucumber.java.an.E;
 import net.bytebuddy.implementation.bytecode.assign.TypeCasting;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
+import java.util.Random;
 
 /**
  * Created by jack.forman on 23/10/2016.
@@ -52,5 +55,28 @@ public class CreateNewAccountPage extends BasePage {
         Assert.assertTrue(elementIsVisible(birthdayAlert));
     }
 
+    public void enterRegisteredEmail(){
+        PersonalDetails pd = getPersonalDetails();
+        findAndType(EMAIL_INPUT, pd.getEmail());
+    }
+
+    public void enterUnregisteredEmail(){
+        Random random = new Random();
+        int randomEmail = random.nextInt(900)+100;
+        findAndType(EMAIL_INPUT, randomEmail + "@gmail.com");
+    }
+    public void enterDetailsMinusEmail(){
+        PersonalDetails pd = getPersonalDetails();
+        findAndType(FIRST_NAME_INPUT, pd.getFirstName());
+        findAndType(LAST_NAME_INPUT, pd.getLastName());
+        findAndType(PASSWORD_INPUT, pd.getPassword());
+    }
+
+    public void enterDetailsWithNumericName(){
+            PersonalDetails pd = getPersonalDetails();
+            findAndType(FIRST_NAME_INPUT, "1234");
+            findAndType(LAST_NAME_INPUT, pd.getLastName());
+            findAndType(PASSWORD_INPUT, pd.getPassword());
+        }
 
 }

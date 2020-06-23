@@ -1,16 +1,12 @@
 package stepdefs;
 
 import config.DriverFactory;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import pageObjects.CreateNewAccountPage;
-import pageObjects.HomePage;
-import pageObjects.ShoppingCartPage;
-import pageObjects.SignInPage;
-
-
+import pageObjects.*;
 
 public class RegistrationStepDef {
     private HomePage homepage = new HomePage();
@@ -18,56 +14,70 @@ public class RegistrationStepDef {
     private SignInPage signInPage = new SignInPage();
     private CreateNewAccountPage createNewAccountPage = new CreateNewAccountPage();
 
-    @Given("^the user is on the \"([^\"])\" page$")
-    public void theUserIsOnThePage(){
-        homepage.goTo();
-        homepage.navigateToSignInPage();
-        signInPage.clickCreateAnAccount();
+    @Given("^clear cookies$")
+    public void clearCookies() {
+        homepage.clearCookies();
     }
 
-    //Scenario: Register user with already Registered Email Address.
-    @When("^the user completes the form with an already registered email address$")
-    public void alreadyRegisteredEmailAddress(){
-        createNewAccountPage.enterPersonalDetails();
-        createNewAccountPage.clickSave();
-    }
-    @Then("^an error message is displayed$")
-    public void errorMessageDisplayed(){
-        signInPage.alreadyRegisteredAlertPresent();
+    @Given("^the user is on the \"([^\"]*)\" page$")
+    public void theUserIsOnThePage(String page){
+        if(page.equals("create a new account")) {
+            homepage.goTo();
+            homepage.navigateToSignInPage();
+            signInPage.clickCreateAnAccount();
+        }
     }
 
-    //Scenario: New user is able to register.
-    @When("^the user completes the form with an \"unregistered\" email address$")
-    public void unregisteredEmailAddress(){
-        createNewAccountPage.enterPersonalDetails();
-        createNewAccountPage.clickSave();
+    @When("^the user completes the form with a \"([^\"]*)\" email address$")
+    public void theUserCompletesTheFormWithAEmailAddress(String email) {
+        if (email.equals("registered")) {
+            createNewAccountPage.enterPersonalDetails();
+            createNewAccountPage.clickSave();
+        }
+        else if (email.equals("unregistered")){
+            createNewAccountPage.enterDetailsMinusEmail();
+            createNewAccountPage.enterUnregisteredEmail();
+            createNewAccountPage.clickSave();
+        }
     }
+
     @Then("^the \"my account\" page is displayed$")
     public void myAccountPageDisplayed(){
         signInPage.successfulSignIn();
     }
 
-    //Scenario: Numeric values are entered into the name field.
-    @When("^the user enters numeric values into the name field$")
-    public void numericValuesEnteredIntoNameField(){
-        createNewAccountPage.personalDetails("123", "Wren", "randomemail@gmail.com", "password");
-        createNewAccountPage.clickSave();
-    }
-    @Then("^an invalid name error is displayed$")
-    public void invalidNameAlert(){
-        createNewAccountPage.invalidNameAlertPresent();
+    @When("^the user enters a \"([^\"]*)\" email address$")
+    public void theUserEntersAEmailAddress(String email) {
+        if (email.equals("registered")) {
+            createNewAccountPage.enterRegisteredEmail();
+        }
+        else if (email.equals("unregistered")){
+            createNewAccountPage.enterUnregisteredEmail();
+        }
     }
 
-    //Scenario: An invalid Date of Birth is entered.
-    @When("^the user enters an invalid date of birth$")
-    public void invalidDateOfBirth(){
-        createNewAccountPage.personalDetails("Adam", "Wren", "randomemail@gmail.com", "password");
-        createNewAccountPage.enterBirthday("Thursday");
-        createNewAccountPage.clickSave();
+    @And("^the user enters an invalid \"([^\"]*)\"$")
+    public void theUserEntersInvalidData(String input) {
+        if (input.equals("name")) {
+            createNewAccountPage.enterDetailsWithNumericName();
+            createNewAccountPage.clickSave();
+        } else if (input.equals("date of birth")) {
+            createNewAccountPage.enterDetailsMinusEmail();
+            createNewAccountPage.enterBirthday("Thursday");
+            createNewAccountPage.clickSave();
+        }
     }
-    @Then("^an invalid date of birth error is displayed$")
-    public void invalidDateOfBirthAlert(){
-        createNewAccountPage.invalidFormat();
+
+    @Then("^\"([^\"]*)\" alert is displayed$")
+    public void invalidErrorDisplayed(String alert) {
+        if(alert.equals("user already registered")){
+            signInPage.alreadyRegisteredAlertPresent();
+        } else if (alert.equals("invalid name")) {
+            createNewAccountPage.invalidNameAlertPresent();
+        } else if (alert.equals("invalid date of birth")) {
+            createNewAccountPage.invalidFormat();
+        }
     }
 
 }
+
