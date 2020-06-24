@@ -55,7 +55,7 @@ public class ShoppingCart {
      */
     @Test
     public void increaseQuantityOfProductInBasket() {
-        homePage.addItemToCart();
+        homePage.itemAddedToCart();
         basketpage.navigateToBasket();
         basketpage.increaseQuantity();
         basketpage.verifyQuantityUpdated();
@@ -185,7 +185,6 @@ public class ShoppingCart {
      * *Verify new address is created
      */
     @Test
-    @Ignore
     public void addNewAddress() {
         homePage.navigateToSignInPage();
         signInPage.login();
