@@ -11,7 +11,7 @@ Feature: Registration
   Scenario: New user is able to register.
     Given the user is on the "create a new account" page
     When the user completes the form with a "unregistered" email address
-    Then the "my account" page is displayed
+    Then the successfully submitted message for "user logged in" is displayed
 
   Scenario: Numeric values are entered into the name field.
     Given the user is on the "create a new account" page

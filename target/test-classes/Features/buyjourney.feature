@@ -9,7 +9,6 @@ Feature: Buy Journey
 
   Scenario:Add product to cart from homepage
     Given the user is on the "home" page
-    When the user adds item to cart by hovering over it
     When the user adds "first item" to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
 
@@ -51,6 +50,7 @@ Feature: Buy Journey
     Then the successfully submitted message for "added to cart" is displayed
 
   Scenario: Continue Shopping and add second item to basket
-    Given the user adds "first item" to cart by hovering over it
+    Given the user is on the "home" page
+    And the user adds "first item" to cart by hovering over it
     When the user adds "second item" to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
