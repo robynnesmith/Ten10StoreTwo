@@ -1,0 +1,2761 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6321970900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:30:58.787Z",
+        "line": 5,
+        "name": "Select item from homepage",
+        "description": "",
+        "id": "buy-journey;select-item-from-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 575966000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 622368500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user selects item through hovering over it",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelectsItemThroughHoveringOverIt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63997300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the Product Page is displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theProductPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 26001700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:06.452Z",
+        "line": 10,
+        "name": "Add product to cart from homepage",
+        "description": "",
+        "id": "buy-journey;add-product-to-cart-from-homepage",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 199005500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1116438400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user adds \"first item\" to cart by hovering over it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first item",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 621973100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 34996900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:08.424Z",
+        "line": 15,
+        "name": "Add product to cart from product page",
+        "description": "",
+        "id": "buy-journey;add-product-to-cart-from-product-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 552000700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user is on the \"product\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "product",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat org.openqa.selenium.support.ui.Select.setSelected(Select.java:324)\r\n\tat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:120)\r\n\tat pageObjects.ProductPage.selectSize(ProductPage.java:42)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelects(BuyJourneyStepDef.java:88)\r\n\tat ✽.the user selects \"details of item\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:17)\r\n",
+              "duration": 267002500,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "the user selects \"details of item\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "details of item",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003800,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "the user adds item to cart",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserAddsItemToCart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33997600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:09.302Z",
+        "line": 21,
+        "name": "Add a message",
+        "description": "",
+        "id": "buy-journey;add-a-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4172790000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user is on the \"account details\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "account details",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 467884400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user selects \"submits message\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "submits message",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 306025800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the successfully submitted message for \"add message\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "add message",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 34995600,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:14.291Z",
+        "line": 26,
+        "name": "Test product filters on dresses page.",
+        "description": "",
+        "id": "buy-journey;test-product-filters-on-dresses-page.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 475121000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is on the \"women\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "women",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2035413600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user selects \"different filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "different filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33960200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "The correct product is displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theCorrectProductIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 36994800,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:16.880Z",
+        "line": 31,
+        "name": "Clear filters",
+        "description": "",
+        "id": "buy-journey;clear-filters",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 474709300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the user is on the \"women\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "women",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2025418100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the user selects \"different filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "different filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102972400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the user selects \"clears filters\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "clears filters",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserSelects(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45000600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "all 7 products are displayed",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.all7ProductsAreDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 41015700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:19.574Z",
+        "line": 37,
+        "name": "Subscribe to news and special sales",
+        "description": "",
+        "id": "buy-journey;subscribe-to-news-and-special-sales",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 190991200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 410528100,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the user completes the newsletter form with a \"valid\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheNewsletterFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48464200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the successfully submitted message for \"subscription\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "subscription",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 37034700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:20.270Z",
+        "line": 42,
+        "name": "Proceed to Contact Us page and send a message",
+        "description": "",
+        "id": "buy-journey;proceed-to-contact-us-page-and-send-a-message",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 318739000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user is on the \"contact us\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact us",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 436115800,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the user completes the contact us form",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserCompletesTheContactUsForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93213000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the successfully submitted message for \"contact us\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "contact us",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24012700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:21.160Z",
+        "line": 47,
+        "name": "Add item via Catalogue search",
+        "description": "",
+        "id": "buy-journey;add-item-via-catalogue-search",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 144049800,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1530360900,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the user types product name into search our catalogue bar",
+            "match": {
+              "location": "stepdefs.BuyJourneyStepDef.theUserTypesProductNameIntoSearchOurCatalogueBar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 590270300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 22555700,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:23.452Z",
+        "line": 52,
+        "name": "Continue Shopping and add second item to basket",
+        "description": "",
+        "id": "buy-journey;continue-shopping-and-add-second-item-to-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 162066900,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "the user is on the \"home\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "home",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1118743200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the user adds \"first item\" to cart by hovering over it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "first item",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca class\u003d\"quick-view\" href\u003d\"#\" data-link-action\u003d\"quickview\"\u003e...\u003c/a\u003e is not clickable at point (768, 555). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.clickThirdItemQuickView(HomePage.java:153)\r\n\tat stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(BuyJourneyStepDef.java:76)\r\n\tat ✽.the user adds \"second item\" to cart by hovering over it(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:55)\r\n",
+              "duration": 1903129500,
+              "status": "failed"
+            },
+            "line": 55,
+            "name": "the user adds \"second item\" to cart by hovering over it",
+            "match": {
+              "arguments": [
+                {
+                  "val": "second item",
+                  "offset": 15
+                }
+              ],
+              "location": "stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "the successfully submitted message for \"added to cart\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "added to cart",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Buy Journey",
+    "description": "",
+    "id": "buy-journey",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/buyjourney.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 25024800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:26.666Z",
+        "line": 6,
+        "name": "Register user with already Registered Email Address.",
+        "description": "",
+        "id": "registration;register-user-with-already-registered-email-address.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 834264300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 706289900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user completes the form with a \"registered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "registered",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42028900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "\"user already registered\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user already registered",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 40997600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:28.278Z",
+        "line": 11,
+        "name": "New user is able to register.",
+        "description": "",
+        "id": "registration;new-user-is-able-to-register.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 707821800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 933776200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user completes the form with a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 36
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserCompletesTheFormWithAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80292900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the successfully submitted message for \"user logged in\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user logged in",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23222800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:30.046Z",
+        "line": 16,
+        "name": "Numeric values are entered into the name field.",
+        "description": "",
+        "id": "registration;numeric-values-are-entered-into-the-name-field.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 690392300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 143047000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user enters a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 563081300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user enters an invalid \"name\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "name",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45989700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "\"invalid name\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid name",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 34988400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:31.520Z",
+        "line": 22,
+        "name": "An invalid Date of Birth is entered.",
+        "description": "",
+        "id": "registration;an-invalid-date-of-birth-is-entered.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 787453200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user is on the \"create a new account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "create a new account",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 148187200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user enters a \"unregistered\" email address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 19
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersAEmailAddress(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 743721600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user enters an invalid \"date of birth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "date of birth",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefs.RegistrationStepDef.theUserEntersInvalidData(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 40989700,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"invalid date of birth\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid date of birth",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration",
+    "description": "",
+    "id": "registration",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/registration.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 38265100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:33.277Z",
+        "line": 6,
+        "name": "Remove item from shopping basket",
+        "description": "",
+        "id": "shopping-cart;remove-item-from-shopping-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1771879300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 929355200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113595700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the item is deleted",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.itemDeletedFromBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 590328300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "pricing \u0026 totals should be updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24237500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:31:36.727Z",
+        "line": 12,
+        "name": "Increase quantity of product in basket",
+        "description": "",
+        "id": "shopping-cart;increase-quantity-of-product-in-basket",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1810132600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 940814000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106241200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user increases quantity of item",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userIncreasesQuantityOfItem()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 245790200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "their basket is updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.basketIsUpdated()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30996600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "product counter is updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.productCounterIsUpdated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .no-items (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat ✽.pricing \u0026 totals should be updated(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:18)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .no-items\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20161006400,
+              "status": "failed"
+            },
+            "line": 18,
+            "name": "pricing \u0026 totals should be updated",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 37997200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:00.053Z",
+        "line": 20,
+        "name": "Proceed to checkout not logged in",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-not-logged-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2035828000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .btn.btn-primary.add-to-cart (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat ✽.the user is \"not logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:22)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .btn.btn-primary.add-to-cart\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20488936500,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "the user is \"not logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "not logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1002600,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "the user proceeds to checkout",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theUserProceedsToCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "the sign-in displayed",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theSignInDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33991400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:22.628Z",
+        "line": 27,
+        "name": "Proceed to checkout and buy item while logged in",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-and-buy-item-while-logged-in",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1845473700,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:29)\r\n",
+              "duration": 1145230100,
+              "status": "failed"
+            },
+            "line": 29,
+            "name": "the user is \"logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 31,
+            "name": "the user proceeds to checkout",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theUserProceedsToCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "fills in form",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.fillsInForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "the order confirmation displayed",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theOrderConfirmationDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23990500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:25.661Z",
+        "line": 44,
+        "name": "Make invoice address different to delivery address",
+        "description": "",
+        "id": "shopping-cart;make-invoice-address-different-to-delivery-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1827856500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:46)\r\n",
+              "duration": 1150836100,
+              "status": "failed"
+            },
+            "line": 46,
+            "name": "the user is \"logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999600,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "the user changes their invoice address on checkout",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theUserChangesTheirInvoiceAddressOnCheckout()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": "the shipping method should be displayed",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theShippingMethodShouldBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23994900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:28.672Z",
+        "line": 57,
+        "name": "Add a comment to your order",
+        "description": "",
+        "id": "shopping-cart;add-a-comment-to-your-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1779777500,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:59)\r\n",
+              "duration": 1092515300,
+              "status": "failed"
+            },
+            "line": 59,
+            "name": "the user is \"logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 60,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 61,
+            "name": "the user writes a comment in shipping method in checkout form",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userWritesACommentInShippingMethodInCheckoutForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "the comment is added",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theCommentIsAdded()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 29367800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:31.575Z",
+        "line": 64,
+        "name": "Proceed to checkout and logout",
+        "description": "",
+        "id": "shopping-cart;proceed-to-checkout-and-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1819635700,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:66)\r\n",
+              "duration": 1141715600,
+              "status": "failed"
+            },
+            "line": 66,
+            "name": "the user is \"logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1033400,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "the user signs out from checkout page",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theUserSignsOutFromCheckoutPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "the cart is empty if user logs back on",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theCartIsEmptyIfUserLogsBackOn()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 24959100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:34.573Z",
+        "line": 71,
+        "name": "Add new address",
+        "description": "",
+        "id": "shopping-cart;add-new-address",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1793549800,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "the user is on the \"shopping cart\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shopping cart",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:73)\r\n",
+              "duration": 1146783700,
+              "status": "failed"
+            },
+            "line": 73,
+            "name": "the user is \"logged in\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "logged in",
+                  "offset": 13
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "the user has \"1 item\" in their basket",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.userHasItemInBasket()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 75,
+            "name": "the user has at least 1 saved address",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefs.ShoppingCartStepDef.theUserHasAtLeastSavedAddress(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 76,
+            "name": "the user adds new address to checkout form",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theUserAddsNewAddressToCheckoutForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 77,
+            "name": "the new address is saved",
+            "match": {
+              "location": "stepdefs.ShoppingCartStepDef.theNewAddressIsSaved()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Shopping Cart",
+    "description": "",
+    "id": "shopping-cart",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/shoppingcart.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33013100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:37.549Z",
+        "line": 6,
+        "name": "User signs in using a registered email",
+        "description": "",
+        "id": "sign-in;user-signs-in-using-a-registered-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 549176600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on the \"sign in\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sign in",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 140858500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user enters \"registered\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "registered",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 551311300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a \"valid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 3
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68589500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the successfully submitted message for \"user logged in\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user logged in",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23167700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:38.899Z",
+        "line": 12,
+        "name": "User signs in using an unregistered email",
+        "description": "",
+        "id": "sign-in;user-signs-in-using-an-unregistered-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 639577500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the user is on the \"sign in\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sign in",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 151568800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the user enters \"unregistered\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 332895200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "a \"valid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "valid",
+                  "offset": 3
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39195100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "\"invalid email\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid email",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31004900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:40.112Z",
+        "line": 18,
+        "name": "User enters registered email to recover password",
+        "description": "",
+        "id": "sign-in;user-enters-registered-email-to-recover-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 842458600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user is on the \"forgotten password\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "forgotten password",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 137952300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user enters \"registered\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "registered",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "clicks retrieve password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 22,
+            "name": "a confirmation message displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21997800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:41.130Z",
+        "line": 24,
+        "name": "User can sign out",
+        "description": "",
+        "id": "sign-in;user-can-sign-out",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1020565600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the user is signed in",
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 257625000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the user clicks sign out",
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserClicksSignOut()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161421700,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user is signed out",
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserIsSignedOut()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 31725500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:42.600Z",
+        "line": 29,
+        "name": "User enters an invalid password",
+        "description": "",
+        "id": "sign-in;user-enters-an-invalid-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 502357500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "the user is on the \"sign in\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sign in",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 133433300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the user enters \"registered\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "registered",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "the user enters an \"invalid\" password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "\"invalid password\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid password",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 32986600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:43.273Z",
+        "line": 35,
+        "name": "User enters new address on the accounts page",
+        "description": "",
+        "id": "sign-in;user-enters-new-address-on-the-accounts-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 984653800,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the user is signed in",
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 37,
+            "name": "on the addresses page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "the user adds a new address",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 39,
+            "name": "a new address is added to the address page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23455300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T10:32:44.295Z",
+        "line": 41,
+        "name": "User enters an unregistered email to recover password",
+        "description": "",
+        "id": "sign-in;user-enters-an-unregistered-email-to-recover-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 718735300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the user is on the \"forgotten password\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "forgotten password",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149762700,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the user enters \"unregistered\" email",
+            "match": {
+              "arguments": [
+                {
+                  "val": "unregistered",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 44,
+            "name": "clicks retrieve password",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": "\"invalid recovery email\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid recovery email",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Sign In",
+    "description": "",
+    "id": "sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/signin.feature",
+    "tags": []
+  }
+]

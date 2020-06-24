@@ -16,10 +16,6 @@ public class SignInStepDef {
     private SignInPage signInPage = new SignInPage();
     private CheckoutPage checkoutPage = new CheckoutPage();
 
-    @Given("^clear cookies$")
-    public void clearCookies() {
-        homepage.clearCookies();
-    }
 
 //    @Given("^the user is on the \"([^\"]*)\" page$")
 //    public void theUserIsOnThePage(String page) {

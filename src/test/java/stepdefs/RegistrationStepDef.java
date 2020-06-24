@@ -14,11 +14,6 @@ public class RegistrationStepDef {
     private SignInPage signInPage = new SignInPage();
     private CreateNewAccountPage createNewAccountPage = new CreateNewAccountPage();
 
-    @Given("^clear cookies$")
-    public void clearCookies() {
-        homepage.clearCookies();
-    }
-
 //    @Given("^the user is on the \"([^\"]*)\" page$")
 //    public void theUserIsOnThePage(String page){
 //        if(page.equals("create a new account")) {
