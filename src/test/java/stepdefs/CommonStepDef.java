@@ -96,6 +96,8 @@ public class CommonStepDef {
             case "new password":
                 signInPage.passwordUpdatedSuccessfully();
                 break;
+            default:
+                System.out.println("Error");
         }
 
     }
@@ -119,6 +121,14 @@ public class CommonStepDef {
                 break;
             case "invalid recovery email":
                 signInPage.confirmationMessage();
+            case "recovery email":
+                signInPage.successAlert();
+                break;
+            case "insufficient stock" :
+                productPage.noStockMessage();
+                break;
+            default:
+                System.out.println("Error");
         }
     }
 

@@ -37,6 +37,7 @@ public class SignInPage extends BasePage {
     private static final By INFORMATION = By.cssSelector("[href='http://3.11.70.191/index.php?controller=identity']");
     private static final By NEW_PASSWORD = By.name("new_password");
     private static final By UPDATED_PASSWORD_SUCCESS = By.xpath("//*[text()='Information successfully updated.']");
+    private static final By CLICK_ORDER_HISTORY = By.cssSelector(".col-lg-4.col-md-6.col-sm-6.col-xs-12:nth-child(3)");
 
     public void enterCreateNewAccountEmailAddress(String emailAddress) {
         findAndType(EMAIL_ADDRESS_INPUT_BOX, emailAddress);
@@ -152,7 +153,7 @@ public class SignInPage extends BasePage {
         waitAndClick(CLICK_SIGN_IN);
     }
 
-    public void recoveryEmailSuccess(){
+    public void successAlert(){
         WebElement successAlert = driver.findElement(SUCCESS_ALERT);
         Assert.assertTrue(elementIsVisible(successAlert));
     }
@@ -170,5 +171,8 @@ public class SignInPage extends BasePage {
         Assert.assertTrue(elementIsVisible(successAlert));
     }
 
+    public void clickOrderHistory(){
+        waitAndClick(CLICK_ORDER_HISTORY);
+    }
 
 }

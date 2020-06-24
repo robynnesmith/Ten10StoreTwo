@@ -18,7 +18,7 @@ public class ShoppingCartStepDef {
     private CheckoutPage checkoutPage = new CheckoutPage();
 
 
-//    @Given("^the user is on the \"([^\"]*)\" page$")
+    //    @Given("^the user is on the \"([^\"]*)\" page$")
 //    public void userOnShoppingCartPage(String page) {
 //        if(page.equals("shopping cart")) {
 //            homepage.goTo();
@@ -27,13 +27,9 @@ public class ShoppingCartStepDef {
 //    }
 //************************************************
 //Scenario:Remove item from shopping basket
-    @And("^the user has \"1 item\" in their basket$")
-    public void userHasItemInBasket() {
+    @When("^the user deletes an item from their basket$")
+    public void userDeletesItemFromBasket() {
         basketpage.navigateToBasket();
-    }
-
-    @When("^the item is deleted$")
-    public void itemDeletedFromBasket() {
         basketpage.deleteItemFromBasket();
     }
 
@@ -47,6 +43,7 @@ public class ShoppingCartStepDef {
 
     @When("^the user increases quantity of item$")
     public void userIncreasesQuantityOfItem() {
+        basketpage.navigateToBasket();
         basketpage.increaseQuantity();
     }
 
@@ -65,15 +62,24 @@ public class ShoppingCartStepDef {
 //Scenario:Proceed to checkout not logged in
 
 
-    @And("^the user is \"([^\"]*)\"$")
+    @Given("^the user is \"([^\"]*)\"$")
     public void theUserIsNotLoggedIn(String login) {
-    if (login.equals("not logged in")){
-        homepage.itemAddedToCart();
-        basketpage.navigateToBasket();
+        switch (login) {
+            case "not logged in":
+                homepage.goTo();
+                homepage.itemAddedToCart();
+                basketpage.navigateToBasket();
+                break;
+            case "logged in":
+                homepage.goTo();
+                homepage.navigateToSignInPage();
+                signInPage.login();
+                homepage.goTo();
+                homepage.addItemToCart();
+                basketpage.clickModalProceedToCheckout();
+            default:
+                System.out.println("navigated to wrong page");
 
-    } else if (login.equals("logged in")){
-        homepage.navigateToSignInPage();
-        signInPage.login();
         }
     }
 
@@ -82,7 +88,7 @@ public class ShoppingCartStepDef {
         basketpage.clickProceedToCheckout();
     }
 
-    @Then("^the sign-in displayed$")
+    @Then("^the sign-in page is displayed$")
     public void theSignInDisplayed() {
         basketpage.isPersonalInformationPageDisplayed();
     }
@@ -103,7 +109,6 @@ public class ShoppingCartStepDef {
         checkoutPage.agreeToTerms();
     }
 
-
     @Then("^the order confirmation displayed$")
     public void theOrderConfirmationDisplayed() {
         checkoutPage.confirmOrder();
@@ -116,7 +121,7 @@ public class ShoppingCartStepDef {
 
     @When("^the user changes their invoice address on checkout$")
     public void theUserChangesTheirInvoiceAddressOnCheckout() {
-        basketpage.clickModalProceedToCheckout();
+        //basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.differentInvoiceAddress();
@@ -130,35 +135,34 @@ public class ShoppingCartStepDef {
 
     }
 
-   
 
-//************************************************
+    //************************************************
 //Scenario: Add a comment to your order
     @When("^the user writes a comment in shipping method in checkout form$")
     public void userWritesACommentInShippingMethodInCheckoutForm() {
+        basketpage.clickProceedToCheckout();
+        checkoutPage.deliveryAddressSectionDisplayed();
+        checkoutPage.clickProceedToNextSection();
+        checkoutPage.shippingPageDisplayed();
+        //checkoutPage.enterShippingComment();
+    }
+
+    @Then("the comment is added")
+    public void theCommentIsAdded() {
         checkoutPage.enterShippingComment();
     }
 
 
-    @Then("the comment is added")
-    public void theCommentIsAdded() {
-
-    }
-
-   
-
-//************************************************
+    //************************************************
 //Scenario: Proceed to checkout and logout
     @When("the user signs out from checkout page")
     public void theUserSignsOutFromCheckoutPage() {
         signInPage.clickSignOut();
         signInPage.clickSignIn();
-
     }
 
-
-    @Then("the cart is empty if user logs back on")
-    public void theCartIsEmptyIfUserLogsBackOn() {
+    @Then("their cart is empty when user logs back on")
+    public void theCartIsEmptyWhenUserLogsBackOn() {
         signInPage.login();
         basketpage.cartButton();
     }
@@ -167,13 +171,9 @@ public class ShoppingCartStepDef {
 //************************************************
 //Scenario: Add new address
 
-    @And("the user has at least {int} saved address")
-    public void theUserHasAtLeastSavedAddress(int arg0) {
-    }
-
-
     @When("the user adds new address to checkout form")
     public void theUserAddsNewAddressToCheckoutForm() {
+        basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.setAddNewAddress();
     }
@@ -181,6 +181,7 @@ public class ShoppingCartStepDef {
 
     @Then("the new address is saved")
     public void theNewAddressIsSaved() {
+
     }
 
 
