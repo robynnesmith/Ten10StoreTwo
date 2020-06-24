@@ -27,10 +27,11 @@ public class SignInStepDef {
             homepage.goTo();
             homepage.navigateToSignInPage();
             signInPage.clickCreateAnAccount();
-        } else if (page.equals("forgotten password"))
+        } else if (page.equals("forgotten password")) {
             homepage.goTo();
-        homepage.navigateToSignInPage();
-        signInPage.forgottenPassword();
+            homepage.navigateToSignInPage();
+            signInPage.forgottenPassword();
+        }
     }
 
     @When("^the user enters \"([^\"]*)\" email$")
@@ -60,6 +61,17 @@ public class SignInStepDef {
 
     @Then("an invalid \"([^\"]*)\" alert is displayed")
     public void anInvalidAlertIsDisplayed(String alert) {
+        switch (alert){
+            case "email":
+                signInPage.unregisteredUserAlert();
+                break;
+            case "password":
+                signInPage.authenticationFailed();
+                break;
+            case "recovery email":
+                signInPage.successAlert();
+                break;
+        }
     }
 
 }
