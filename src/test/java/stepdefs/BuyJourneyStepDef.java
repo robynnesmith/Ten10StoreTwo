@@ -22,38 +22,38 @@ public class BuyJourneyStepDef {
         homepage.clearCookies();
     }
 
-    @Given("^the user is on \"([^\"]*)\" page$")
-    public void theUserIsOnPage(String page) {
-        homepage.goTo();
-        switch (page) {
-            //Select item from homepage
-            //Add product to cart from homepage
-            case "home":
-                break;
-            //Add product to cart from product page
-            case "product":
-                productPage.navigatetoProductPage();
-                break;
-            //add message
-            case "account details":
-                homepage.navigateToSignInPage();
-                signInPage.login();
-                homepage.clickOrder();
-                orders.clickDetails();
-                break;
-            //Test product filters on dresses page
-            //clear filters
-            case "women":
-                homepage.clickWomen();
-                break;
-            default:
-                System.out.println("Unexpected page type");
-            //Proceed to Contact Us page and send a message
-            case "contact us":
-                contactPage.goToContactUsPage();
-                break;
-        }
-    }
+//    @Given("^the user is on the \"([^\"]*)\" page$")
+//    public void theUserIsOnPage(String page) {
+//        homepage.goTo();
+//        switch (page) {
+//            //Select item from homepage
+//            //Add product to cart from homepage
+//            case "home":
+//                break;
+//            //Add product to cart from product page
+//            case "product":
+//                productPage.navigatetoProductPage();
+//                break;
+//            //add message
+//            case "account details":
+//                homepage.navigateToSignInPage();
+//                signInPage.login();
+//                homepage.clickOrder();
+//                orders.clickDetails();
+//                break;
+//            //Test product filters on dresses page
+//            //clear filters
+//            case "women":
+//                homepage.clickWomen();
+//                break;
+//            default:
+//                System.out.println("Unexpected page type");
+//            //Proceed to Contact Us page and send a message
+//            case "contact us":
+//                contactPage.goToContactUsPage();
+//                break;
+//        }
+//    }
 
     //Select item from homepage
     @When("^the user selects item through hovering over it$")

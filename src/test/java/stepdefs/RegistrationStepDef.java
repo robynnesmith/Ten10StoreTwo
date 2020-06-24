@@ -19,14 +19,14 @@ public class RegistrationStepDef {
         homepage.clearCookies();
     }
 
-    @Given("^the user is on the \"([^\"]*)\" page$")
-    public void theUserIsOnThePage(String page){
-        if(page.equals("create a new account")) {
-            homepage.goTo();
-            homepage.navigateToSignInPage();
-            signInPage.clickCreateAnAccount();
-        }
-    }
+//    @Given("^the user is on the \"([^\"]*)\" page$")
+//    public void theUserIsOnThePage(String page){
+//        if(page.equals("create a new account")) {
+//            homepage.goTo();
+//            homepage.navigateToSignInPage();
+//            signInPage.clickCreateAnAccount();
+//        }
+//    }
 
     @When("^the user completes the form with a \"([^\"]*)\" email address$")
     public void theUserCompletesTheFormWithAEmailAddress(String email) {

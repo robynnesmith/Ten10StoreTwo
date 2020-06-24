@@ -11,7 +11,7 @@ import pageObjects.*;
 
 
 public class ShoppingCartStepDef {
-    private HomePage homePage = new HomePage();
+    private HomePage homepage = new HomePage();
     private ShoppingCartPage basketpage = new ShoppingCartPage();
     private SignInPage signInPage = new SignInPage();
     private ProductPage productPage = new ProductPage();
@@ -20,8 +20,8 @@ public class ShoppingCartStepDef {
     @Given("^the user is on the \"([^\"]*)\" page$")
     public void userOnShoppingCartPage(String page) {
         if(page.equals("shopping cart")) {
-            homePage.goTo();
-            homePage.itemAddedToCart();
+            homepage.goTo();
+            homepage.itemAddedToCart();
         }
     }
 //************************************************
@@ -68,11 +68,11 @@ public class ShoppingCartStepDef {
     @And("^the user is \"([^\"]*)\"$")
     public void theUserIsNotLoggedIn(String login) {
     if (login.equals("not logged in")){
-        homePage.itemAddedToCart();
+        homepage.itemAddedToCart();
         basketpage.navigateToBasket();
 
     } else if (login.equals("logged in")){
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
         }
     }
