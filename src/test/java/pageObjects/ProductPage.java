@@ -22,7 +22,8 @@ public class ProductPage extends BasePage {
     private static final By CLEAR_FILTERS = By.cssSelector(".btn.btn-tertiary.js-search-filters-clear-all:last-of-type");
     private static final By SELECT_THIRD_SUMMER_DRESS = By.cssSelector("[href='http://3.11.70.191/index.php?id_product=7&id_product_attribute=34&rewrite=printed-chiffon-dress&controller=product#/1-size-s/16-color-yellow']");
     private static final By SELECT_QUANTITY = By.cssSelector("input[name='qty']");
-    private static final By NO_STOCK_MESSAGE =  By.linkText("There are not enough products in stock");
+    private static final By NO_STOCK_MESSAGE =  By.cssSelector(".material-icons.product-unavailable");
+    private static final By PRODUCT_AV_DIFF_OPTION = By.linkText("Product available with different options");
 
     public void productPageDisplayed() {
         WebElement productPage = driver.findElement(ADD_TO_CART_BUTTON);
@@ -80,6 +81,14 @@ public class ProductPage extends BasePage {
     public void emptyQuantity(){ driver.findElement(SELECT_QUANTITY).clear();}
 
     public void noStockMessage(){
-        WebElement alertBox = driver.findElement(NO_STOCK_MESSAGE);
-        Assert.assertTrue("not enough stock",elementIsVisible(alertBox)); }
+        waitUntilVisible(NO_STOCK_MESSAGE);
+        WebElement noStock = driver.findElement(NO_STOCK_MESSAGE);
+        Assert.assertTrue(elementIsVisible(noStock));
+    }
+//    public void productAvailableInDifferentOption() {
+//        waitUntilVisible(PRODUCT_AV_DIFF_OPTION);
+//        WebElement productAvailability = driver.findElement(PRODUCT_AV_DIFF_OPTION);
+//        Assert.assertTrue(elementIsVisible(productAvailability));
+//    }
+
 }

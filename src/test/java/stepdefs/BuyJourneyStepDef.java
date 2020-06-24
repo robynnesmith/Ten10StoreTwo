@@ -72,6 +72,7 @@ public class BuyJourneyStepDef {
                 homepage.addItemToCart();
                 break;
             case "second item":
+                homepage.continueShopping();
                 homepage.hoverOverThirdItem();
                 homepage.clickThirdItemQuickView();
                 homepage.addSingleItemToCart();
@@ -175,4 +176,14 @@ public class BuyJourneyStepDef {
         homepage.hoverOverDress();
         homepage.addItemToCart();
     }
+
+//Not enough stock
+    @When("^the user enters a high value in the quantity field$")
+    public void enterHighQuantity(){
+        productPage.selectColour();
+        productPage.emptyQuantity();
+        productPage.enterQuantity("499");
+        productPage.selectQuantity();
+    }
+
 }

@@ -228,12 +228,13 @@ public class BuyJourney {
      * 3. Enter a high number in the quantity (Example 500)
      * Verify that the message "There are not enough products in Stock displayed"
      */
-    @Test @Ignore
+    @Test
     public void notEnoughStock (){
         productPage.navigatetoProductPage();
         productPage.selectColour();
         productPage.emptyQuantity();
-        productPage.enterQuantity("500");
+        productPage.enterQuantity("499");
+        productPage.selectQuantity();
         productPage.noStockMessage();
 
     }
@@ -246,7 +247,12 @@ public class BuyJourney {
      */
     @Test @Ignore
     public void noAddToCartButtonForOutOfStock (){
-
+        productPage.navigatetoProductPage();
+        productPage.selectColour();
+        productPage.emptyQuantity();
+        productPage.enterQuantity("499");
+        productPage.selectQuantity();
+//don't know how to prove that add to cart button is disabled therefore ignore
     }
 
     /**
@@ -254,8 +260,12 @@ public class BuyJourney {
      * 2. Select a product that is available with different option (FADED SHORT SLEEVES T-SHIRT)
      * Verify that the message "Product available with different options" is displayed.
      */
-    @Test @Ignore
+    @Test
     public void productAvailableWithDifferentOption (){
+        homepage.hoverOverItem();
+        homepage.clickMoreButton();
+        productPage.productPageDisplayed();
+        productPage.noStockMessage();
 
     }
 
@@ -272,6 +282,12 @@ public class BuyJourney {
      */
     @Test @Ignore
     public void reorderPreviousPurchase (){
+        homepage.navigateToSignInPage();
+        signInPage.login();
+        signInPage.clickOrderHistory();
+        orders.clickReorder();
+        //Nothing happens when you click reorder
+//        signInPage.clickSignOut();
 
     }
 

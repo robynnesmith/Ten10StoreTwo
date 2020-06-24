@@ -84,6 +84,8 @@ public class CommonStepDef {
             case "user logged in":
                 signInPage.successfulSignIn();
                 break;
+            default:
+                System.out.println("Error");
         }
 
     }
@@ -108,6 +110,11 @@ public class CommonStepDef {
             case "recovery email":
                 signInPage.successAlert();
                 break;
+            case "insufficient stock" :
+                productPage.noStockMessage();
+                break;
+            default:
+                System.out.println("Error");
         }
     }
 

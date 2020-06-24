@@ -9,6 +9,7 @@ import static org.junit.Assert.assertTrue;
 public class Orders extends BasePage{
 
     private static final By CLICK_DETAILS = By.linkText("Details");
+    private static final By CLICK_REORDER = By.linkText("Reorder");
     private static final By CHOOSE_PRODUCT_DROP_DOWN = By.cssSelector("option[value='7']");
     private static final By ENTER_MESSAGE = By.cssSelector("textarea[rows='3']");
     private static final By SEND_MESSAGE= By.cssSelector("button[name='submitMessage']");
@@ -16,6 +17,9 @@ public class Orders extends BasePage{
 
     public void clickDetails() {
         waitAndClick(CLICK_DETAILS);
+    }
+    public void clickReorder() {
+        waitAndClick(CLICK_REORDER);
     }
     public void chooseProductDropDown() { waitAndClick(CHOOSE_PRODUCT_DROP_DOWN); }
     public void enterMessage(String enterMessage) {

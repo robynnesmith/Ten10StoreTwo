@@ -54,3 +54,19 @@ Feature: Buy Journey
     And the user adds "first item" to cart by hovering over it
     When the user adds "second item" to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
+
+  Scenario: Not enough stock insufficient stock alert
+    Given the user is on the "product" page
+    When the user enters a high value in the quantity field
+    Then "insufficient stock" alert is displayed
+
+#  Scenario: Not enough stock add to cart button disabled
+#    Given the user is on the "product" page
+#    When the user enters a high value in the quantity field
+#    Then add to cart button disabled
+
+  Scenario: product available with different option
+    Given the user is on the "home" page
+    When the user selects item through hovering over it
+    Then "insufficient stock" alert is displayed
+

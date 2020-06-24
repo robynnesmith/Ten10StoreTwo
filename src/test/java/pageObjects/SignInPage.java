@@ -34,6 +34,7 @@ public class SignInPage extends BasePage {
     private static final By ADD_NEW_ADDRESS = By.cssSelector("[data-link-action='add-address']");
     private static final By CLICK_SIGN_IN = By.cssSelector("span[class='hidden-sm-down']");
     private static final By SUCCESS_ALERT = By.cssSelector(".ps-alert-success");
+    private static final By CLICK_ORDER_HISTORY = By.cssSelector(".col-lg-4.col-md-6.col-sm-6.col-xs-12:nth-child(3)");
 
     public void enterCreateNewAccountEmailAddress(String emailAddress) {
         findAndType(EMAIL_ADDRESS_INPUT_BOX, emailAddress);
@@ -153,6 +154,8 @@ public class SignInPage extends BasePage {
         WebElement successAlert = driver.findElement(SUCCESS_ALERT);
         Assert.assertTrue(elementIsVisible(successAlert));
     }
-
+    public void clickOrderHistory(){
+        waitAndClick(CLICK_ORDER_HISTORY);
+    }
 
 }
