@@ -17,6 +17,11 @@ public class ShoppingCartStepDef {
     private ProductPage productPage = new ProductPage();
     private CheckoutPage checkoutPage = new CheckoutPage();
 
+    @Given("^clear cookies$")
+    public void clearCookies() {
+        homePage.clearCookies();
+    }
+
     @Given("^the user is on the \"([^\"]*)\" page$")
     public void userOnShoppingCartPage(String page) {
         if(page.equals("shopping cart")) {
@@ -39,7 +44,6 @@ public class ShoppingCartStepDef {
     @Then("^pricing & totals should be updated$")
     public void pricingAndTotalsUpdated() {
         basketpage.checkItemRemovedFromBasket();
-
     }
 
 //************************************************
