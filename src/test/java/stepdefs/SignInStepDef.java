@@ -74,6 +74,21 @@ public class SignInStepDef {
         }
     }
 
+    @Given("the user is signed in")
+    public void theUserIsSignedIn() {
+        homepage.navigateToSignInPage();
+        signInPage.login();
+    }
+
+    @When("the user clicks sign out")
+    public void theUserClicksSignOut() {
+        signInPage.clickSignOut();
+    }
+
+    @Then("the user is signed out")
+    public void theUserIsSignedOut() {
+        signInPage.userSignedOut();
+    }
 }
 
 
