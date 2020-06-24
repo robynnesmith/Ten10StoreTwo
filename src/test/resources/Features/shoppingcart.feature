@@ -1,5 +1,8 @@
 Feature:Shopping Cart
 
+  Background: Clear cookies
+    Given clear cookies
+
   Scenario:Remove item from shopping basket
     Given the user is on the "shopping cart" page
     And the user has "1 item" in their basket
