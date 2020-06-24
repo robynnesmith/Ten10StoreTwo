@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6321970900,
+              "duration": 6250249700,
               "status": "passed"
             },
             "line": 3,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:30:58.787Z",
+        "start_timestamp": "2020-06-24T14:48:15.791Z",
         "line": 5,
         "name": "Select item from homepage",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 575966000,
+              "duration": 580622100,
               "status": "passed"
             },
             "line": 6,
@@ -52,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 622368500,
+              "duration": 607723100,
               "status": "passed"
             },
             "line": 7,
@@ -64,7 +64,7 @@
           },
           {
             "result": {
-              "duration": 63997300,
+              "duration": 59839100,
               "status": "passed"
             },
             "line": 8,
@@ -85,7 +85,7 @@
         "steps": [
           {
             "result": {
-              "duration": 26001700,
+              "duration": 25915800,
               "status": "passed"
             },
             "line": 3,
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:06.452Z",
+        "start_timestamp": "2020-06-24T14:48:23.376Z",
         "line": 10,
         "name": "Add product to cart from homepage",
         "description": "",
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 199005500,
+              "duration": 171052600,
               "status": "passed"
             },
             "line": 11,
@@ -126,8 +126,9 @@
           },
           {
             "result": {
-              "duration": 1116438400,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .btn.btn-primary.add-to-cart (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(BuyJourneyStepDef.java:72)\r\n\tat ✽.the user adds \"first item\" to cart by hovering over it(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/buyjourney.feature:12)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .btn.btn-primary.add-to-cart\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(BuyJourneyStepDef.java:72)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20853487800,
+              "status": "failed"
             },
             "line": 12,
             "name": "the user adds \"first item\" to cart by hovering over it",
@@ -144,8 +145,7 @@
           },
           {
             "result": {
-              "duration": 621973100,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 13,
             "name": "the successfully submitted message for \"added to cart\" is displayed",
@@ -171,7 +171,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34996900,
+              "duration": 15984000,
               "status": "passed"
             },
             "line": 3,
@@ -184,7 +184,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:08.424Z",
+        "start_timestamp": "2020-06-24T14:48:44.454Z",
         "line": 15,
         "name": "Add product to cart from product page",
         "description": "",
@@ -194,7 +194,7 @@
         "steps": [
           {
             "result": {
-              "duration": 552000700,
+              "duration": 544053900,
               "status": "passed"
             },
             "line": 16,
@@ -212,9 +212,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d83.0.4103.106)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat org.openqa.selenium.support.ui.Select.setSelected(Select.java:324)\r\n\tat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:120)\r\n\tat pageObjects.ProductPage.selectSize(ProductPage.java:42)\r\n\tat stepdefs.BuyJourneyStepDef.theUserSelects(BuyJourneyStepDef.java:88)\r\n\tat ✽.the user selects \"details of item\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:17)\r\n",
-              "duration": 267002500,
-              "status": "failed"
+              "duration": 350446600,
+              "status": "passed"
             },
             "line": 17,
             "name": "the user selects \"details of item\"",
@@ -231,8 +230,8 @@
           },
           {
             "result": {
-              "duration": 1003800,
-              "status": "skipped"
+              "duration": 673096700,
+              "status": "passed"
             },
             "line": 18,
             "name": "the user adds item to cart",
@@ -243,7 +242,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 596949100,
+              "status": "passed"
             },
             "line": 19,
             "name": "the successfully submitted message for \"added to cart\" is displayed",
@@ -269,7 +269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33997600,
+              "duration": 9954400,
               "status": "passed"
             },
             "line": 3,
@@ -282,7 +282,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:09.302Z",
+        "start_timestamp": "2020-06-24T14:48:46.640Z",
         "line": 21,
         "name": "Add a message",
         "description": "",
@@ -292,7 +292,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4172790000,
+              "duration": 4458551700,
               "status": "passed"
             },
             "line": 22,
@@ -310,7 +310,7 @@
           },
           {
             "result": {
-              "duration": 467884400,
+              "duration": 526256800,
               "status": "passed"
             },
             "line": 23,
@@ -328,7 +328,7 @@
           },
           {
             "result": {
-              "duration": 306025800,
+              "duration": 345364000,
               "status": "passed"
             },
             "line": 24,
@@ -355,7 +355,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34995600,
+              "duration": 18942100,
               "status": "passed"
             },
             "line": 3,
@@ -368,7 +368,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:14.291Z",
+        "start_timestamp": "2020-06-24T14:48:51.988Z",
         "line": 26,
         "name": "Test product filters on dresses page.",
         "description": "",
@@ -378,7 +378,7 @@
         "steps": [
           {
             "result": {
-              "duration": 475121000,
+              "duration": 463317600,
               "status": "passed"
             },
             "line": 27,
@@ -396,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 2035413600,
+              "duration": 2032487600,
               "status": "passed"
             },
             "line": 28,
@@ -414,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 33960200,
+              "duration": 37516800,
               "status": "passed"
             },
             "line": 29,
@@ -435,7 +435,7 @@
         "steps": [
           {
             "result": {
-              "duration": 36994800,
+              "duration": 9973400,
               "status": "passed"
             },
             "line": 3,
@@ -448,7 +448,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:16.880Z",
+        "start_timestamp": "2020-06-24T14:48:54.543Z",
         "line": 31,
         "name": "Clear filters",
         "description": "",
@@ -458,7 +458,7 @@
         "steps": [
           {
             "result": {
-              "duration": 474709300,
+              "duration": 541092300,
               "status": "passed"
             },
             "line": 32,
@@ -476,7 +476,7 @@
           },
           {
             "result": {
-              "duration": 2025418100,
+              "duration": 2042450800,
               "status": "passed"
             },
             "line": 33,
@@ -494,7 +494,7 @@
           },
           {
             "result": {
-              "duration": 102972400,
+              "duration": 102880100,
               "status": "passed"
             },
             "line": 34,
@@ -512,7 +512,7 @@
           },
           {
             "result": {
-              "duration": 45000600,
+              "duration": 25927800,
               "status": "passed"
             },
             "line": 35,
@@ -533,7 +533,7 @@
         "steps": [
           {
             "result": {
-              "duration": 41015700,
+              "duration": 11967000,
               "status": "passed"
             },
             "line": 3,
@@ -546,7 +546,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:19.574Z",
+        "start_timestamp": "2020-06-24T14:48:57.271Z",
         "line": 37,
         "name": "Subscribe to news and special sales",
         "description": "",
@@ -556,7 +556,7 @@
         "steps": [
           {
             "result": {
-              "duration": 190991200,
+              "duration": 202945800,
               "status": "passed"
             },
             "line": 38,
@@ -574,7 +574,7 @@
           },
           {
             "result": {
-              "duration": 410528100,
+              "duration": 404102900,
               "status": "passed"
             },
             "line": 39,
@@ -592,7 +592,7 @@
           },
           {
             "result": {
-              "duration": 48464200,
+              "duration": 47902100,
               "status": "passed"
             },
             "line": 40,
@@ -619,7 +619,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37034700,
+              "duration": 29430400,
               "status": "passed"
             },
             "line": 3,
@@ -632,7 +632,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:20.270Z",
+        "start_timestamp": "2020-06-24T14:48:57.941Z",
         "line": 42,
         "name": "Proceed to Contact Us page and send a message",
         "description": "",
@@ -642,7 +642,7 @@
         "steps": [
           {
             "result": {
-              "duration": 318739000,
+              "duration": 377453000,
               "status": "passed"
             },
             "line": 43,
@@ -660,7 +660,7 @@
           },
           {
             "result": {
-              "duration": 436115800,
+              "duration": 472243700,
               "status": "passed"
             },
             "line": 44,
@@ -672,7 +672,7 @@
           },
           {
             "result": {
-              "duration": 93213000,
+              "duration": 77981000,
               "status": "passed"
             },
             "line": 45,
@@ -699,7 +699,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24012700,
+              "duration": 9985400,
               "status": "passed"
             },
             "line": 3,
@@ -712,7 +712,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:21.160Z",
+        "start_timestamp": "2020-06-24T14:48:58.902Z",
         "line": 47,
         "name": "Add item via Catalogue search",
         "description": "",
@@ -722,7 +722,7 @@
         "steps": [
           {
             "result": {
-              "duration": 144049800,
+              "duration": 193509100,
               "status": "passed"
             },
             "line": 48,
@@ -740,7 +740,7 @@
           },
           {
             "result": {
-              "duration": 1530360900,
+              "duration": 1251670600,
               "status": "passed"
             },
             "line": 49,
@@ -752,7 +752,7 @@
           },
           {
             "result": {
-              "duration": 590270300,
+              "duration": 584785300,
               "status": "passed"
             },
             "line": 50,
@@ -779,7 +779,7 @@
         "steps": [
           {
             "result": {
-              "duration": 22555700,
+              "duration": 12980500,
               "status": "passed"
             },
             "line": 3,
@@ -792,7 +792,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:23.452Z",
+        "start_timestamp": "2020-06-24T14:49:00.947Z",
         "line": 52,
         "name": "Continue Shopping and add second item to basket",
         "description": "",
@@ -802,7 +802,7 @@
         "steps": [
           {
             "result": {
-              "duration": 162066900,
+              "duration": 157101900,
               "status": "passed"
             },
             "line": 53,
@@ -820,7 +820,7 @@
           },
           {
             "result": {
-              "duration": 1118743200,
+              "duration": 831231200,
               "status": "passed"
             },
             "line": 54,
@@ -838,8 +838,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca class\u003d\"quick-view\" href\u003d\"#\" data-link-action\u003d\"quickview\"\u003e...\u003c/a\u003e is not clickable at point (768, 555). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.clickThirdItemQuickView(HomePage.java:153)\r\n\tat stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(BuyJourneyStepDef.java:76)\r\n\tat ✽.the user adds \"second item\" to cart by hovering over it(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/buyjourney.feature:55)\r\n",
-              "duration": 1903129500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div.products \u003e article:nth-child(3) img\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\n*** Element info: {Using\u003dcss selector, value\u003ddiv.products \u003e article:nth-child(3) img}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:450)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)\r\n\tat pageObjects.HomePage.hoverOverThirdItem(HomePage.java:148)\r\n\tat stepdefs.BuyJourneyStepDef.theUserAddsToCartByHoveringOverIt(BuyJourneyStepDef.java:75)\r\n\tat ✽.the user adds \"second item\" to cart by hovering over it(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/buyjourney.feature:55)\r\n",
+              "duration": 27926000,
               "status": "failed"
             },
             "line": 55,
@@ -894,7 +894,7 @@
         "steps": [
           {
             "result": {
-              "duration": 25024800,
+              "duration": 17864200,
               "status": "passed"
             },
             "line": 4,
@@ -907,7 +907,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:26.666Z",
+        "start_timestamp": "2020-06-24T14:49:01.985Z",
         "line": 6,
         "name": "Register user with already Registered Email Address.",
         "description": "",
@@ -917,7 +917,7 @@
         "steps": [
           {
             "result": {
-              "duration": 834264300,
+              "duration": 987372700,
               "status": "passed"
             },
             "line": 7,
@@ -935,7 +935,7 @@
           },
           {
             "result": {
-              "duration": 706289900,
+              "duration": 729055900,
               "status": "passed"
             },
             "line": 8,
@@ -953,7 +953,7 @@
           },
           {
             "result": {
-              "duration": 42028900,
+              "duration": 42874900,
               "status": "passed"
             },
             "line": 9,
@@ -980,7 +980,7 @@
         "steps": [
           {
             "result": {
-              "duration": 40997600,
+              "duration": 22043100,
               "status": "passed"
             },
             "line": 4,
@@ -993,7 +993,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:28.278Z",
+        "start_timestamp": "2020-06-24T14:49:03.766Z",
         "line": 11,
         "name": "New user is able to register.",
         "description": "",
@@ -1003,7 +1003,7 @@
         "steps": [
           {
             "result": {
-              "duration": 707821800,
+              "duration": 846163200,
               "status": "passed"
             },
             "line": 12,
@@ -1021,7 +1021,7 @@
           },
           {
             "result": {
-              "duration": 933776200,
+              "duration": 1024448200,
               "status": "passed"
             },
             "line": 13,
@@ -1039,7 +1039,7 @@
           },
           {
             "result": {
-              "duration": 80292900,
+              "duration": 80782400,
               "status": "passed"
             },
             "line": 14,
@@ -1066,7 +1066,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23222800,
+              "duration": 10967300,
               "status": "passed"
             },
             "line": 4,
@@ -1079,7 +1079,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:30.046Z",
+        "start_timestamp": "2020-06-24T14:49:05.742Z",
         "line": 16,
         "name": "Numeric values are entered into the name field.",
         "description": "",
@@ -1089,7 +1089,7 @@
         "steps": [
           {
             "result": {
-              "duration": 690392300,
+              "duration": 801523100,
               "status": "passed"
             },
             "line": 17,
@@ -1107,7 +1107,7 @@
           },
           {
             "result": {
-              "duration": 143047000,
+              "duration": 139102000,
               "status": "passed"
             },
             "line": 18,
@@ -1125,7 +1125,7 @@
           },
           {
             "result": {
-              "duration": 563081300,
+              "duration": 575433700,
               "status": "passed"
             },
             "line": 19,
@@ -1143,7 +1143,7 @@
           },
           {
             "result": {
-              "duration": 45989700,
+              "duration": 52335300,
               "status": "passed"
             },
             "line": 20,
@@ -1170,7 +1170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34988400,
+              "duration": 25751200,
               "status": "passed"
             },
             "line": 4,
@@ -1183,7 +1183,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:31.520Z",
+        "start_timestamp": "2020-06-24T14:49:07.326Z",
         "line": 22,
         "name": "An invalid Date of Birth is entered.",
         "description": "",
@@ -1193,7 +1193,7 @@
         "steps": [
           {
             "result": {
-              "duration": 787453200,
+              "duration": 766079000,
               "status": "passed"
             },
             "line": 23,
@@ -1211,7 +1211,7 @@
           },
           {
             "result": {
-              "duration": 148187200,
+              "duration": 152316600,
               "status": "passed"
             },
             "line": 24,
@@ -1229,7 +1229,7 @@
           },
           {
             "result": {
-              "duration": 743721600,
+              "duration": 704952400,
               "status": "passed"
             },
             "line": 25,
@@ -1247,7 +1247,7 @@
           },
           {
             "result": {
-              "duration": 40989700,
+              "duration": 49699200,
               "status": "passed"
             },
             "line": 26,
@@ -1285,7 +1285,7 @@
         "steps": [
           {
             "result": {
-              "duration": 38265100,
+              "duration": 18700900,
               "status": "passed"
             },
             "line": 4,
@@ -1298,7 +1298,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:33.277Z",
+        "start_timestamp": "2020-06-24T14:49:09.029Z",
         "line": 6,
         "name": "Remove item from shopping basket",
         "description": "",
@@ -1308,7 +1308,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1771879300,
+              "duration": 1889814000,
               "status": "passed"
             },
             "line": 7,
@@ -1326,7 +1326,7 @@
           },
           {
             "result": {
-              "duration": 929355200,
+              "duration": 974210900,
               "status": "passed"
             },
             "line": 8,
@@ -1338,7 +1338,7 @@
           },
           {
             "result": {
-              "duration": 113595700,
+              "duration": 108592700,
               "status": "passed"
             },
             "line": 9,
@@ -1350,7 +1350,7 @@
           },
           {
             "result": {
-              "duration": 590328300,
+              "duration": 602126100,
               "status": "passed"
             },
             "line": 10,
@@ -1371,7 +1371,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24237500,
+              "duration": 10970900,
               "status": "passed"
             },
             "line": 4,
@@ -1384,7 +1384,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:31:36.727Z",
+        "start_timestamp": "2020-06-24T14:49:12.634Z",
         "line": 12,
         "name": "Increase quantity of product in basket",
         "description": "",
@@ -1394,7 +1394,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1810132600,
+              "duration": 1872385700,
               "status": "passed"
             },
             "line": 13,
@@ -1412,7 +1412,7 @@
           },
           {
             "result": {
-              "duration": 940814000,
+              "duration": 976947800,
               "status": "passed"
             },
             "line": 14,
@@ -1424,7 +1424,7 @@
           },
           {
             "result": {
-              "duration": 106241200,
+              "duration": 120897800,
               "status": "passed"
             },
             "line": 15,
@@ -1436,7 +1436,7 @@
           },
           {
             "result": {
-              "duration": 245790200,
+              "duration": 271685300,
               "status": "passed"
             },
             "line": 16,
@@ -1448,7 +1448,7 @@
           },
           {
             "result": {
-              "duration": 30996600,
+              "duration": 29205200,
               "status": "passed"
             },
             "line": 17,
@@ -1460,8 +1460,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .no-items (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat ✽.pricing \u0026 totals should be updated(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:18)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .no-items\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 20161006400,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .no-items (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat ✽.pricing \u0026 totals should be updated(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:18)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .no-items\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitUntilVisible(BasePage.java:46)\r\n\tat pageObjects.ShoppingCartPage.checkItemRemovedFromBasket(ShoppingCartPage.java:49)\r\n\tat stepdefs.ShoppingCartStepDef.pricingAndTotalsUpdated(ShoppingCartStepDef.java:42)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20223803800,
               "status": "failed"
             },
             "line": 18,
@@ -1482,7 +1482,7 @@
         "steps": [
           {
             "result": {
-              "duration": 37997200,
+              "duration": 14833900,
               "status": "passed"
             },
             "line": 4,
@@ -1495,7 +1495,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:00.053Z",
+        "start_timestamp": "2020-06-24T14:49:36.151Z",
         "line": 20,
         "name": "Proceed to checkout not logged in",
         "description": "",
@@ -1505,7 +1505,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2035828000,
+              "duration": 1966597800,
               "status": "passed"
             },
             "line": 21,
@@ -1523,8 +1523,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .btn.btn-primary.add-to-cart (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat ✽.the user is \"not logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:22)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .btn.btn-primary.add-to-cart\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
-              "duration": 20488936500,
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .btn.btn-primary.add-to-cart (tried for 20 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat ✽.the user is \"not logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:22)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.cssSelector: .btn.btn-primary.add-to-cart\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:882)\r\n\tat java.base/java.util.Optional.orElseThrow(Optional.java:408)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:881)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:643)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:640)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:27)\r\n\tat pageObjects.HomePage.addItemToCart(HomePage.java:80)\r\n\tat pageObjects.HomePage.itemAddedToCart(HomePage.java:92)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:71)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:566)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\r\n",
+              "duration": 20561653300,
               "status": "failed"
             },
             "line": 22,
@@ -1542,7 +1542,6 @@
           },
           {
             "result": {
-              "duration": 1002600,
               "status": "skipped"
             },
             "line": 23,
@@ -1554,6 +1553,7 @@
           },
           {
             "result": {
+              "duration": 999300,
               "status": "skipped"
             },
             "line": 24,
@@ -1585,7 +1585,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33991400,
+              "duration": 20971300,
               "status": "passed"
             },
             "line": 4,
@@ -1598,7 +1598,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:22.628Z",
+        "start_timestamp": "2020-06-24T14:49:58.703Z",
         "line": 27,
         "name": "Proceed to checkout and buy item while logged in",
         "description": "",
@@ -1608,7 +1608,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1845473700,
+              "duration": 1914192800,
               "status": "passed"
             },
             "line": 28,
@@ -1626,8 +1626,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:29)\r\n",
-              "duration": 1145230100,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.116)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:29)\r\n",
+              "duration": 1149853500,
               "status": "failed"
             },
             "line": 29,
@@ -1667,6 +1667,7 @@
           },
           {
             "result": {
+              "duration": 997800,
               "status": "skipped"
             },
             "line": 32,
@@ -1678,6 +1679,7 @@
           },
           {
             "result": {
+              "duration": 997000,
               "status": "skipped"
             },
             "line": 33,
@@ -1698,7 +1700,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23990500,
+              "duration": 17949100,
               "status": "passed"
             },
             "line": 4,
@@ -1711,7 +1713,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:25.661Z",
+        "start_timestamp": "2020-06-24T14:50:01.802Z",
         "line": 44,
         "name": "Make invoice address different to delivery address",
         "description": "",
@@ -1721,7 +1723,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1827856500,
+              "duration": 1872848800,
               "status": "passed"
             },
             "line": 45,
@@ -1739,8 +1741,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:46)\r\n",
-              "duration": 1150836100,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.116)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:46)\r\n",
+              "duration": 1146751100,
               "status": "failed"
             },
             "line": 46,
@@ -1758,7 +1760,7 @@
           },
           {
             "result": {
-              "duration": 999600,
+              "duration": 994300,
               "status": "skipped"
             },
             "line": 47,
@@ -1801,7 +1803,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23994900,
+              "duration": 13962500,
               "status": "passed"
             },
             "line": 4,
@@ -1814,7 +1816,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:28.672Z",
+        "start_timestamp": "2020-06-24T14:50:04.848Z",
         "line": 57,
         "name": "Add a comment to your order",
         "description": "",
@@ -1824,7 +1826,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1779777500,
+              "duration": 1903403500,
               "status": "passed"
             },
             "line": 58,
@@ -1842,8 +1844,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:59)\r\n",
-              "duration": 1092515300,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.116)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:59)\r\n",
+              "duration": 1167510100,
               "status": "failed"
             },
             "line": 59,
@@ -1883,6 +1885,7 @@
           },
           {
             "result": {
+              "duration": 1004600,
               "status": "skipped"
             },
             "line": 62,
@@ -1903,7 +1906,7 @@
         "steps": [
           {
             "result": {
-              "duration": 29367800,
+              "duration": 24349800,
               "status": "passed"
             },
             "line": 4,
@@ -1916,7 +1919,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:31.575Z",
+        "start_timestamp": "2020-06-24T14:50:07.942Z",
         "line": 64,
         "name": "Proceed to checkout and logout",
         "description": "",
@@ -1926,7 +1929,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1819635700,
+              "duration": 1869219200,
               "status": "passed"
             },
             "line": 65,
@@ -1944,8 +1947,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:66)\r\n",
-              "duration": 1141715600,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.116)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:66)\r\n",
+              "duration": 1083774500,
               "status": "failed"
             },
             "line": 66,
@@ -1963,7 +1966,6 @@
           },
           {
             "result": {
-              "duration": 1033400,
               "status": "skipped"
             },
             "line": 67,
@@ -1975,6 +1977,7 @@
           },
           {
             "result": {
+              "duration": 999500,
               "status": "skipped"
             },
             "line": 68,
@@ -2006,7 +2009,7 @@
         "steps": [
           {
             "result": {
-              "duration": 24959100,
+              "duration": 9971200,
               "status": "passed"
             },
             "line": 4,
@@ -2019,7 +2022,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:34.573Z",
+        "start_timestamp": "2020-06-24T14:50:10.927Z",
         "line": 71,
         "name": "Add new address",
         "description": "",
@@ -2029,7 +2032,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1793549800,
+              "duration": 1853816000,
               "status": "passed"
             },
             "line": 72,
@@ -2047,8 +2050,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.106)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-ACA-1057\u0027, ip: \u0027172.29.128.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.5\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\DINAH~1.HUN\\AppData\\Local\\Temp\\scoped_dir5500_806583197}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:65020}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.106, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7172a24f1741dc26ecfc804229f7bff2\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/Dinah.hunde/Documents/Ten10%20Store/src/test/resources/features/shoppingcart.feature:73)\r\n",
-              "duration": 1146783700,
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003ca href\u003d\"http://3.11.70.191/index.php?controller\u003dmy-account\" title\u003d\"Log in to your customer account\" rel\u003d\"nofollow\"\u003e...\u003c/a\u003e is not clickable at point (1023, 11). Other element would receive the click: \u003cdiv id\u003d\"blockcart-modal\" class\u003d\"modal fade in\" tabindex\u003d\"-1\" role\u003d\"dialog\" aria-labelledby\u003d\"myModalLabel\" style\u003d\"display: block;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d83.0.4103.116)\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat pageObjects.BasePage.waitAndClick(BasePage.java:28)\r\n\tat pageObjects.HomePage.navigateToSignInPage(HomePage.java:53)\r\n\tat stepdefs.ShoppingCartStepDef.theUserIsNotLoggedIn(ShoppingCartStepDef.java:75)\r\n\tat ✽.the user is \"logged in\"(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/shoppingcart.feature:73)\r\n",
+              "duration": 1152465800,
               "status": "failed"
             },
             "line": 73,
@@ -2066,7 +2069,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 997900,
               "status": "skipped"
             },
             "line": 74,
@@ -2078,6 +2081,7 @@
           },
           {
             "result": {
+              "duration": 996900,
               "status": "skipped"
             },
             "line": 75,
@@ -2095,7 +2099,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 76,
@@ -2107,6 +2110,7 @@
           },
           {
             "result": {
+              "duration": 997300,
               "status": "skipped"
             },
             "line": 77,
@@ -2138,7 +2142,7 @@
         "steps": [
           {
             "result": {
-              "duration": 33013100,
+              "duration": 20554300,
               "status": "passed"
             },
             "line": 4,
@@ -2151,7 +2155,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:37.549Z",
+        "start_timestamp": "2020-06-24T14:50:13.953Z",
         "line": 6,
         "name": "User signs in using a registered email",
         "description": "",
@@ -2161,7 +2165,7 @@
         "steps": [
           {
             "result": {
-              "duration": 549176600,
+              "duration": 554385400,
               "status": "passed"
             },
             "line": 7,
@@ -2179,7 +2183,7 @@
           },
           {
             "result": {
-              "duration": 140858500,
+              "duration": 135833700,
               "status": "passed"
             },
             "line": 8,
@@ -2197,16 +2201,16 @@
           },
           {
             "result": {
-              "duration": 551311300,
+              "duration": 632783400,
               "status": "passed"
             },
             "line": 9,
-            "name": "a \"valid\" password",
+            "name": "\"valid\" password",
             "match": {
               "arguments": [
                 {
                   "val": "valid",
-                  "offset": 3
+                  "offset": 1
                 }
               ],
               "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
@@ -2215,7 +2219,7 @@
           },
           {
             "result": {
-              "duration": 68589500,
+              "duration": 88193200,
               "status": "passed"
             },
             "line": 10,
@@ -2242,7 +2246,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23167700,
+              "duration": 8982400,
               "status": "passed"
             },
             "line": 4,
@@ -2255,7 +2259,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:38.899Z",
+        "start_timestamp": "2020-06-24T14:50:15.395Z",
         "line": 12,
         "name": "User signs in using an unregistered email",
         "description": "",
@@ -2265,7 +2269,7 @@
         "steps": [
           {
             "result": {
-              "duration": 639577500,
+              "duration": 568070200,
               "status": "passed"
             },
             "line": 13,
@@ -2283,7 +2287,7 @@
           },
           {
             "result": {
-              "duration": 151568800,
+              "duration": 156544300,
               "status": "passed"
             },
             "line": 14,
@@ -2301,16 +2305,16 @@
           },
           {
             "result": {
-              "duration": 332895200,
+              "duration": 307143900,
               "status": "passed"
             },
             "line": 15,
-            "name": "a \"valid\" password",
+            "name": "\"valid\" password",
             "match": {
               "arguments": [
                 {
                   "val": "valid",
-                  "offset": 3
+                  "offset": 1
                 }
               ],
               "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
@@ -2319,7 +2323,7 @@
           },
           {
             "result": {
-              "duration": 39195100,
+              "duration": 49107200,
               "status": "passed"
             },
             "line": 16,
@@ -2346,7 +2350,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31004900,
+              "duration": 14959400,
               "status": "passed"
             },
             "line": 4,
@@ -2359,7 +2363,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:40.112Z",
+        "start_timestamp": "2020-06-24T14:50:16.487Z",
         "line": 18,
         "name": "User enters registered email to recover password",
         "description": "",
@@ -2369,7 +2373,7 @@
         "steps": [
           {
             "result": {
-              "duration": 842458600,
+              "duration": 778598200,
               "status": "passed"
             },
             "line": 19,
@@ -2387,7 +2391,7 @@
           },
           {
             "result": {
-              "duration": 137952300,
+              "duration": 162785700,
               "status": "passed"
             },
             "line": 20,
@@ -2405,20 +2409,32 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 280883100,
+              "status": "passed"
             },
             "line": 21,
             "name": "clicks retrieve password",
-            "match": {},
+            "match": {
+              "location": "stepdefs.SignInStepDef.clicksRetrievePassword()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 47838700,
+              "status": "passed"
             },
             "line": 22,
-            "name": "a confirmation message displayed",
-            "match": {},
+            "name": "\"invalid recovery email\" alert is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid recovery email",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ]
@@ -2432,7 +2448,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21997800,
+              "duration": 21133100,
               "status": "passed"
             },
             "line": 4,
@@ -2445,7 +2461,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:41.130Z",
+        "start_timestamp": "2020-06-24T14:50:17.777Z",
         "line": 24,
         "name": "User can sign out",
         "description": "",
@@ -2455,7 +2471,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1020565600,
+              "duration": 1075401400,
               "status": "passed"
             },
             "line": 25,
@@ -2467,7 +2483,7 @@
           },
           {
             "result": {
-              "duration": 257625000,
+              "duration": 339967500,
               "status": "passed"
             },
             "line": 26,
@@ -2479,13 +2495,19 @@
           },
           {
             "result": {
-              "duration": 161421700,
+              "duration": 222058900,
               "status": "passed"
             },
             "line": 27,
-            "name": "the user is signed out",
+            "name": "the successfully submitted message for \"signed out\" is displayed",
             "match": {
-              "location": "stepdefs.SignInStepDef.theUserIsSignedOut()"
+              "arguments": [
+                {
+                  "val": "signed out",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -2500,7 +2522,7 @@
         "steps": [
           {
             "result": {
-              "duration": 31725500,
+              "duration": 10875700,
               "status": "passed"
             },
             "line": 4,
@@ -2513,7 +2535,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:42.600Z",
+        "start_timestamp": "2020-06-24T14:50:19.439Z",
         "line": 29,
         "name": "User enters an invalid password",
         "description": "",
@@ -2523,7 +2545,7 @@
         "steps": [
           {
             "result": {
-              "duration": 502357500,
+              "duration": 659715800,
               "status": "passed"
             },
             "line": 30,
@@ -2541,7 +2563,7 @@
           },
           {
             "result": {
-              "duration": 133433300,
+              "duration": 148884700,
               "status": "passed"
             },
             "line": 31,
@@ -2559,16 +2581,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 434595500,
+              "status": "passed"
             },
             "line": 32,
-            "name": "the user enters an \"invalid\" password",
-            "match": {},
+            "name": "\"invalid\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 56066200,
+              "status": "passed"
             },
             "line": 33,
             "name": "\"invalid password\" alert is displayed",
@@ -2594,7 +2626,7 @@
         "steps": [
           {
             "result": {
-              "duration": 32986600,
+              "duration": 22061000,
               "status": "passed"
             },
             "line": 4,
@@ -2607,7 +2639,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:43.273Z",
+        "start_timestamp": "2020-06-24T14:50:20.752Z",
         "line": 35,
         "name": "User enters new address on the accounts page",
         "description": "",
@@ -2617,7 +2649,7 @@
         "steps": [
           {
             "result": {
-              "duration": 984653800,
+              "duration": 1119205100,
               "status": "passed"
             },
             "line": 36,
@@ -2629,29 +2661,50 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 585810400,
+              "status": "passed"
             },
             "line": 37,
-            "name": "on the addresses page",
-            "match": {},
+            "name": "on the \"addresses\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "addresses",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.onTheAddressesPage(java.lang.String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1161183200,
+              "status": "passed"
             },
             "line": 38,
             "name": "the user adds a new address",
-            "match": {},
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserAddsANewAddress()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 33841300,
+              "status": "passed"
             },
             "line": 39,
-            "name": "a new address is added to the address page",
-            "match": {},
+            "name": "the successfully submitted message for \"new address\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new address",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ]
@@ -2665,7 +2718,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23455300,
+              "duration": 13960000,
               "status": "passed"
             },
             "line": 4,
@@ -2678,7 +2731,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-24T10:32:44.295Z",
+        "start_timestamp": "2020-06-24T14:50:23.676Z",
         "line": 41,
         "name": "User enters an unregistered email to recover password",
         "description": "",
@@ -2688,7 +2741,7 @@
         "steps": [
           {
             "result": {
-              "duration": 718735300,
+              "duration": 821090200,
               "status": "passed"
             },
             "line": 42,
@@ -2706,7 +2759,7 @@
           },
           {
             "result": {
-              "duration": 149762700,
+              "duration": 144839000,
               "status": "passed"
             },
             "line": 43,
@@ -2724,27 +2777,124 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 215655500,
+              "status": "passed"
             },
             "line": 44,
             "name": "clicks retrieve password",
-            "match": {},
+            "match": {
+              "location": "stepdefs.SignInStepDef.clicksRetrievePassword()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 34159700,
+              "status": "passed"
             },
             "line": 45,
-            "name": "\"invalid recovery email\" alert is displayed",
+            "name": "the successfully submitted message for \"recovery email\" is displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "invalid recovery email",
-                  "offset": 1
+                  "val": "recovery email",
+                  "offset": 40
                 }
               ],
-              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Clear cookies",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9994500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "clear cookies",
+            "match": {
+              "location": "stepdefs.CommonStepDef.clearCookies()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T14:50:24.910Z",
+        "line": 47,
+        "name": "User logs in and updates password",
+        "description": "",
+        "id": "sign-in;user-logs-in-and-updates-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1135484500,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the user is signed in",
+            "match": {
+              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 229449300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "on the \"information\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "information",
+                  "offset": 8
+                }
+              ],
+              "location": "stepdefs.SignInStepDef.onTheAddressesPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241116200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user updates password",
+            "match": {
+              "location": "stepdefs.SignInStepDef.userUpdatesPassword()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[text()\u003d\u0027Information successfully updated.\u0027]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.6.0\u0027, revision: \u00276fbf3ec767\u0027, time: \u00272017-09-27T15:28:36.4Z\u0027\nSystem info: host: \u0027T10-LT-1524\u0027, ip: \u002710.0.0.108\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.7\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir\u003dC:\\Users\\ADAM~1.WRE\\AppData\\Local\\Temp\\scoped_dir13344_215007982}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dWINDOWS, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57735}, acceptInsecureCerts\u003dfalse, browserVersion\u003d83.0.4103.116, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dWINDOWS, setWindowRect\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 7ab407e007e1c7e4d5f3c84daf7e29cc\n*** Element info: {Using\u003dxpath, value\u003d//*[text()\u003d\u0027Information successfully updated.\u0027]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)\r\n\tat pageObjects.SignInPage.passwordUpdatedSuccessfully(SignInPage.java:169)\r\n\tat stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(CommonStepDef.java:97)\r\n\tat ✽.the successfully submitted message for \"new password\" is displayed(file:///C:/Users/adam.wren/Desktop/Ten10StoreTwo/src/test/resources/features/signin.feature:51)\r\n",
+              "duration": 12970200,
+              "status": "failed"
+            },
+            "line": 51,
+            "name": "the successfully submitted message for \"new password\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "new password",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }

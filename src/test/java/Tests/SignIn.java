@@ -133,7 +133,32 @@ public class SignIn {
         signInPage.forgottenPassword();
         signInPage.enterForgottenPasswordEmailAddress("123abc@abc123.com");
         signInPage.clickRetrievePassword();
-        signInPage.successAlert();
+        signInPage.recoveryEmailSuccess();
+
+    }
+
+    /**
+     * * Navigate to Sign in Page
+     * * Fill in Email Address
+     * * Fill in Password
+     * * Click Sign in
+     * * Go to account page
+     * * Navigate to profile information page
+     * * Fill in form and update password
+     * * Click save
+     * * Verify notification confirming that information has been updated
+     */
+    @Test
+    public void changePassword(){
+        homepage.navigateToSignInPage();
+        signInPage.enterSignInEmailAddress("random@gmail.com");
+        signInPage.enterPassword2("password");
+        signInPage.clickLogIn();
+        signInPage.clickInformation();
+        signInPage.enterPassword2("password");
+        signInPage.typeNewPassword("password");
+        signInPage.passwordUpdatedSuccessfully();
+
 
     }
 

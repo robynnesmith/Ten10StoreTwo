@@ -84,6 +84,18 @@ public class CommonStepDef {
             case "user logged in":
                 signInPage.successfulSignIn();
                 break;
+            case "recovery email":
+                signInPage.recoveryEmailSuccess();
+                break;
+            case "new address":
+                signInPage.addressSuccessfullyAdded();
+                break;
+            case "signed out":
+                signInPage.userSignedOut();
+                break;
+            case "new password":
+                signInPage.passwordUpdatedSuccessfully();
+                break;
         }
 
     }
@@ -105,9 +117,8 @@ public class CommonStepDef {
             case "invalid password":
                 signInPage.authenticationFailed();
                 break;
-            case "recovery email":
-                signInPage.successAlert();
-                break;
+            case "invalid recovery email":
+                signInPage.confirmationMessage();
         }
     }
 

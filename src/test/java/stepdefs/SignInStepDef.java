@@ -38,7 +38,7 @@ public class SignInStepDef {
         }
     }
 
-    @And("^a \"([^\"]*)\" password$")
+    @And("^\"([^\"]*)\" password$")
     public void userEntersPassword(String password) {
         if (password.equals("valid")) {
             signInPage.enterPassword2("password");
@@ -80,9 +80,34 @@ public class SignInStepDef {
         signInPage.clickSignOut();
     }
 
-    @Then("the user is signed out")
-    public void theUserIsSignedOut() {
-        signInPage.userSignedOut();
+    @And("clicks retrieve password")
+    public void clicksRetrievePassword() {
+        signInPage.clickRetrievePassword();
+    }
+
+    @And("^on the \"([^\"]*)\" page$")
+    public void onTheAddressesPage(String page) {
+        switch(page){
+            case "addresses":
+            signInPage.clickAddressesLink();
+            signInPage.clickAddNewAddress();
+            break;
+            case "information":
+                signInPage.clickInformation();
+        }
+
+
+    }
+
+    @When("the user adds a new address")
+    public void theUserAddsANewAddress() {
+        checkoutPage.enterNewAddressDetails("Mr Wren", "Ten10", "123 Street", "Derby", "12345");
+    }
+
+    @When("user updates password")
+    public void userUpdatesPassword() {
+        signInPage.enterPassword2("password");
+        signInPage.typeNewPassword("password");
     }
 }
 
