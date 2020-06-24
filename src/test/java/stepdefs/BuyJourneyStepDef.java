@@ -22,8 +22,8 @@ public class BuyJourneyStepDef {
         homepage.clearCookies();
     }
 
-    @Given("^the user is on the \"([^\"]*)\" page$")
-    public void theUserIsOnThePage(String page) {
+    @Given("^the user is on \"([^\"]*)\" page$")
+    public void theUserIsOnPage(String page) {
         homepage.goTo();
         switch (page) {
             //Select item from homepage
@@ -68,10 +68,19 @@ public class BuyJourneyStepDef {
     }
 
     //Add product to cart from homepage
-    @When("^the user adds item to cart by hovering over it$")
-    public void theUserAddsItemToCartByHoveringOverIt() {
-        homepage.hoverOverItem();
-        homepage.addItemToCart();
+    @When("^the user adds \"([^\"]*)\" to cart by hovering over it$")
+    public void theUserAddsToCartByHoveringOverIt(String item) {
+        switch(item){
+            case "first item":
+                homepage.hoverOverItem();
+                homepage.addItemToCart();
+                break;
+            case "second item":
+                homepage.hoverOverThirdItem();
+                homepage.clickThirdItemQuickView();
+                homepage.addSingleItemToCart();
+        }
+
     }
 
     @When("^the user selects \"([^\"]*)\"$")
@@ -161,5 +170,13 @@ public class BuyJourneyStepDef {
         contactPage.enterEmailAddress();
         contactPage.enterMessage();
         contactPage.clickSend();
+    }
+
+    @When("the user types product name into search our catalogue bar")
+    public void theUserTypesProductNameIntoSearchOurCatalogueBar() {
+        homepage.searchBarOnHomePage("dress");
+        homepage.clickSearch();
+        homepage.hoverOverDress();
+        homepage.addItemToCart();
     }
 }
