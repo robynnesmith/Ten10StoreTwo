@@ -19,7 +19,10 @@ public class ShoppingCartStepDef {
 
     @Given("^the user is on the \"([^\"]*)\" page$")
     public void userOnShoppingCartPage(String page) {
-        homePage.itemAddedToCart();
+        if(page.equals("shopping cart")) {
+            homePage.goTo();
+            homePage.itemAddedToCart();
+        }
     }
 //************************************************
 //Scenario:Remove item from shopping basket
@@ -45,7 +48,6 @@ public class ShoppingCartStepDef {
     @When("^the user increases quantity of item$")
     public void userIncreasesQuantityOfItem() {
         basketpage.increaseQuantity();
-
     }
 
     @Then("^their basket is updated$")
@@ -53,11 +55,9 @@ public class ShoppingCartStepDef {
         basketpage.verifyQuantityUpdated();
     }
 
-
     @And("^product counter is updated$")
     public void productCounterIsUpdated() {
         basketpage.verifyProductCountUpdated();
-
     }
 
 
@@ -72,14 +72,14 @@ public class ShoppingCartStepDef {
         basketpage.navigateToBasket();
 
     } else if (login.equals("logged in")){
-        return;
+        homePage.navigateToSignInPage();
+        signInPage.login();
         }
     }
 
     @When("^the user proceeds to checkout$")
     public void theUserProceedsToCheckout() {
         basketpage.clickProceedToCheckout();
-
     }
 
     @Then("^the sign-in displayed$")
@@ -88,22 +88,8 @@ public class ShoppingCartStepDef {
     }
 
 
-
 //************************************************
 //Scenario:Proceed to checkout and buy the item while logged in
-
-
-    @And("^the user is \"([^\"]*)\"$")
-    public void theUserIsLoggedIn(String login) {
-        if (login.equals("logged in")){
-            homePage.navigateToSignInPage();
-            signInPage.login();
-            homePage.goTo();
-        } else if (login.equals("not logged in")) {
-        return;
-        }
-
-    }
 
     @And("^fills in form$")
     public void fillsInForm() {
