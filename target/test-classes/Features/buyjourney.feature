@@ -9,6 +9,7 @@ Feature: Buy Journey
 
   Scenario:Add product to cart from homepage
     Given the user is on the "home" page
+    When the user adds item to cart by hovering over it
     When the user adds "first item" to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
 
