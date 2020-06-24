@@ -7,13 +7,13 @@ Feature: Sign In
     Given the user is on the "sign in" page
     When the user enters "registered" email
     And a "valid" password
-    Then the users account is displayed
+    Then the successfully submitted message for "user logged in" is displayed
 
   Scenario: User signs in using an unregistered email
     Given the user is on the "sign in" page
     When the user enters "unregistered" email
     And a "valid" password
-    Then an invalid "email" alert is displayed
+    Then "invalid email" alert is displayed
 
   Scenario: User enters registered email to recover password
     Given the user is on the "forgotten password" page
@@ -30,7 +30,7 @@ Feature: Sign In
     Given the user is on the "sign in" page
     When the user enters "registered" email
     And the user enters an "invalid" password
-    Then an invalid "password" alert is displayed
+    Then "invalid password" alert is displayed
 
   Scenario: User enters new address on the accounts page
     Given the user is signed in
@@ -42,5 +42,5 @@ Feature: Sign In
     Given the user is on the "forgotten password" page
     When the user enters "unregistered" email
     And clicks retrieve password
-    Then an invalid "recovery email" alert is displayed
+    Then "invalid recovery email" alert is displayed
 

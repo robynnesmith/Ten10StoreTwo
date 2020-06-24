@@ -118,28 +118,28 @@ public class BuyJourneyStepDef {
     }
 
 
-    @Then("^the successfully submitted message for \"([^\"]*)\" is displayed$")
-    public void theSuccessfullySubmittedMessageIsDisplayed(String successful) {
-        switch(successful){
-            case "added to cart":
-                homepage.addedToCart();
-                break;
-            //add message
-            case "add message":
-                orders.successfullySendMessage();
-                signInPage.clickSignOut();
-                break;
-            //Subscribe to news and special sales
-            case "subscription":
-                homepage.checkSuccessfullySubscribed();
-                break;
-            //Proceed to Contact Us page and send a message
-            case "contact us":
-                contactPage.verifySentMessage();
-                break;
-        }
-
-    }
+//    @Then("^the successfully submitted message for \"([^\"]*)\" is displayed$")
+//    public void theSuccessfullySubmittedMessageIsDisplayed(String successful) {
+//        switch(successful){
+//            case "added to cart":
+//                homepage.addedToCart();
+//                break;
+//            //add message
+//            case "add message":
+//                orders.successfullySendMessage();
+//                signInPage.clickSignOut();
+//                break;
+//            //Subscribe to news and special sales
+//            case "subscription":
+//                homepage.checkSuccessfullySubscribed();
+//                break;
+//            //Proceed to Contact Us page and send a message
+//            case "contact us":
+//                contactPage.verifySentMessage();
+//                break;
+//        }
+//
+//    }
 
 //Test product filters on dresses page
     @Then("^The correct product is displayed$")

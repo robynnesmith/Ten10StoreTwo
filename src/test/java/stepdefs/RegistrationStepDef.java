@@ -41,10 +41,10 @@ public class RegistrationStepDef {
         }
     }
 
-    @Then("^the \"my account\" page is displayed$")
-    public void myAccountPageDisplayed(){
-        signInPage.successfulSignIn();
-    }
+//    @Then("^the \"my account\" page is displayed$")
+//    public void myAccountPageDisplayed(){
+//        signInPage.successfulSignIn();
+//    }
 
     @When("^the user enters a \"([^\"]*)\" email address$")
     public void theUserEntersAEmailAddress(String email) {
@@ -68,15 +68,15 @@ public class RegistrationStepDef {
         }
     }
 
-    @Then("^\"([^\"]*)\" alert is displayed$")
-    public void invalidErrorDisplayed(String alert) {
-        if(alert.equals("user already registered")){
-            signInPage.alreadyRegisteredAlertPresent();
-        } else if (alert.equals("invalid name")) {
-            createNewAccountPage.invalidNameAlertPresent();
-        } else if (alert.equals("invalid date of birth")) {
-            createNewAccountPage.invalidFormat();
-        }
-    }
+//    @Then("^\"([^\"]*)\" alert is displayed$")
+//    public void invalidErrorDisplayed(String alert) {
+//        if(alert.equals("user already registered")){
+//            signInPage.alreadyRegisteredAlertPresent();
+//        } else if (alert.equals("invalid name")) {
+//            createNewAccountPage.invalidNameAlertPresent();
+//        } else if (alert.equals("invalid date of birth")) {
+//            createNewAccountPage.invalidFormat();
+//        }
+//    }
 }
 

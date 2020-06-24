@@ -19,16 +19,16 @@ public class ShoppingCartStepDef {
 
     @Given("^clear cookies$")
     public void clearCookies() {
-        homePage.clearCookies();
+        homepage.clearCookies();
     }
 
-    @Given("^the user is on the \"([^\"]*)\" page$")
-    public void userOnShoppingCartPage(String page) {
-        if(page.equals("shopping cart")) {
-            homepage.goTo();
-            homepage.itemAddedToCart();
-        }
-    }
+//    @Given("^the user is on the \"([^\"]*)\" page$")
+//    public void userOnShoppingCartPage(String page) {
+//        if(page.equals("shopping cart")) {
+//            homepage.goTo();
+//            homepage.itemAddedToCart();
+//        }
+//    }
 //************************************************
 //Scenario:Remove item from shopping basket
     @And("^the user has \"1 item\" in their basket$")

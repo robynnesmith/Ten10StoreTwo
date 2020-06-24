@@ -21,18 +21,17 @@ public class SignInStepDef {
         homepage.clearCookies();
     }
 
-    @Given("^the user is on the \"([^\"]*)\" page$")
-    public void theUserIsOnThePage(String page) {
-        if (page.equals("sign in")) {
-            homepage.goTo();
-            homepage.navigateToSignInPage();
-            signInPage.clickCreateAnAccount();
-        } else if (page.equals("forgotten password")) {
-            homepage.goTo();
-            homepage.navigateToSignInPage();
-            signInPage.forgottenPassword();
-        }
-    }
+//    @Given("^the user is on the \"([^\"]*)\" page$")
+//    public void theUserIsOnThePage(String page) {
+//        if (page.equals("sign in")) {
+//            homepage.goTo();
+//            homepage.navigateToSignInPage();
+//        } else if (page.equals("forgotten password")) {
+//            homepage.goTo();
+//            homepage.navigateToSignInPage();
+//            signInPage.forgottenPassword();
+//        }
+//    }
 
     @When("^the user enters \"([^\"]*)\" email$")
     public void userEntersEmail(String email) {
@@ -54,25 +53,25 @@ public class SignInStepDef {
         }
     }
 
-    @Then("^the users account is displayed")
-    public void usersAccountIsDisplayed(){
-        signInPage.successfulSignIn();
-    }
+//    @Then("^the users account is displayed")
+//    public void usersAccountIsDisplayed(){
+//        signInPage.successfulSignIn();
+//    }
 
-    @Then("an invalid \"([^\"]*)\" alert is displayed")
-    public void anInvalidAlertIsDisplayed(String alert) {
-        switch (alert){
-            case "email":
-                signInPage.unregisteredUserAlert();
-                break;
-            case "password":
-                signInPage.authenticationFailed();
-                break;
-            case "recovery email":
-                signInPage.successAlert();
-                break;
-        }
-    }
+//    @Then("an invalid \"([^\"]*)\" alert is displayed")
+//    public void anInvalidAlertIsDisplayed(String alert) {
+//        switch (alert){
+//            case "email":
+//                signInPage.unregisteredUserAlert();
+//                break;
+//            case "password":
+//                signInPage.authenticationFailed();
+//                break;
+//            case "recovery email":
+//                signInPage.successAlert();
+//                break;
+//        }
+//    }
 
     @Given("the user is signed in")
     public void theUserIsSignedIn() {
