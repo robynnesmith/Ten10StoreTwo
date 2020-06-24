@@ -17,6 +17,11 @@ public class BuyJourneyStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
 
+    @Given("^clear cookies$")
+    public void clearCookies() {
+        homepage.clearCookies();
+    }
+
     @Given("^the user is on the \"([^\"]*)\" page$")
     public void theUserIsOnThePage(String page) {
         homepage.goTo();
