@@ -106,8 +106,8 @@ public class SignInStepDef {
 
     @When("user updates password")
     public void userUpdatesPassword() {
-        signInPage.enterPassword2("password");
-        signInPage.typeNewPassword("password");
+        signInPage.enterPassword();
+        signInPage.typeNewPassword();
         signInPage.clickSave();
     }
 }

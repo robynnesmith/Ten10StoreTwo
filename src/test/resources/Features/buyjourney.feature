@@ -13,6 +13,7 @@ Feature: Buy Journey
     When the user adds "first item" to cart by hovering over it
     Then the successfully submitted message for "added to cart" is displayed
 
+
   Scenario:Add product to cart from product page
     Given the user is on the "product" page
     When the user selects "details of item"
