@@ -175,4 +175,9 @@ public class SignInPage extends BasePage {
         waitAndClick(CLICK_ORDER_HISTORY);
     }
 
+    public void recoveryEmailSuccess(){
+        WebElement successAlert = driver.findElement(SUCCESS_ALERT);
+        Assert.assertTrue(elementIsVisible(successAlert));
+    }
+
 }
