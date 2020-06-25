@@ -111,6 +111,7 @@ public class ShoppingCart {
         checkoutPage.agreeToTerms();
         checkoutPage.confirmOrder();
         checkoutPage.orderConfirmationDisplayed();
+
     }
 
     /**

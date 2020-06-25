@@ -1,7 +1,8 @@
+
 Feature: Buy Journey
   Background: Clear cookies
     Given clear cookies
-
+@dev
   Scenario: Select item from homepage
     Given  the user is on the "home" page
     When  the user selects item through hovering over it

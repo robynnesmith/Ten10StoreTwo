@@ -17,40 +17,6 @@ public class BuyJourneyStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
 
-
-//    @Given("^the user is on the \"([^\"]*)\" page$")
-//    public void theUserIsOnPage(String page) {
-//        homepage.goTo();
-//        switch (page) {
-//            //Select item from homepage
-//            //Add product to cart from homepage
-//            case "home":
-//                break;
-//            //Add product to cart from product page
-//            case "product":
-//                productPage.navigatetoProductPage();
-//                break;
-//            //add message
-//            case "account details":
-//                homepage.navigateToSignInPage();
-//                signInPage.login();
-//                homepage.clickOrder();
-//                orders.clickDetails();
-//                break;
-//            //Test product filters on dresses page
-//            //clear filters
-//            case "women":
-//                homepage.clickWomen();
-//                break;
-//            default:
-//                System.out.println("Unexpected page type");
-//            //Proceed to Contact Us page and send a message
-//            case "contact us":
-//                contactPage.goToContactUsPage();
-//                break;
-//        }
-//    }
-
     //Select item from homepage
     @When("^the user selects item through hovering over it$")
     public void theUserSelectsItemThroughHoveringOverIt() {
@@ -113,30 +79,6 @@ public class BuyJourneyStepDef {
     public void theUserAddsItemToCart() {
         basketpage.addToCart();
     }
-
-
-//    @Then("^the successfully submitted message for \"([^\"]*)\" is displayed$")
-//    public void theSuccessfullySubmittedMessageIsDisplayed(String successful) {
-//        switch(successful){
-//            case "added to cart":
-//                homepage.addedToCart();
-//                break;
-//            //add message
-//            case "add message":
-//                orders.successfullySendMessage();
-//                signInPage.clickSignOut();
-//                break;
-//            //Subscribe to news and special sales
-//            case "subscription":
-//                homepage.checkSuccessfullySubscribed();
-//                break;
-//            //Proceed to Contact Us page and send a message
-//            case "contact us":
-//                contactPage.verifySentMessage();
-//                break;
-//        }
-//
-//    }
 
 //Test product filters on dresses page
     @Then("^The correct product is displayed$")
