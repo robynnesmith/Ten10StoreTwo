@@ -1,3 +1,4 @@
+@dev
 Feature: Buy Journey
   Background: Clear cookies
     Given clear cookies

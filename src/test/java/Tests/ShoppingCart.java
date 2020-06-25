@@ -1,19 +1,15 @@
 package Tests;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 import pageObjects.*;
-
-import static Tests.TestSuite.driverFactory;
 
 /**
  * Created by jack.forman on 08/11/2016.
  */
 public class ShoppingCart {
 
-    private HomePage homePage = new HomePage();
+    private HomePage homepage = new HomePage();
     private ShoppingCartPage basketpage = new ShoppingCartPage();
     private SignInPage signInPage = new SignInPage();
     private ProductPage productPage = new ProductPage();
@@ -22,8 +18,8 @@ public class ShoppingCart {
 
     @Before
     public void individualSetUp() {
-        homePage.clearCookies();
-        homePage.goTo();
+        homepage.clearCookies();
+        homepage.goTo();
     }
 
     /**
@@ -37,7 +33,7 @@ public class ShoppingCart {
     @Test
     public void removeItemFromShoppingBasket() {
 
-        homePage.itemAddedToCart();
+        homepage.itemAddedToCart();
         basketpage.navigateToBasket();
         basketpage.deleteItemFromBasket();
         basketpage.checkItemRemovedFromBasket();
@@ -55,7 +51,7 @@ public class ShoppingCart {
      */
     @Test
     public void increaseQuantityOfProductInBasket() {
-        homePage.itemAddedToCart();
+        homepage.itemAddedToCart();
         basketpage.navigateToBasket();
         basketpage.increaseQuantity();
         basketpage.verifyQuantityUpdated();
@@ -72,7 +68,7 @@ public class ShoppingCart {
      */
     @Test
     public void proceedToCheckoutNotLoggedIn() {
-        homePage.itemAddedToCart();
+        homepage.itemAddedToCart();
         basketpage.navigateToBasket();
         basketpage.clickProceedToCheckout();
         basketpage.isPersonalInformationPageDisplayed();
@@ -95,10 +91,10 @@ public class ShoppingCart {
      */
     @Test
     public void proceedToCheckoutAndBuyLoggedIn() {
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
+        homepage.goTo();
+        homepage.addItemToCart();
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
@@ -111,6 +107,7 @@ public class ShoppingCart {
         checkoutPage.agreeToTerms();
         checkoutPage.confirmOrder();
         checkoutPage.orderConfirmationDisplayed();
+        signInPage.clickSignOut();
     }
 
     /**
@@ -123,16 +120,18 @@ public class ShoppingCart {
      */
     @Test
     public void makeInvoiceAddressDifferentToDeliveryAddress() {
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
+        homepage.goTo();
+        homepage.addItemToCart();
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.differentInvoiceAddress();
         checkoutPage.clickProceedToNextSection();
         checkoutPage.paymentPageDisplayed();
+        homepage.goTo();
+        signInPage.clickSignOut();
 
     }
 
@@ -146,16 +145,18 @@ public class ShoppingCart {
      */
     @Test
     public void addCommentToOrder() {
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
+        homepage.goTo();
+        homepage.addItemToCart();
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.clickProceedToNextSection();
         checkoutPage.shippingPageDisplayed();
         checkoutPage.enterShippingComment();
+        homepage.goTo();
+        signInPage.clickSignOut();
     }
 
     /**
@@ -166,15 +167,16 @@ public class ShoppingCart {
      */
     @Test
     public void proceedToCheckoutAndLogout() {
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
+        homepage.goTo();
+        homepage.addItemToCart();
         basketpage.clickModalProceedToCheckout();
         signInPage.clickSignOut();
         signInPage.clickSignIn();
         signInPage.login();
         basketpage.cartButton();
+        signInPage.clickSignOut();
     }
 
     /**
@@ -186,14 +188,16 @@ public class ShoppingCart {
      */
     @Test
     public void addNewAddress() {
-        homePage.navigateToSignInPage();
+        homepage.navigateToSignInPage();
         signInPage.login();
-        homePage.goTo();
-        homePage.addItemToCart();
+        homepage.goTo();
+        homepage.addItemToCart();
         basketpage.clickModalProceedToCheckout();
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.setAddNewAddress();
+        //once you're done with this test make sure you sign out
+//        signInPage.clickSignOut();
     }
 
 
