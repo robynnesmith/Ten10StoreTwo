@@ -14,6 +14,7 @@ public class CommonStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
     private CreateNewAccountPage createNewAccountPage = new CreateNewAccountPage();
+    private CheckoutPage checkoutPage = new CheckoutPage();
 
     @Given("^clear cookies$")
     public void clearCookies() {
@@ -98,6 +99,10 @@ public class CommonStepDef {
             case "new password":
                 signInPage.passwordUpdatedSuccessfully();
                 break;
+            case "oder confirmed":
+                checkoutPage.confirmOrder();
+                checkoutPage.orderConfirmationDisplayed();
+                signInPage.clickSignOut();
             default:
                 System.out.println("Error");
         }

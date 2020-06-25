@@ -39,6 +39,7 @@ public class ShoppingCart {
         basketpage.deleteItemFromBasket();
         basketpage.checkItemRemovedFromBasket();
 
+
     }
 
     /**
@@ -58,6 +59,7 @@ public class ShoppingCart {
         basketpage.verifyQuantityUpdated();
         basketpage.verifyProductCountUpdated();
 
+
     }
 
     /**
@@ -73,6 +75,7 @@ public class ShoppingCart {
         basketpage.navigateToBasket();
         basketpage.clickProceedToCheckout();
         basketpage.isPersonalInformationPageDisplayed();
+
     }
 
     /**
@@ -109,6 +112,7 @@ public class ShoppingCart {
         checkoutPage.confirmOrder();
         checkoutPage.orderConfirmationDisplayed();
         signInPage.clickSignOut();
+
     }
 
     /**

@@ -101,14 +101,14 @@ public class ShoppingCartStepDef {
         checkoutPage.clickPayByBankWire();
         checkoutPage.agreeToTerms();
     }
-
-    @Then("^the order confirmation displayed$")
-    public void theOrderConfirmationDisplayed() {
-        checkoutPage.confirmOrder();
-        checkoutPage.orderConfirmationDisplayed();
-        signInPage.clickSignOut();
-
-    }
+//
+//    @Then("^the order confirmation displayed$")
+//    public void theOrderConfirmationDisplayed() {
+//        checkoutPage.confirmOrder();
+//        checkoutPage.orderConfirmationDisplayed();
+//        signInPage.clickSignOut();
+//
+//    }
 
 //************************************************
 //Scenario: Make invoice address different to delivery address

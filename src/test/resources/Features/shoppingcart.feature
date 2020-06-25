@@ -24,7 +24,7 @@ Feature:Shopping Cart
     Given the user is "logged in"
     When the user proceeds to checkout
     And fills in form
-    Then the order confirmation displayed
+    Then the successfully submitted message for "oder confirmed" is displayed
 
 
 
