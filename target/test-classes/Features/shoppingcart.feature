@@ -58,7 +58,6 @@ Feature:Shopping Cart
     When the user signs out from checkout page
     Then their cart is empty when user logs back on
 
-    @dev
   Scenario: Add new address
     Given the user is "logged in"
     When the user adds new address to checkout form
