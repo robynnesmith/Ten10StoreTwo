@@ -1,6 +1,7 @@
 package Tests;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import pageObjects.*;
 
@@ -186,7 +187,7 @@ public class ShoppingCart {
      * *Fill out address form
      * *Verify new address is created
      */
-    @Test
+    @Test @Ignore
     public void addNewAddress() {
         homepage.navigateToSignInPage();
         signInPage.login();
@@ -196,6 +197,7 @@ public class ShoppingCart {
         basketpage.clickProceedToCheckout();
         checkoutPage.deliveryAddressSectionDisplayed();
         checkoutPage.setAddNewAddress();
+        System.out.println("");
         //once you're done with this test make sure you sign out
 //        signInPage.clickSignOut();
     }

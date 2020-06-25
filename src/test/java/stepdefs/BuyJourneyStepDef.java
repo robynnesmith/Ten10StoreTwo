@@ -17,6 +17,7 @@ public class BuyJourneyStepDef {
     private Orders orders = new Orders();
     private ContactUsPage contactPage = new ContactUsPage();
 
+    //************************************************
     //Select item from homepage
     @When("^the user selects item through hovering over it$")
     public void theUserSelectsItemThroughHoveringOverIt() {
@@ -24,11 +25,13 @@ public class BuyJourneyStepDef {
         homepage.clickMoreButton();
     }
 
+
     @Then("^the Product Page is displayed$")
     public void theProductPageIsDisplayed() {
         productPage.productPageDisplayed();
     }
 
+    //************************************************
     //Add product to cart from homepage
     @When("^the user adds \"([^\"]*)\" to cart by hovering over it$")
     public void theUserAddsToCartByHoveringOverIt(String item) {
@@ -46,6 +49,7 @@ public class BuyJourneyStepDef {
 
     }
 
+    //************************************************
     @When("^the user selects \"([^\"]*)\"$")
     public void theUserSelects(String selects) {
         switch(selects) {
@@ -74,24 +78,30 @@ public class BuyJourneyStepDef {
                 System.out.println("not able to select");
         }
     }
+
+
+//************************************************
 //Add product to cart from product page
     @And("^the user adds item to cart$")
     public void theUserAddsItemToCart() {
         basketpage.addToCart();
     }
 
+//************************************************
 //Test product filters on dresses page
     @Then("^The correct product is displayed$")
     public void theCorrectProductIsDisplayed() {
         productPage.correctItemDisplayed();
     }
 
+//************************************************
 //clear filters
     @Then("^all 7 products are displayed$")
     public void all7ProductsAreDisplayed() {
         productPage.sevenProducts("There are 7 products.");
     }
 
+//************************************************
 //Subscribe to news and special sales
     @When("^the user completes the newsletter form with a \"([^\"]*)\" email address$")
     public void theUserCompletesTheNewsletterFormWithAEmailAddress(String validEmail) {
@@ -103,6 +113,8 @@ public class BuyJourneyStepDef {
         }
     }
 
+
+//************************************************
 //Proceed to Contact Us page and send a message
     @When("the user completes the contact us form")
     public void theUserCompletesTheContactUsForm() {
@@ -111,6 +123,8 @@ public class BuyJourneyStepDef {
         contactPage.clickSend();
     }
 
+//************************************************
+//Add item via Catalogue search
     @When("the user types product name into search our catalogue bar")
     public void theUserTypesProductNameIntoSearchOurCatalogueBar() {
         homepage.searchBarOnHomePage("dress");
@@ -119,6 +133,7 @@ public class BuyJourneyStepDef {
         homepage.addItemToCart();
     }
 
+//************************************************
 //Not enough stock
     @When("^the user enters a high value in the quantity field$")
     public void enterHighQuantity(){

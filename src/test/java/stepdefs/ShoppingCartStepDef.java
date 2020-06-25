@@ -18,13 +18,6 @@ public class ShoppingCartStepDef {
     private CheckoutPage checkoutPage = new CheckoutPage();
 
 
-    //    @Given("^the user is on the \"([^\"]*)\" page$")
-//    public void userOnShoppingCartPage(String page) {
-//        if(page.equals("shopping cart")) {
-//            homepage.goTo();
-//            homepage.itemAddedToCart();
-//        }
-//    }
 //************************************************
 //Scenario:Remove item from shopping basket
     @When("^the user deletes an item from their basket$")
