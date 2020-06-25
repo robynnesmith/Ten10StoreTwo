@@ -37,7 +37,7 @@ Feature: Sign In
     And on the "addresses" page
     When the user adds a new address
     Then the successfully submitted message for "new address" is displayed
-@dev
+
   Scenario: User enters an unregistered email to recover password
     Given the user is on the "forgotten password" page
     When the user enters "unregistered" email

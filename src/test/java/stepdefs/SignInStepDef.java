@@ -108,6 +108,7 @@ public class SignInStepDef {
     public void userUpdatesPassword() {
         signInPage.enterPassword2("password");
         signInPage.typeNewPassword("password");
+        signInPage.clickSave();
     }
 }
 

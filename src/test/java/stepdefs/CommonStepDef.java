@@ -4,6 +4,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageObjects.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class CommonStepDef {
     private HomePage homepage = new HomePage();
     private ShoppingCartPage basketpage = new ShoppingCartPage();
@@ -121,6 +123,7 @@ public class CommonStepDef {
                 break;
             case "invalid recovery email":
                 signInPage.confirmationMessage();
+                break;
             case "recovery email":
                 signInPage.successAlert();
                 break;

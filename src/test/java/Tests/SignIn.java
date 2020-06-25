@@ -157,6 +157,7 @@ public class SignIn {
         signInPage.clickInformation();
         signInPage.enterPassword2("password");
         signInPage.typeNewPassword("password");
+        signInPage.clickSave();
         signInPage.passwordUpdatedSuccessfully();
 
 

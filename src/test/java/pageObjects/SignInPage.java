@@ -38,6 +38,7 @@ public class SignInPage extends BasePage {
     private static final By NEW_PASSWORD = By.name("new_password");
     private static final By UPDATED_PASSWORD_SUCCESS = By.xpath("//*[text()='Information successfully updated.']");
     private static final By CLICK_ORDER_HISTORY = By.cssSelector(".col-lg-4.col-md-6.col-sm-6.col-xs-12:nth-child(3)");
+    private static final By SAVE_BUTTON = By.cssSelector("[data-link-action='save-customer']");
 
     public void enterCreateNewAccountEmailAddress(String emailAddress) {
         findAndType(EMAIL_ADDRESS_INPUT_BOX, emailAddress);
@@ -146,6 +147,7 @@ public class SignInPage extends BasePage {
     }
 
     public void addressSuccessfullyAdded(){
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement successMessage = driver.findElement(By.xpath("//*[text()='Address successfully added!']"));
         Assert.assertTrue(elementIsVisible(successMessage));
     }
@@ -178,6 +180,10 @@ public class SignInPage extends BasePage {
     public void recoveryEmailSuccess(){
         WebElement successAlert = driver.findElement(SUCCESS_ALERT);
         Assert.assertTrue(elementIsVisible(successAlert));
+    }
+
+    public void clickSave(){
+        waitAndClick(SAVE_BUTTON);
     }
 
 }
