@@ -113,6 +113,7 @@ public class ShoppingCartStepDef {
     public void theOrderConfirmationDisplayed() {
         checkoutPage.confirmOrder();
         checkoutPage.orderConfirmationDisplayed();
+        signInPage.clickSignOut();
 
     }
 
@@ -132,6 +133,8 @@ public class ShoppingCartStepDef {
     public void theShippingMethodShouldBeDisplayed() {
         checkoutPage.clickProceedToNextSection();
         checkoutPage.paymentPageDisplayed();
+        homepage.goTo();
+        signInPage.clickSignOut();
 
     }
 
