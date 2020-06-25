@@ -147,7 +147,6 @@ public class SignInPage extends BasePage {
     }
 
     public void addressSuccessfullyAdded(){
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         WebElement successMessage = driver.findElement(By.xpath("//*[text()='Address successfully added!']"));
         Assert.assertTrue(elementIsVisible(successMessage));
     }
@@ -164,8 +163,8 @@ public class SignInPage extends BasePage {
        waitAndClick(INFORMATION);
     }
 
-    public void typeNewPassword(String newPassword){
-        findAndType(NEW_PASSWORD, newPassword);
+    public void typeNewPassword(){
+        findAndType(NEW_PASSWORD, pd.getPassword());
     }
 
     public void passwordUpdatedSuccessfully(){
