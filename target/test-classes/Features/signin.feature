@@ -1,3 +1,4 @@
+@dev
 Feature: Sign In
 
   Background: Clear cookies
