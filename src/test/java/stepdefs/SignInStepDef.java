@@ -16,19 +16,8 @@ public class SignInStepDef {
     private SignInPage signInPage = new SignInPage();
     private CheckoutPage checkoutPage = new CheckoutPage();
 
-
-//    @Given("^the user is on the \"([^\"]*)\" page$")
-//    public void theUserIsOnThePage(String page) {
-//        if (page.equals("sign in")) {
-//            homepage.goTo();
-//            homepage.navigateToSignInPage();
-//        } else if (page.equals("forgotten password")) {
-//            homepage.goTo();
-//            homepage.navigateToSignInPage();
-//            signInPage.forgottenPassword();
-//        }
-//    }
-
+//************************************************
+//User signs in using a registered email
     @When("^the user enters \"([^\"]*)\" email$")
     public void userEntersEmail(String email) {
         if (email.equals("registered")) {
@@ -49,26 +38,8 @@ public class SignInStepDef {
         }
     }
 
-//    @Then("^the users account is displayed")
-//    public void usersAccountIsDisplayed(){
-//        signInPage.successfulSignIn();
-//    }
-
-//    @Then("an invalid \"([^\"]*)\" alert is displayed")
-//    public void anInvalidAlertIsDisplayed(String alert) {
-//        switch (alert){
-//            case "email":
-//                signInPage.unregisteredUserAlert();
-//                break;
-//            case "password":
-//                signInPage.authenticationFailed();
-//                break;
-//            case "recovery email":
-//                signInPage.successAlert();
-//                break;
-//        }
-//    }
-
+//************************
+//User can sign out
     @Given("the user is signed in")
     public void theUserIsSignedIn() {
         homepage.navigateToSignInPage();
@@ -80,30 +51,22 @@ public class SignInStepDef {
         signInPage.clickSignOut();
     }
 
+//************************
+// User enters registered email to recover password
     @And("clicks retrieve password")
     public void clicksRetrievePassword() {
         signInPage.clickRetrievePassword();
     }
 
-    @And("^on the \"([^\"]*)\" page$")
-    public void onTheAddressesPage(String page) {
-        switch(page){
-            case "addresses":
-            signInPage.clickAddressesLink();
-            signInPage.clickAddNewAddress();
-            break;
-            case "information":
-                signInPage.clickInformation();
-        }
-
-
-    }
-
+//************************
+// User enters new address on the accounts page
     @When("the user adds a new address")
     public void theUserAddsANewAddress() {
         checkoutPage.enterNewAddressDetails("Mr Wren", "Ten10", "123 Street", "Derby", "12345");
     }
 
+//************************
+//User logs in and updates password
     @When("user updates password")
     public void userUpdatesPassword() {
         signInPage.enterPassword();

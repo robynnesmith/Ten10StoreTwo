@@ -64,6 +64,18 @@ public class CommonStepDef {
                 homepage.navigateToSignInPage();
                 signInPage.forgottenPassword();
                 break;
+            case "information":
+                homepage.navigateToSignInPage();
+                signInPage.login();
+                signInPage.clickInformation();
+                break;
+            case "address":
+                homepage.navigateToSignInPage();
+                signInPage.login();
+                signInPage.clickAddressesLink();
+                signInPage.clickAddNewAddress();
+                break;
+
             default:
                 System.out.println("Unexpected page type");
         }

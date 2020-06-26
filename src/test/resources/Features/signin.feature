@@ -1,4 +1,4 @@
-@dev
+
 Feature: Sign In
 
   Background: Clear cookies
@@ -34,8 +34,7 @@ Feature: Sign In
     Then "invalid password" alert is displayed
 
   Scenario: User enters new address on the accounts page
-    Given the user is signed in
-    And on the "addresses" page
+    Given the user is on the "address" page
     When the user adds a new address
     Then the successfully submitted message for "new address" is displayed
 
@@ -46,8 +45,7 @@ Feature: Sign In
     Then the successfully submitted message for "recovery email" is displayed
 
   Scenario: User logs in and updates password
-    Given the user is signed in
-    And on the "information" page
+    Given the user is on the "information" page
     When user updates password
     Then the successfully submitted message for "new password" is displayed
 

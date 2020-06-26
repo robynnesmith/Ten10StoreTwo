@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5922976900,
+              "duration": 5917373700,
               "status": "passed"
             },
             "line": 5,
@@ -24,516 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-25T14:51:27.940Z",
-        "line": 7,
-        "name": "User signs in using a registered email",
-        "description": "",
-        "id": "sign-in;user-signs-in-using-a-registered-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 907004600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user is on the \"sign in\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sign in",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 184990600,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the user enters \"registered\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "registered",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 571007600,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "\"valid\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "valid",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 88996700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the successfully submitted message for \"user logged in\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "user logged in",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 31996100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:35.683Z",
-        "line": 13,
-        "name": "User signs in using an unregistered email",
-        "description": "",
-        "id": "sign-in;user-signs-in-using-an-unregistered-email",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 745844300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "the user is on the \"sign in\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sign in",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 154007700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user enters \"unregistered\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "unregistered",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 338027900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "\"valid\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "valid",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 51019900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "\"invalid email\" alert is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid email",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 37999900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:37.008Z",
-        "line": 19,
-        "name": "User enters registered email to recover password",
-        "description": "",
-        "id": "sign-in;user-enters-registered-email-to-recover-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 736547000,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user is on the \"forgotten password\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "forgotten password",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 159363600,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user enters \"registered\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "registered",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 207987700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "clicks retrieve password",
-            "match": {
-              "location": "stepdefs.SignInStepDef.clicksRetrievePassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 48754600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "\"invalid recovery email\" alert is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid recovery email",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 41602700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:38.202Z",
-        "line": 25,
-        "name": "User can sign out",
-        "description": "",
-        "id": "sign-in;user-can-sign-out",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1095697400,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the user is signed in",
-            "match": {
-              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 249949700,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "the user clicks sign out",
-            "match": {
-              "location": "stepdefs.SignInStepDef.theUserClicksSignOut()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 191597600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the successfully submitted message for \"signed out\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "signed out",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 47710800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:39.785Z",
-        "line": 30,
-        "name": "User enters an invalid password",
-        "description": "",
-        "id": "sign-in;user-enters-an-invalid-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 496060100,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "the user is on the \"sign in\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "sign in",
-                  "offset": 20
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 149037800,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "the user enters \"registered\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "registered",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 432157800,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "\"invalid\" password",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersPassword(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61975400,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "\"invalid password\" alert is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "invalid password",
-                  "offset": 1
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.invalidErrorDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 50577100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:40.979Z",
+        "start_timestamp": "2020-06-26T09:47:49.353Z",
         "line": 36,
         "name": "User enters new address on the accounts page",
         "description": "",
@@ -543,40 +34,28 @@
         "steps": [
           {
             "result": {
-              "duration": 1053159500,
+              "duration": 2404370100,
               "status": "passed"
             },
-            "line": 37,
-            "name": "the user is signed in",
+            "line": 39,
+            "name": "the user is on the \"address\" page",
             "match": {
-              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
+              "arguments": [
+                {
+                  "val": "address",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefs.CommonStepDef.theUserIsOnPage(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 553466400,
+              "duration": 1263946500,
               "status": "passed"
             },
-            "line": 38,
-            "name": "on the \"addresses\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "addresses",
-                  "offset": 8
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.onTheAddressesPage(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1196798700,
-              "status": "passed"
-            },
-            "line": 39,
+            "line": 40,
             "name": "the user adds a new address",
             "match": {
               "location": "stepdefs.SignInStepDef.theUserAddsANewAddress()"
@@ -585,10 +64,10 @@
           },
           {
             "result": {
-              "duration": 42021700,
+              "duration": 56001300,
               "status": "passed"
             },
-            "line": 40,
+            "line": 41,
             "name": "the successfully submitted message for \"new address\" is displayed",
             "match": {
               "arguments": [
@@ -617,7 +96,7 @@
         "steps": [
           {
             "result": {
-              "duration": 34004500,
+              "duration": 34994300,
               "status": "passed"
             },
             "line": 5,
@@ -630,25 +109,25 @@
         ]
       },
       {
-        "start_timestamp": "2020-06-25T14:51:43.883Z",
-        "line": 42,
-        "name": "User enters an unregistered email to recover password",
+        "start_timestamp": "2020-06-26T09:47:59.074Z",
+        "line": 49,
+        "name": "User logs in and updates password",
         "description": "",
-        "id": "sign-in;user-enters-an-unregistered-email-to-recover-password",
+        "id": "sign-in;user-logs-in-and-updates-password",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 709841200,
+              "duration": 1533004600,
               "status": "passed"
             },
-            "line": 43,
-            "name": "the user is on the \"forgotten password\" page",
+            "line": 52,
+            "name": "the user is on the \"information\" page",
             "match": {
               "arguments": [
                 {
-                  "val": "forgotten password",
+                  "val": "information",
                   "offset": 20
                 }
               ],
@@ -658,125 +137,10 @@
           },
           {
             "result": {
-              "duration": 174283500,
+              "duration": 760997300,
               "status": "passed"
             },
-            "line": 44,
-            "name": "the user enters \"unregistered\" email",
-            "match": {
-              "arguments": [
-                {
-                  "val": "unregistered",
-                  "offset": 17
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.userEntersEmail(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 200463100,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "clicks retrieve password",
-            "match": {
-              "location": "stepdefs.SignInStepDef.clicksRetrievePassword()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50022300,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "the successfully submitted message for \"recovery email\" is displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "recovery email",
-                  "offset": 40
-                }
-              ],
-              "location": "stepdefs.CommonStepDef.theSuccessfullySubmittedMessageIsDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@dev"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "Clear cookies",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 27054800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "clear cookies",
-            "match": {
-              "location": "stepdefs.CommonStepDef.clearCookies()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-06-25T14:51:45.059Z",
-        "line": 48,
-        "name": "User logs in and updates password",
-        "description": "",
-        "id": "sign-in;user-logs-in-and-updates-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1052594400,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "the user is signed in",
-            "match": {
-              "location": "stepdefs.SignInStepDef.theUserIsSignedIn()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 327191500,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "on the \"information\" page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "information",
-                  "offset": 8
-                }
-              ],
-              "location": "stepdefs.SignInStepDef.onTheAddressesPage(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 699240900,
-              "status": "passed"
-            },
-            "line": 51,
+            "line": 53,
             "name": "user updates password",
             "match": {
               "location": "stepdefs.SignInStepDef.userUpdatesPassword()"
@@ -785,10 +149,10 @@
           },
           {
             "result": {
-              "duration": 37992000,
+              "duration": 58029100,
               "status": "passed"
             },
-            "line": 52,
+            "line": 54,
             "name": "the successfully submitted message for \"new password\" is displayed",
             "match": {
               "arguments": [
@@ -814,15 +178,6 @@
     "id": "sign-in",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/signin.feature",
-    "tags": [
-      {
-        "name": "@dev",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "tags": []
   }
 ]

@@ -182,7 +182,6 @@ public class BuyJourney {
         productPage.selectThirdSummerDress();
         productPage.selectQuantity();
         productPage.selectSize();
-//        productPage.
         homepage.addedToCart();
     }
 

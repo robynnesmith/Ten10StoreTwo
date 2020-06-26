@@ -37,7 +37,6 @@ public class HomePage extends BasePage {
     private static final By SEARCH_BAR = By.cssSelector("input[name='s']");
     private static final By PRESS_SEARCH = By.cssSelector("button[type='submit']");
     private static final By HOOVER_OVER_DRESS = By.cssSelector("img[alt='Blouse']");
-//    private static final By CONTINUE_SHOPPING = By.cssSelector("button[data-dismiss='modal']:last-of-type");
     private static final By CONTINUE_SHOPPING = By.xpath("//*[text()='Continue shopping']");
 
 

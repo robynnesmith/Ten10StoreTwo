@@ -1,4 +1,4 @@
-@dev
+
 Feature: Sign In
 
   Background: Clear cookies
@@ -32,10 +32,11 @@ Feature: Sign In
     When the user enters "registered" email
     And "invalid" password
     Then "invalid password" alert is displayed
-
+@dev
   Scenario: User enters new address on the accounts page
-    Given the user is signed in
-    And on the "addresses" page
+#    Given the user is signed in
+#    And on the "addresses" page
+    Given the user is on the "address" page
     When the user adds a new address
     Then the successfully submitted message for "new address" is displayed
 
@@ -44,10 +45,11 @@ Feature: Sign In
     When the user enters "unregistered" email
     And clicks retrieve password
     Then the successfully submitted message for "recovery email" is displayed
-
+@dev
   Scenario: User logs in and updates password
-    Given the user is signed in
-    And on the "information" page
+#    Given the user is signed in
+#    And on the "information" page
+    Given the user is on the "information" page
     When user updates password
     Then the successfully submitted message for "new password" is displayed
 
